@@ -1,5 +1,16 @@
 site_name: UnnyNet Documentation
-theme: mkdocs
+
+# Documentation and theme
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
 nav:
     - Home: index.md
     - General:
@@ -22,3 +33,20 @@ nav:
         - API: advanced/guilds/guilds_api.md
       - Open UnnyNet: advanced/open.md
     - Release Notes: release_notes.md
+
+extra_css:
+  - css/code_tabs.css
+
+extra_javascript:
+  - js/main.js
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: False
+      guess_lang: False
+  - toc:
+      permalink: True
+  - markdown_fenced_code_tabs:
+      single_block_as_tab: False

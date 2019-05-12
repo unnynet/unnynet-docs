@@ -13,33 +13,44 @@ In case a player logs out he might want to login in back with the game credentia
 1.  Turn on Login with Credentials in UnnyNet Settings.
 2. Add the following callback.
 
-        UnnyNet.UnnyNetBase.m_OnGameLoginRequest = () => {
-           UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
-        };
-
-    UnnyNet calls this method whenever player tries to authorize with game credentials.
+```csharp
+UnnyNet.UnnyNetBase.m_OnGameLoginRequest = () => {
+   UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
+};
+```
+    
+UnnyNet calls this method whenever player tries to authorize with game credentials.
 
 ### Log Out
 
 In case your game supports several account and players can switch between them, you can force players to log out from UnnyNet as soon as they log out from your game.
 
-    UnnyNet.UnnyNet.ForceLogout();
-    
+
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.ForceLogout();
+```
+
+```js fct_label="Java"
+unnynet.forceLogout()
+```
+  
 ## Callbacks
     
 UnnyNet invokes methods on different player's actions or to reply to a game request. If you need any of the information, you can subscribe to our callbacks.
 
 ### User has Logged In
 
-    UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
-        string unnyId;
-        prms.TryGetValue("unny_id", out unnyId);
-        string email;
-        prms.TryGetValue("email", out email);
-        string playerName;
-        prms.TryGetValue("name", out playerName);
-        Debug.LogFormat("Player autorized: id = {0}; name = {1}; email= {2}", unnyId, playerName, email);
-    }
+```csharp
+UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
+    string unnyId;
+    prms.TryGetValue("unny_id", out unnyId);
+    string email;
+    prms.TryGetValue("email", out email);
+    string playerName;
+    prms.TryGetValue("name", out playerName);
+    Debug.LogFormat("Player autorized: id = {0}; name = {1}; email= {2}", unnyId, playerName, email);
+}
+```
 
 This event triggers once a user logs in to UnnyNet. Parameters:
 
@@ -48,7 +59,8 @@ This event triggers once a user logs in to UnnyNet. Parameters:
 * **name** - User's Name.
 
 ### User has changed his name
-
-    UnnyNet.UnnyNetBase.m_OnPlayerNameChanged = (newName) => {
-        Debug.Log("Player changed name to " + newName);
-    }
+```csharp
+UnnyNet.UnnyNetBase.m_OnPlayerNameChanged = (newName) => {
+    Debug.Log("Player changed name to " + newName);
+}
+```
