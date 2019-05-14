@@ -5,34 +5,76 @@ As UnnyNet has tons of features inside, you need a flexible way of displaying th
 ### Default
 Opens Default page or the page, which a player visited the last: 
 
-    UnnyNet.UnnyNetBase.OpenUnnyNet();
+```csharp fct_label="Unity"
+UnnyNet.UnnyNetBase.OpenUnnyNet();
+```
+
+```js fct_label="Java"
+unnynet.show();
+```
 
 ### Leaderboards  
 Opens Leaderboards Window:
 
-    UnnyNet.UnnyNet.OpenLeaderboards();
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.OpenLeaderboards();
+```
+
+```js fct_label="Java"
+unnynet.openLeaderboards();
+```
 
 ### Achievements
 Open Achievements Window:
 
-    UnnyNet.UnnyNet.OpenAchievements();
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.OpenAchievements();
+```
+
+```js fct_label="Java"
+unnynet.openAchievements();
+```
 
 ### Friends
 Open Friends Window:
 
-    UnnyNet.UnnyNet.OpenFriends();
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.OpenFriends();
+```
+
+```js fct_label="Java"
+unnynet.openFriends();
+```
 
 ### Chat
 Open a specific channel. For example "general":
 
-    UnnyNet.UnnyNet.OpenChannel("general");
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.OpenChannel("general");
+```
+
+```js fct_label="Java"
+unnynet.openChannel("general");
+```  
 
 ### Guilds
 Open Guilds window, where player can search, create or join guilds:
 
-    UnnyNet.UnnyNet.OpenGuilds();
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.OpenGuilds();
+```
+
+```js fct_label="Java"
+unnynet.openGuilds();
+```
 
 ### My Guild
 Open my Guild window. The Guilds window is opened if the player isn't in a guild:
 
-    UnnyNet.UnnyNet.OpenMyGuild();
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.OpenMyGuild();
+```
+
+```js fct_label="Java"
+unnynet.openMyGuild();
+```

@@ -10,10 +10,14 @@ Realtime chat makes it easy to power a live community. Users can chat with each 
 
 Channels can be edited even after the game is released.
 
-
 ### Game Messages
 Game messages can be used to share special moments of a player with the community. For example if a players completes a hard achievement or summons a rare monster, why not to tell about that to everybody? Game messages can do that automatically on behalf on a player. Messages can be sent only to the game channels.
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.SendMessageToChannel("achievements", "Made a successful evolution to 3★");
+```
 
-    UnnyNet.UnnyNet.SendMessageToChannel("achievements", "Made a successful evolution to 3★");
+```js fct_label="Java"
+unnynet.sendMessageToChannel("achievements", "Made a successful evolution to 3★");
+```
 
 Sends "Made a successful evolution to 3★" message to the "achievements" channel on behalf on the player.

@@ -46,7 +46,13 @@ This is how players see the achievements in the game:
 ### Report Achievements
 All types of achievements have the same method to report the progress:
 
-    UnnyNet.UnnyNet.ReportAchievements(6, 99);
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.ReportAchievements(6, 99);
+```
+
+```js fct_label="Java"
+unnynet.reportAchievements(6, 99);
+```
 
 The first parameter ("6" in the example) is the id of the achievememt. It assigns to an achievements once the achievement is created, and you can find it in the achievements table of game settings.
 The second parameter ("99" in the example) differs for each type of achievement:
@@ -57,7 +63,14 @@ The second parameter ("99" in the example) differs for each type of achievement:
 
 ### Achievement Completed
 You can subscribe for the event to be notified, when a player completes an achievement
+```csharp fct_label="Unity"
+UnnyNet.UnnyNetBase.m_OnAchievementCompleted = (prms) =>{
+    Debug.Log("On Achievement Completed by id " + prms["ach_id"]);
+};
+```
 
-    UnnyNet.UnnyNetBase.m_OnAchievementCompleted = (prms) =>{
-        Debug.Log("On Achievement Completed by id " + prms["ach_id"]);
-    };
+```js fct_label="Java"
+unnynet.setOnAchievementCompletedListener(achId -> 
+    showMessage("Achievement Completed: " + achId)
+);
+```

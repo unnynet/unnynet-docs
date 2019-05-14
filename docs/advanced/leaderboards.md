@@ -13,7 +13,14 @@ The server has no special requirement on what the score value should represent f
     
 When a player completes a level or makes any other important action, use the next method to report his scores to UnnyNet:
 
-    UnnyNet.UnnyNet.ReportLeaderboards("Arena", 99);
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.ReportLeaderboards("Arena", 99);
+```
+
+```js fct_label="Java"
+unnynet.reportLeaderboards("Arena", 99);
+```
+    
 
 ### Leaderboards UI
 UnnyNet displays Global Leaderboards and also Leaderboards only for Friends:

@@ -26,7 +26,9 @@ UnnyNet.UnnyNetBase.m_OnGameLoginRequest = () => {
 ```
 
 ```js fct_label="Java"
-unnynet.setOnGameLoginRequestListener(() -> unnynet.authorizeWithCredentials("username", "password", "display_name", null));
+unnynet.setOnGameLoginRequestListener(() -> 
+    unnynet.authorizeWithCredentials("username", "password", "display_name", null)
+);
 ```
 
 UnnyNet calls this method whenever player tries to authorize with game credentials.
@@ -62,7 +64,9 @@ UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
 ```
 
 ```js fct_label="Java"
-unnynet.setOnPlayerAuthorizedListener((unnyId, email, name) -> showMessage(String.format("Player Authorized: %s - %s, %s", name, email, unnyId)))
+unnynet.setOnPlayerAuthorizedListener((unnyId, email, name) -> 
+    showMessage(String.format("Player Authorized: %s - %s, %s", name, email, unnyId))
+);
 ```
 
 This event triggers once a user logs in to UnnyNet. Parameters:
