@@ -1,6 +1,6 @@
 # Guilds API
 
-When you [setup] the guilds in UnnyNet and [test] everything, we can move forward to learn about API and events, which you can use in your game.
+When you [setup](/advanced/guilds/guilds_setup) the guilds in UnnyNet and [test](/advanced/guilds/guilds_test) everything, we can move forward to learn about API and events, which you can use in your game.
 
 ### Guild creation
 

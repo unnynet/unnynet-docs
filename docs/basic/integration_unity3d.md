@@ -1,6 +1,6 @@
 # Unity3D Integration
 
-For you convenience we've recorded the [video of the integration](https://youtu.be/ajnHBpC8r5A)
+For your convenience we've recorded the [video of the integration](https://youtu.be/ajnHBpC8r5A)
 
 1.  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920)
 2.  Import the UnnyNet plugin
@@ -18,7 +18,7 @@ For you convenience we've recorded the [video of the integration](https://youtu.
 
         UnnyNet.UnnyNetBase.OpenUnnyNet();
 
-6.  In the Player Settings set for Android Minimum API Level to 20, for iOS Target minimum iOS Version to 8.0.
+6.  In the Player Settings set for Android Minimum API Level to at least 20, for iOS Target minimum iOS Version to at least 8.0.
 
 Once you make an Android or iOS build - everything will work like magic. Unfortunately you can't test it in Unity yet, but we are working on it.
 
