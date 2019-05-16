@@ -6,7 +6,7 @@ For your convenience we've recorded the [video of the integration](https://youtu
 2.  Import the UnnyNet plugin
 3.  In the Unity's Title Bar click on UnnyNet->Settings and set the your Game ID
     
-    You can find you Game ID here:
+    You can find your Game ID here:
     ![Screenshot](../img/game_id_1.jpg)
     ![Screenshot](../img/game_id_2.jpg)
 
