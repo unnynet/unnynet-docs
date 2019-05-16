@@ -21,3 +21,29 @@ unnynet.sendMessageToChannel("achievements", "Made a successful evolution to 3â˜
 ```
 
 Sends "Made a successful evolution to 3â˜…" message to the "achievements" channel on behalf on the player.
+
+### New Message Received
+You might want to show notification in the game once a player receives a message. Just 
+
+```csharp fct_label="Unity"
+UnnyNet.UnnyNetBase.m_OnNewMessageReceived = (Dictionary<string, string> prms) => {
+    string sender_id;
+    prms.TryGetValue("sender_id", out sender_id);
+    string sender_name;
+    prms.TryGetValue("sender_name", out sender_name);
+    string channel_type;
+    prms.TryGetValue("type", out channel_type);
+    string channel_name;
+    prms.TryGetValue("channel_name", out channel_name);
+
+    UnnyNet.ChannelType type = (UnnyNet.ChannelType)int.Parse(channel_type);
+
+    Debug.LogFormat("New Message received from user {0} ({1}); ChannelType = {2}", sender_name, sender_id, type);
+};
+```
+
+**channel_name** doesn't present for direct messages.
+**UnnyNet.ChannelType** is the enum with 3 values:
+1.  **Global** - one of the general channels. Which one is specified in **channel_name**
+2.  **Direct** - a private message from a friend
+3.  **Guild** - a message from my guild mate 
