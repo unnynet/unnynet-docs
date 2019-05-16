@@ -17,7 +17,7 @@ When a player completes a level or makes any other important action, use the nex
 UnnyNet.UnnyNet.ReportLeaderboards("Arena", 99);
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.reportLeaderboards("Arena", 99);
 ```
     

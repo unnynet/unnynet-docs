@@ -19,7 +19,7 @@ UnnyNet.UnnyNetBase.m_OnNewGuildRequest = (prms) =>{
 };
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnNewGuildRequestListener((name, description, guildType) -> {
     showMessage(String.format("NewGuild Request: %s - %s, %s, Guilds are allowed, so we return null. If you want to prevent guild from the creation - just return any string error", name, description, guildType));
     return null;
@@ -42,7 +42,7 @@ UnnyNet.UnnyNetBase.m_OnNewGuild = (prms) =>{
 };
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnNewGuildListener((name, description, guildId) -> showErrorMessage(String.format("OnNewGuild: %s - %s, %s", name, description, guildId)))
 ```
 
@@ -65,7 +65,7 @@ UnnyNet.UnnyNetBase.m_OnRankChanged = (prms) =>{
 };
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnRankChangedListener((index, rank, prevIndex, prevRank) -> 
     showMessage(String.format("Rank Changed: %s - %s => %s - %s", prevIndex, prevRank, index, rank))
 );
@@ -80,7 +80,7 @@ As a game developer, you need to decide when exactly players give experience to 
 UnnyNet.UnnyNet.AddGuildExperience(500);
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.addGuildExperience(500);
 ```
 
@@ -100,7 +100,7 @@ UnnyNet.UnnyNet.GetGuildInfo(true, (data) =>{
 });
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.getGuildInfo(true, data -> {
     showMessage(data);
 })

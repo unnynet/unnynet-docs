@@ -10,7 +10,7 @@ Currently UnnyNet has 3 ways to authorize players:
 UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.authorizeWithCredentials("username", "password", "display_name", null);
 ```
     
@@ -25,7 +25,7 @@ UnnyNet.UnnyNetBase.m_OnGameLoginRequest = () => {
 };
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnGameLoginRequestListener(() -> 
     unnynet.authorizeWithCredentials("username", "password", "display_name", null)
 );
@@ -41,7 +41,7 @@ In case your game supports several account and players can switch between them, 
 UnnyNet.UnnyNet.ForceLogout();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.forceLogout()
 ```
   
@@ -63,7 +63,7 @@ UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
 }
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnPlayerAuthorizedListener((unnyId, email, name) -> 
     showMessage(String.format("Player Authorized: %s - %s, %s", name, email, unnyId))
 );
@@ -83,6 +83,6 @@ UnnyNet.UnnyNetBase.m_OnPlayerNameChanged = (newName) => {
 }
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnPlayerNameChangedListener(newName -> showMessage(String.format("Player Name Changed: %s", newName)))
 ```

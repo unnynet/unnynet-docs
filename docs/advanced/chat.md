@@ -16,7 +16,7 @@ Game messages can be used to share special moments of a player with the communit
 UnnyNet.UnnyNet.SendMessageToChannel("achievements", "Made a successful evolution to 3★");
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.sendMessageToChannel("achievements", "Made a successful evolution to 3★");
 ```
 

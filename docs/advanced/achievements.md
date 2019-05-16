@@ -69,7 +69,7 @@ UnnyNet.UnnyNetBase.m_OnAchievementCompleted = (prms) =>{
 };
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.setOnAchievementCompletedListener(achId -> 
     showMessage("Achievement Completed: " + achId)
 );

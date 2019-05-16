@@ -9,7 +9,7 @@ Opens Default page or the page, which a player visited the last:
 UnnyNet.UnnyNetBase.OpenUnnyNet();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.show();
 ```
 
@@ -20,7 +20,7 @@ Opens Leaderboards Window:
 UnnyNet.UnnyNet.OpenLeaderboards();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.openLeaderboards();
 ```
 
@@ -31,7 +31,7 @@ Open Achievements Window:
 UnnyNet.UnnyNet.OpenAchievements();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.openAchievements();
 ```
 
@@ -42,7 +42,7 @@ Open Friends Window:
 UnnyNet.UnnyNet.OpenFriends();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.openFriends();
 ```
 
@@ -53,7 +53,7 @@ Open a specific channel. For example "general":
 UnnyNet.UnnyNet.OpenChannel("general");
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.openChannel("general");
 ```  
 
@@ -64,7 +64,7 @@ Open Guilds window, where player can search, create or join guilds:
 UnnyNet.UnnyNet.OpenGuilds();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.openGuilds();
 ```
 
@@ -75,6 +75,6 @@ Open my Guild window. The Guilds window is opened if the player isn't in a guild
 UnnyNet.UnnyNet.OpenMyGuild();
 ```
 
-```js fct_label="Java"
+```java fct_label="Java"
 unnynet.openMyGuild();
 ```
