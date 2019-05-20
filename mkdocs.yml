@@ -10,6 +10,7 @@ theme:
   font:
     text: 'Roboto'
     code: 'Roboto Mono'
+  favicon: 'img/favicon.ico'
 
 nav:
     - Home: index.md
