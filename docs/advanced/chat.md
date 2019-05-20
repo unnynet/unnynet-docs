@@ -42,8 +42,8 @@ UnnyNet.UnnyNetBase.m_OnNewMessageReceived = (Dictionary<string, string> prms) =
 };
 ```
 
-**channel_name** doesn't present for direct messages.
-**UnnyNet.ChannelType** is the enum with 3 values:
+**channel_name** doesn't present for direct messages.  **UnnyNet.ChannelType** is the enum with 3 values:
+
 1.  **Global** - one of the general channels. Which one is specified in **channel_name**
 2.  **Direct** - a private message from a friend
 3.  **Guild** - a message from my guild mate 
