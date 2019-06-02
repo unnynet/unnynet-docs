@@ -1,4 +1,4 @@
-# Unity3D Integration
+# Android Integration
 
 
 1) Download the latest version of the library from the [github](https://github.com/unnynet/unnynet-android/releases). *Later we will publish it to JCenter or Maven Center*.  
