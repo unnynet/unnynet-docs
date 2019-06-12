@@ -3,7 +3,16 @@
 Currently UnnyNet has 3 ways to authorize players:
 
 1.  **Email** - this is a default method, which players can use from the main screen.
-2.  **Guest Mode** is turned on by default, but if you don't want guests to join your group, you can turn it off in the UnnyNet settings (Unity: UnnyNet->Settings)
+2.  **Guest Mode** is turned on by default, players authorize using their deviceId. Players can do that manually from UnnyNet screen or developers can do that on their behalf, so players won't see our welcome window.
+
+```csharp fct_label="Unity"
+UnnyNet.UnnyNet.AuthorizeAsGuest("display_name");
+```
+
+```java fct_label="Java"
+unnynet.authorizeAsGuest("display_name", null);
+```
+
 3.  **Game Auth** with credentials if your game has any auth system, you can use those credentials to authorize your players in UnnyNet.
 
 ```csharp fct_label="Unity"
@@ -13,6 +22,8 @@ UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name")
 ```java fct_label="Java"
 unnynet.authorizeWithCredentials("username", "password", "display_name", null);
 ```
+
+Password must be at least 8 symbols length.
     
 In case a player logs out he might want to login in back with the game credentials. We've created a flow for such situation, but it's up to developers to take care about the rest:
 
