@@ -55,25 +55,22 @@ UnnyNet invokes methods on different player's actions or to reply to a game requ
 UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
     string unnyId;
     prms.TryGetValue("unny_id", out unnyId);
-    string email;
-    prms.TryGetValue("email", out email);
     string playerName;
     prms.TryGetValue("name", out playerName);
-    Debug.LogFormat("Player autorized: id = {0}; name = {1}; email= {2}", unnyId, playerName, email);
+    Debug.LogFormat("Player autorized: id = {0}; name = {1};", unnyId, playerName);
 }
 ```
 
 ```java fct_label="Java"
-unnynet.setOnPlayerAuthorizedListener((unnyId, email, name) -> 
-    showMessage(String.format("Player Authorized: %s - %s, %s", name, email, unnyId))
+unnynet.setOnPlayerAuthorizedListener((unnyId, name) -> 
+    showMessage(String.format("Player Authorized: %s - %s", name, unnyId))
 );
 ```
 
 This event triggers once a user logs in to UnnyNet. Parameters:
 
 * **unny_id** - UnnyNet player Id. It'll never change, so you can use it to identify a user and synchronize his game progress for example.
-* **email** - Email, which player used to login. This value can be changed by a player or might not present at all.
-* **name** - User's Name.
+* **name** - User's Display Name.
 
 ### User has changed his name
 
