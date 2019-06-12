@@ -2,6 +2,14 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.1 - June 4, 2019
+* Fixed problems in some Unity versions 
+* Public key added
+
+### v2.0 - May 20, 2019
+* Unity 5.6+ support  
+* Android min version was reduced to 4.4
+
 ### v1.12 - May 7, 2019
 * New design
 * New API Methods:

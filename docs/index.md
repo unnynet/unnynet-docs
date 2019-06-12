@@ -4,7 +4,7 @@ UnnyNet is an important extension for social and realtime games and apps.
 
 With UnnyNet you can power-up your game with real-time chat, friends, leaderboards and other social features. We offer out-of-the-box solution for client and server, which you can integrate in just 10 minutes.
 
-UnnyNet helps you to build a community of your most engaged, active and loyal players right inside your game!
+UnnyNet helps you to build a community of your most engaged, active and loyal players right inside your game! Big publishers usually use similar systems to cross-promote their new games and get free installs.
 
 Our servers are designed to run at massive scale, and scale automatically with your user base. We have your back, so we expect from you to focus on the game itself and make it awesome.
 
