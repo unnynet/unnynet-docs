@@ -4,11 +4,17 @@ For your convenience we've recorded the [video of the integration](https://youtu
 
 1.  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
 2.  Import the UnnyNet plugin.
-3.  In the Unity's Title Bar click on UnnyNet->Settings and set the your Game ID.
+3.  In the Unity's Title Bar click on UnnyNet->Settings to set up your Game ID and Public Key:
+    ![Screenshot](../img/settings_800.jpg)
     
-    You can find your Game ID here:
+    To get the required information, open your game's settings at UnnyNet website:
     ![Screenshot](../img/game_id_1.jpg)
+    
+    Read and accept Terms of Service first:
     ![Screenshot](../img/game_id_2.jpg)
+    
+    Copy and paste Game ID and Public Key: 
+    ![Screenshot](../img/game_id_3.jpg)
 
 4.  Call initialize method at start:
 
