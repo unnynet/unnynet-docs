@@ -1,6 +1,6 @@
 # Unity3D Integration
 
-For your convenience we've recorded the [video of the integration](https://youtu.be/ajnHBpC8r5A)
+For your convenience we've recorded the [video of the integration](https://youtu.be/ql6h1WTBj5I)
 
 1.  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
 2.  Import the UnnyNet plugin.
