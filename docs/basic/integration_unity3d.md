@@ -8,13 +8,13 @@ For your convenience we've recorded the [video of the integration](https://youtu
     ![Screenshot](../img/settings_800.jpg)
     
     To get the required information, open your game's settings at UnnyNet website:
-    ![Screenshot](../img/game_id_1.jpg)
+    ![Screenshot](../img/game_id_1_.jpg)
     
     Read and accept Terms of Service first:
-    ![Screenshot](../img/game_id_2.jpg)
+    ![Screenshot](../img/game_id_2_.jpg)
     
     Copy and paste Game ID and Public Key: 
-    ![Screenshot](../img/game_id_3.jpg)
+    ![Screenshot](../img/game_id_3_.jpg)
 
 4.  Call initialize method at start:
 
