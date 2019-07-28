@@ -2,6 +2,12 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.3 - July 29, 2019
+* New method CloseUnnyNet window
+* Messages format: make text bold, italic, start new lines or post links
+* Now you can open player's profile from his invitation to friends
+
+
 ### v2.2 - June 22, 2019
 * Our Business model was changed for new clients.
 * Authorization as guests can be done from the code now

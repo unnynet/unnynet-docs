@@ -33,6 +33,7 @@ nav:
         - Tests: advanced/guilds/guilds_test.md
         - API: advanced/guilds/guilds_api.md
       - Open UnnyNet: advanced/open.md
+      - Close UnnyNet: advanced/close.md
     - Release Notes: release_notes.md
 
 extra_css:
