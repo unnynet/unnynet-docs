@@ -96,6 +96,16 @@ This event triggers once a user logs in to UnnyNet. Parameters:
 * `unny_id` - UnnyNet player Id. It'll never change, so you can use it to identify a user and synchronize his game progress for example.
 * `name` - User's Display Name.
 
+### User has Logged Out
+
+```csharp fct_label="Unity"
+UnnyNet.UnnyNetBase.m_OnPlayerLoggedOut = () => {
+    Debug.Log("On Player Logged Out");
+};
+```
+
+This event triggers once a user logs out from UnnyNet.
+
 ### User has changed his name
 
 ```csharp fct_label="Unity"

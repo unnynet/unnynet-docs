@@ -13,14 +13,14 @@ Channels can be edited even after the game is released.
 ### Game Messages
 Game messages can be used to share special moments of a player with the community. For example if a players completes a hard achievement or summons a rare monster, why not to tell about that to everybody? Game messages can do that automatically on behalf on a player. Messages can be sent only to the game channels.
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.SendMessageToChannel("achievements", "Made a successful evolution to 3★");
+UnnyNet.UnnyNet.SendMessageToChannel("channel_id", "Made a successful evolution to 3★");
 ```
 
 ```java fct_label="Java"
-unnynet.sendMessageToChannel("achievements", "Made a successful evolution to 3★");
+unnynet.sendMessageToChannel("channel_id", "Made a successful evolution to 3★");
 ```
 
-Sends "Made a successful evolution to 3★" message to the "achievements" channel on behalf on the player.
+Sends "Made a successful evolution to 3★" message to the channel with id "channel_id" on behalf on the player. You can find "channel_id" right above the name of the channel in the channels settings.
 
 ### New Message Received
 You might want to show notification in the game once a player receives a message. Just 

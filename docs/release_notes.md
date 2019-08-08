@@ -2,6 +2,11 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.4 - August 09, 2019
+* OnPlayerLoggedOut event was added
+* Optimization for chat channels
+
+
 ### v2.3 - August 01, 2019
 * New method CloseUnnyNet window
 * Messages format: make text bold, italic, start new lines or post links
