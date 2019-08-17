@@ -66,7 +66,7 @@ UnnyNet.UnnyNet.ForceLogout();
 ```
 
 ```java fct_label="Java"
-unnynet.forceLogout()
+unnynet.forceLogout();
 ```
   
 ## Callbacks
@@ -81,8 +81,8 @@ UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
     prms.TryGetValue("unny_id", out unnyId);
     string playerName;
     prms.TryGetValue("name", out playerName);
-    Debug.LogFormat("Player autorized: id = {0}; name = {1};", unnyId, playerName);
-}
+    Debug.LogFormat("Player authorized: id = {0}; name = {1};", unnyId, playerName);
+};
 ```
 
 ```java fct_label="Java"
@@ -111,9 +111,9 @@ This event triggers once a user logs out from UnnyNet.
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNetBase.m_OnPlayerNameChanged = (newName) => {
     Debug.Log("Player changed name to " + newName);
-}
+};
 ```
 
 ```java fct_label="Java"
-unnynet.setOnPlayerNameChangedListener(newName -> showMessage(String.format("Player Name Changed: %s", newName)))
+unnynet.setOnPlayerNameChangedListener(newName -> showMessage(String.format("Player Name Changed: %s", newName)));
 ```

@@ -44,7 +44,7 @@ unnynet = new UnnyNetDefault(this);
 5) Call the next method to show UnnyNet window:
 
 ```java
-unnynet.show()
+unnynet.show();
 ```
 
 

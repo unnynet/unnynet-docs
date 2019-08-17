@@ -23,7 +23,7 @@ UnnyNet.UnnyNetBase.m_OnNewGuildRequest = (prms) =>{
 unnynet.setOnNewGuildRequestListener((name, description, guildType) -> {
     showMessage(String.format("NewGuild Request: %s - %s, %s, Guilds are allowed, so we return null. If you want to prevent guild from the creation - just return any string error", name, description, guildType));
     return null;
-})
+});
 ```
 
 For example: it costs 25,000 Gold to create a guild. You can check if a player has this amount of Gold and return 'null' if everything is ok. In case the player doesn't have enough money, you can return the error "You need 25,000 Gold to create a guild".
@@ -43,7 +43,7 @@ UnnyNet.UnnyNetBase.m_OnNewGuild = (prms) =>{
 ```
 
 ```java fct_label="Java"
-unnynet.setOnNewGuildListener((name, description, guildId) -> showErrorMessage(String.format("OnNewGuild: %s - %s, %s", name, description, guildId)))
+unnynet.setOnNewGuildListener((name, description, guildId) -> showErrorMessage(String.format("OnNewGuild: %s - %s, %s", name, description, guildId)));
 ```
 
 
@@ -103,7 +103,7 @@ UnnyNet.UnnyNet.GetGuildInfo(true, (data) =>{
 ```java fct_label="Java"
 unnynet.getGuildInfo(true, data -> {
     showMessage(data);
-})
+});
 ```
 
 First parameter indicates if you need full information (basic info + list of members) or just basic information about the guild. The return value is a string json. You can use UnnyNetMiniJSON to Deserialize string to JSON. If there is the error field, it means something went wrong (probably player doesn't have a guild).
