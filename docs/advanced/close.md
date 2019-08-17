@@ -9,3 +9,13 @@ UnnyNet.UnnyNetBase.CloseUnnyNet();
 ```java fct_label="Java"
 unnynet.close();
 ```
+
+### UnnyNet was closed event
+
+Whenever UnnyNet window got closed (from the code or by the user action), the event triggers:
+
+```csharp fct_label="Unity"
+UnnyNet.UnnyNetBase.m_OnUnnyNetClosed = () => {
+    Debug.Log("On UnnyNet was closed");
+};
+```
