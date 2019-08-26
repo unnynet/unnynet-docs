@@ -47,14 +47,14 @@ unnynet.openFriends();
 ```
 
 ### Chat
-Open a specific channel. For example "general":
+Open a specific channel. For example general (channel_id = "1"):
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenChannel("general");
+UnnyNet.UnnyNet.OpenChannel("channel_id");
 ```
 
 ```java fct_label="Java"
-unnynet.openChannel("general");
+unnynet.openChannel("channel_id");
 ```  
 
 ### Guilds
