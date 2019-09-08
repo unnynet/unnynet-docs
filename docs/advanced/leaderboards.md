@@ -4,6 +4,8 @@ Leaderboards are a great way to add a social and competitive element to any game
 
 The server has no special requirement on what the score value should represent from your game. A leaderboard is created with a sort order on values. If you're using lap time or currency in records you'll want to order the results in ASC or DESC mode as preferred. At creation time you must also specify the operator which controls how scores are submitted to the leaderboard: "best" or "set".
 
+For your convenience we've recorded the [small video tutorial](https://youtu.be/fvbJznVhaw0)
+
 ### How to add Leaderboards
 1.  Open Game Settings window
     ![Screenshot](../img/game_settings.jpg)

@@ -11,6 +11,8 @@ Manage Achievements:
 
 Once you add at least one achievement - all players will see the Achievements button in the main navigation.
 
+For your convenience we've recorded the [small video tutorial](https://youtu.be/7lSqoOWwSdM)
+
 ### Achievement Parameters:
 
 * **Name** - displayed name of the achievement;
