@@ -2,16 +2,22 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.6 - September 12, 2019
+* UIWebView warning on iOS fixed
+* GetAchievementsInfo - the method to get total scores for achievements
+* Fixed notches for iOS and Android
+
+### v2.5 - August 27, 2019
+* Fixed problem with screen size on some Android devices
+
 ### v2.4 - August 09, 2019
 * OnPlayerLoggedOut event was added
 * Optimization for chat channels
-
 
 ### v2.3 - August 01, 2019
 * New method CloseUnnyNet window
 * Messages format: make text bold, italic, start new lines or post links
 * Now you can open player's profile from his invitation to friends
-
 
 ### v2.2 - June 22, 2019
 * Our Business model was changed for new clients.
