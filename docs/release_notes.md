@@ -2,6 +2,13 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.7 - September 18, 2019
+* New methods:
+ - GetPlayerPublicInfo for display_name and avatar_url
+ - GetLeaderboardScores
+* Custom method to popup window
+* Popup window added to the leaderboards and direct messages
+
 ### v2.6 - September 12, 2019
 * UIWebView warning on iOS fixed
 * GetAchievementsInfo - the method to get total scores for achievements
