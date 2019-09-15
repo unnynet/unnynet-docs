@@ -83,27 +83,3 @@ UnnyNet.UnnyNet.AddGuildExperience(500);
 ```java fct_label="Java"
 unnynet.addGuildExperience(500);
 ```
-
-### Get Guild Info
-
-You can request guild information of a player:
-
-```csharp fct_label="Unity"
-UnnyNet.UnnyNet.GetGuildInfo(true, (data) =>{
-    Dictionary<string, object> json = UnnyNetMiniJSON.Json.Deserialize(data) as Dictionary<string, object>;
-
-    if (json.ContainsKey("error")) {
-        Debug.LogError("Couldn't get Guild Info: " + json["error"]);
-    } else {
-        Debug.Log("Guild Info Loaded: " + data);
-    }
-});
-```
-
-```java fct_label="Java"
-unnynet.getGuildInfo(true, data -> {
-    showMessage(data);
-});
-```
-
-First parameter indicates if you need full information (basic info + list of members) or just basic information about the guild. The return value is a string json. You can use UnnyNetMiniJSON to Deserialize string to JSON. If there is the error field, it means something went wrong (probably player doesn't have a guild).

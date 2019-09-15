@@ -76,18 +76,3 @@ unnynet.setOnAchievementCompletedListener(achId ->
     showMessage("Achievement Completed: " + achId)
 );
 ```
-
-### Get Achievements Scores
-You can request the total Achievements scores
-
-```csharp fct_label="Unity"
-UnnyNet.UnnyNet.GetAchievementsInfo((data) => {
-    Dictionary<string, object> json = UnnyNetMiniJSON.Json.Deserialize(data.Data) as Dictionary<string, object>;
-
-    if (json.ContainsKey("scores"))
-    {
-        long scores = (long)json["scores"];
-        Debug.LogError("Your total achievement scores is " + scores);
-    }
-});
-```

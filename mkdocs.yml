@@ -35,6 +35,8 @@ nav:
         - API: advanced/guilds/guilds_api.md
       - Open UnnyNet: advanced/open.md
       - Close UnnyNet: advanced/close.md
+    - Requests: requests/response_data.md
+      - Get API: requests/get_api.md
     - Release Notes: release_notes.md
 
 extra_css:
