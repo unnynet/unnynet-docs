@@ -1,6 +1,6 @@
 # GET API
 
-There are a lot of information about a player, stored in UnnyNet, which you might need for your game.
+There are a lot of information about a player stored in UnnyNet, which you might need for your game.
 
 Please make sure to read about [ResponseData and Errors](/response_data) before moving forward.
 
@@ -15,7 +15,7 @@ void ResponceReceived(UnnyNet.ResponseData data) {
 }
 ```
 
-## Player's public info
+### Player's public info
 
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNet.GetPlayerPublicInfo(ResponceReceived);
@@ -24,7 +24,7 @@ UnnyNet.UnnyNet.GetPlayerPublicInfo(ResponceReceived);
 Example of the response:  **{"display_name":"Pavel Ignatov","avatar_url":"https://unnynet.azureedge.net/avatars/unnyhog/4.jpg"}**
 
 
-## Player's leaderboard info
+### Player's leaderboard info
 
 Put your leaderboard_id to get current player's leaderboard rank and score:
 
