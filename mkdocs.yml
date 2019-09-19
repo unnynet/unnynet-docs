@@ -23,7 +23,7 @@ nav:
           - Basics: basic/integration_android.md
           - Proguard: basic/integration_android_proguard.md
       - Authorization: basic/authorization.md
-    - Advanced Integration: 
+    - Advanced Integration:
       - Leaderboards: advanced/leaderboards.md
       - Achievements: advanced/achievements.md
       - Real-time Chat: advanced/chat.md
@@ -36,7 +36,8 @@ nav:
         - API: advanced/guilds/guilds_api.md
       - Open UnnyNet: advanced/open.md
       - Close UnnyNet: advanced/close.md
-    - Requests: requests/response_data.md
+    - Requests:
+      - Response Data: requests/response_data.md
       - Get API: requests/get_api.md
     - Release Notes: release_notes.md
 
