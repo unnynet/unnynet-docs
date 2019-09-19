@@ -27,6 +27,7 @@ nav:
       - Leaderboards: advanced/leaderboards.md
       - Achievements: advanced/achievements.md
       - Real-time Chat: advanced/chat.md
+      - Chat Popup: advanced/chat_popup.md
       - Theme Customization: advanced/themes.md
       - Guilds:
         - Basic Information: advanced/guilds/guilds.md

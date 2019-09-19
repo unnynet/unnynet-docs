@@ -7,7 +7,7 @@ Please make sure to read about [ResponseData and Errors](/response_data) before 
 For the testing purpose we'll declare one function, which we'll be using in all the requests:
 
 ```csharp fct_label="Unity"
-void ResponceReceived(ResponseData data) {
+void ResponceReceived(UnnyNet.ResponseData data) {
     if (data.Success)
         Debug.Log("data received = " + data.Data);
     else
