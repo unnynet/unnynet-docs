@@ -43,6 +43,7 @@ You can add as many buttons as you want, just bear in mind the size of the scree
 ### Incoming parameters
 
 As you might've noticed there are additional parameters passed to the OnPopupOpened event:
+
 *   display_name - the display name of the selected player
 *   unny_id - the unique id of the selected player
 *   friend_state:
@@ -53,6 +54,7 @@ As you might've noticed there are additional parameters passed to the OnPopupOpe
     *   Banned: 3
 
 If the player is in a guild, additional parameters are passed as well:
+
 *   guild_id
 *   guild_name
 *   guild_mate - (true/false) indicates whether the player is in the same guild as current player  
