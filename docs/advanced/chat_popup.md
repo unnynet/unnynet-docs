@@ -1,6 +1,7 @@
 # Chat Popup
 
 When a player selects another player, a popup appear with a set of option:
+
 *   View Profile
 *   Add Friend
 *   Mention
