@@ -52,6 +52,10 @@ All types of achievements have the same method to report the progress:
 UnnyNet.UnnyNet.ReportAchievements(6, 99);
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.reportAchievements(6, 99);
+```
+
 ```js fct_label="Java"
 unnynet.reportAchievements(6, 99);
 ```
@@ -68,6 +72,12 @@ You can subscribe for the event to be notified, when a player completes an achie
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNetBase.m_OnAchievementCompleted = (prms) =>{
     Debug.Log("On Achievement Completed by id " + prms["ach_id"]);
+};
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onAchievementCompleted = (prms) =>{
+    console.info("onAchievementCompleted", prms);
 };
 ```
 

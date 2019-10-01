@@ -10,6 +10,10 @@ Currently UnnyNet has 3 ways to authorize players:
 UnnyNet.UnnyNet.AuthorizeAsGuest("display_name");
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.authorizeAsGuest("display_name");
+```
+
 ```java fct_label="Java"
 unnynet.authorizeAsGuest("display_name", null);
 ```
@@ -18,6 +22,10 @@ unnynet.authorizeAsGuest("display_name", null);
 
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNet.AuthorizeWithCustomId("custom_id", "display_name");
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.authorizeWithCustomId("custom_id", "display_name");
 ```
 
 ```java fct_label="Java"
@@ -32,20 +40,27 @@ unnynet.authorizeWithCustomId("custom_id", "display_name", null);
 UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.authorizeWithCredentials("username", "password", "display_name");
+```
+
 ```java fct_label="Java"
 unnynet.authorizeWithCredentials("username", "password", "display_name", null);
 ```
 
 `password` must be at least 8 symbols length.
     
-In case a player logs out he might want to login in back with the game credentials. We've created a flow for such situation, but it's up to developers to take care about the rest:
-
-1. Turn on Login with Credentials in UnnyNet Settings.
-2. Add the following callback.
+In case a player logs out he might want to login in back with the game credentials. We've created a flow for such situation, but it's up to developers to take care about the rest. Add the following callback before calling the Initialize method:
 
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNetBase.m_OnGameLoginRequest = () => {
    UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
+};
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onGameLoginRequest = () => {
+   UnnyNet.UnnyNet.authorizeWithCredentials("username", "password", "display_name");
 };
 ```
 
@@ -63,6 +78,10 @@ In case your game supports several account and players can switch between them, 
 
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNet.ForceLogout();
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.forceLogout();
 ```
 
 ```java fct_label="Java"
@@ -85,6 +104,12 @@ UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
 };
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onPlayerAuthorized = (prms) => {
+    console.info("onPlayerAuthorized", prms);
+};
+```
+
 ```java fct_label="Java"
 unnynet.setOnPlayerAuthorizedListener((unnyId, name) -> 
     showMessage(String.format("Player Authorized: %s - %s", name, unnyId))
@@ -104,6 +129,12 @@ UnnyNet.UnnyNetBase.m_OnPlayerLoggedOut = () => {
 };
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onPlayerLoggedOut = () => {
+    console.info("onPlayerLoggedOut");
+};
+```
+
 This event triggers once a user logs out from UnnyNet.
 
 ### User has changed his name
@@ -111,6 +142,12 @@ This event triggers once a user logs out from UnnyNet.
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNetBase.m_OnPlayerNameChanged = (newName) => {
     Debug.Log("Player changed name to " + newName);
+};
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onPlayerNameChanged = (newName) => {
+    console.info("onPlayerNameChanged: " + newName);
 };
 ```
 

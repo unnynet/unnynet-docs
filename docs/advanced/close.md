@@ -6,6 +6,10 @@ Depending on a game, you might need to close UnnyNet window to display your in-g
 UnnyNet.UnnyNetBase.CloseUnnyNet();
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.closeUnnyNet();
+```
+
 ```java fct_label="Java"
 unnynet.close();
 ```
@@ -17,5 +21,11 @@ Whenever UnnyNet window got closed (from the code or by the user action), the ev
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNetBase.m_OnUnnyNetClosed = () => {
     Debug.Log("On UnnyNet was closed");
+};
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onUnnyNetClosed = () => {
+    console.info("onUnnyNetClosed");
 };
 ```

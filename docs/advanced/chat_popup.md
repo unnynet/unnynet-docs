@@ -1,6 +1,7 @@
 # Chat Popup
 
 When a player selects another player, a popup appear with a set of option:
+
 *   View Profile
 *   Add Friend
 *   Mention
@@ -32,6 +33,18 @@ UnnyNet.UnnyNetBase.m_OnPopupOpened = (Dictionary<string, string> prms) =>
 };
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onPopupOpened = (prms) =>
+{
+    console.info("onPopupOpened", prms);
+    
+    const popup = new UnnyNet.PopupButtons();
+    popup.addButton("Test 1", () => console.log("Test 1 Clicked"), UnnyNet.ButtonType.Success);
+    popup.addButton("Test 2", () => console.log("Test 2 Clicked"), UnnyNet.ButtonType.Warning);
+    return popup;
+};
+```
+
 ### Button parameters
 
 You can add as many buttons as you want, just bear in mind the size of the screen. With AddButton method you can add a button a specify the following parameters:
@@ -42,6 +55,7 @@ You can add as many buttons as you want, just bear in mind the size of the scree
 ### Incoming parameters
 
 As you might've noticed there are additional parameters passed to the OnPopupOpened event:
+
 *   display_name - the display name of the selected player
 *   unny_id - the unique id of the selected player
 *   friend_state:
@@ -52,6 +66,7 @@ As you might've noticed there are additional parameters passed to the OnPopupOpe
     *   Banned: 3
 
 If the player is in a guild, additional parameters are passed as well:
+
 *   guild_id
 *   guild_name
 *   guild_mate - (true/false) indicates whether the player is in the same guild as current player  

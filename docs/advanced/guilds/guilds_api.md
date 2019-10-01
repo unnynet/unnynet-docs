@@ -19,6 +19,13 @@ UnnyNet.UnnyNetBase.m_OnNewGuildRequest = (prms) =>{
 };
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onNewGuildRequest = (prms) =>{
+    console.info("onNewGuildRequest", prms);
+    return null;
+};
+```
+
 ```java fct_label="Java"
 unnynet.setOnNewGuildRequestListener((name, description, guildType) -> {
     showMessage(String.format("NewGuild Request: %s - %s, %s, Guilds are allowed, so we return null. If you want to prevent guild from the creation - just return any string error", name, description, guildType));
@@ -39,6 +46,12 @@ UnnyNet.UnnyNetBase.m_OnNewGuild = (prms) =>{
     string guildId;
     prms.TryGetValue("guild_id", out guildId);
     Debug.LogFormat("New Guild was created: id = {0}; name = {1}; description= {2}", guildId, guildName, description);
+};
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onNewGuild = (prms) =>{
+    console.info("onNewGuild", prms);
 };
 ```
 
@@ -65,6 +78,12 @@ UnnyNet.UnnyNetBase.m_OnRankChanged = (prms) =>{
 };
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onRankChanged = (prms) =>{
+    console.info("onRankChanged", prms);
+};
+```
+
 ```java fct_label="Java"
 unnynet.setOnRankChangedListener((index, rank, prevIndex, prevRank) -> 
     showMessage(String.format("Rank Changed: %s - %s => %s - %s", prevIndex, prevRank, index, rank))
@@ -78,6 +97,10 @@ As a game developer, you need to decide when exactly players give experience to 
 
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNet.AddGuildExperience(500);
+```
+
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.addGuildExperience(500);
 ```
 
 ```java fct_label="Java"

@@ -16,6 +16,10 @@ Game messages can be used to share special moments of a player with the communit
 UnnyNet.UnnyNet.SendMessageToChannel("channel_id", "Made a successful evolution to 3");
 ```
 
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.sendMessageToChannel("channel_id", "Made a successful evolution to 3");
+```
+
 ```java fct_label="Java"
 unnynet.sendMessageToChannel("channel_id", "Made a successful evolution to 3");
 ```
@@ -42,7 +46,14 @@ UnnyNet.UnnyNetBase.m_OnNewMessageReceived = (Dictionary<string, string> prms) =
 };
 ```
 
-**channel_name** doesn't present for direct messages.  **UnnyNet.ChannelType** is the enum with 3 values:
+```csharp fct_label="JavaScript"
+UnnyNet.UnnyNet.onNewMessageReceived = (prms) => {
+    console.info("onNewMessageReceived", prms);
+};
+```
+
+**channel_name** doesn't present for direct messages.  
+**UnnyNet.ChannelType** is the enum with 3 values:
 
 1.  **Global** - one of the general channels. Which one is specified in **channel_name**
 2.  **Direct** - a private message from a friend
