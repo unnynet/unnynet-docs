@@ -36,6 +36,7 @@ nav:
         - API: advanced/guilds/guilds_api.md
       - Open UnnyNet: advanced/open.md
       - Close UnnyNet: advanced/close.md
+      - Set Frame: advanced/setframe.md
     - Requests:
       - Response Data: requests/response_data.md
       - Get API: requests/get_api.md
