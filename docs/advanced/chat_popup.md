@@ -64,6 +64,11 @@ As you might've noticed there are additional parameters passed to the OnPopupOpe
     *   Outgoing Request: 1
     *   Incoming Request: 2
     *   Banned: 3
+*   placement - where the popup was called from
+    *   Global Channel: 1
+    *   DirectMessage: 2
+    *   Guild: 3
+    *   Leaderboards: 4
 
 If the player is in a guild, additional parameters are passed as well:
 
