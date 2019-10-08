@@ -39,7 +39,7 @@ Example of the response:  **{"display_name":"Pavel Ignatov","avatar_url":"https:
 
 ### Player's leaderboard info
 
-Put your leaderboard_id to get current player's leaderboard rank and score:
+Put your leaderboard_id to get leaderboard info:
 
 ```csharp fct_label="Unity"
 UnnyNet.UnnyNet.GetLeaderboardScores("leaderboard_id", ResponceReceived);
@@ -49,7 +49,23 @@ UnnyNet.UnnyNet.GetLeaderboardScores("leaderboard_id", ResponceReceived);
 UnnyNet.UnnyNet.getLeaderboardScores("leaderboard_id", responceReceived);
 ```
 
-Example of the response:  **{"leaderboard_name":"Arena","leaderboard_id":"612832c3-d308-478d-a155-46cd70b48d72","rank":6,"score":1999}**
+Example of the response:
+```json
+{
+    "leaderboard_name": "Arena",
+    "leaderboard_id": "612832c3-d308-478d-a155-46cd70b48d72",
+    "records":[
+        {
+            "display_name": "Chris Evento",
+            "rank": 1,
+            "score": 999, 
+            "update_time": "2019-10-08T19:09:58Z",
+            "id": "109317f2-3991-41f0-99dc-7effefa47e7b",
+            "avatar_url": "https://unnynet.azureedge.net/avatars/unnyhog/22.jpg"
+        }
+    ]
+}
+```
 
 
 ### Get Achievements Scores
