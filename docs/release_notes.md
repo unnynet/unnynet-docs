@@ -2,6 +2,20 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.9 - October 22, 2019
+* Unpublished achievements are not displayed for user and can't be reported from the game
+* You can now remove our Exit Button to use your own logic
+* Leaderboards and Achievements can now be reported in offline and once UnnyNet connects to the server, it'll automatically synch them
+* JavaScript version is now available
+
+### v2.8 (Backend only) - October 11, 2019
+* Reset leaderboards in the game settings window
+* Remove any specific record from a leaderboard
+* Popups are now working in leaderboards
+* New parameter "placement" in the popup callback: https://docs.developers.unnynet.com/advanced/chat_popup/
+* New SetFrame method: https://docs.developers.unnynet.com/advanced/setframe/
+* Request leaderboard scores now returns the top-20: https://docs.developers.unnynet.com/requests/get_api/
+
 ### v2.7 - September 20, 2019
 * New methods:
  - GetPlayerPublicInfo for display_name and avatar_url

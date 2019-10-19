@@ -45,7 +45,8 @@ public enum Errors {
     NoGuildsForTheGame = 10,
     NotInGuild = 11,
     NoSuchAchievement = 12,
-    WrongAchievementType = 13
+    WrongAchievementType = 13,
+    AchievementIsNotPublished = 14
 };
 ```  
 
@@ -65,6 +66,7 @@ export const Errors = {
     NotInGuild: 11,
     NoSuchAchievement: 12,
     WrongAchievementType: 13
+    AchievementIsNotPublished: 14
 };
 ```
 

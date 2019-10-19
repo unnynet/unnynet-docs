@@ -1,6 +1,6 @@
 # JavaScript Integration
 
-1) Install UnnyNet using [npm]() or just include the latest library: t
+1) Install UnnyNet using [npm](https://www.npmjs.com/package/unnynet) or just include the latest library: 
 https://assetstore.unity.com/packages/slug/128920
 
 2) Find your Game Id and Public Key in your game settings:
