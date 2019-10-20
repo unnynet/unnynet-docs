@@ -32,3 +32,9 @@ You can find leaderboard_id on the leaderboards page in the game settings.
 ### Leaderboards UI
 UnnyNet displays Global Leaderboards and also Leaderboards only for Friends:
     ![Screenshot](../img/leaders_2.jpg)
+    
+### Leaderboards Custom Data
+There is a third parameter in reportLeaderboards method (Custom Data - string). You can send there anything you want. It can be the race(Ork, Human, Elf,..) of the player or the weapon he used. This information will be displayed in the Leaderboards table.
+
+### Leaderboards in Offline
+It's obvious that UnnyNet requires internet connection in order to operate, however we've added a mecanism, which saves locally all undelivered Leaderboard reports. Once the internet is back, UnnyNet will automatically resend all the information it stored. 

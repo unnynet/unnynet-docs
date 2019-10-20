@@ -86,3 +86,7 @@ unnynet.setOnAchievementCompletedListener(achId ->
     showMessage("Achievement Completed: " + achId)
 );
 ```
+
+### Achievements in Offline
+It's obvious that UnnyNet requires internet connection in order to operate, however we've added a mecanism, which saves locally all undelivered Achievement reports. Once the internet is back, UnnyNet will automatically resend all the information it stored. 
+
