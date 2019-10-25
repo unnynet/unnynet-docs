@@ -28,6 +28,7 @@ unnynet.reportLeaderboards("leaderboard_id", 99);
 ```
 
 You can find leaderboard_id on the leaderboards page in the game settings.
+The same leaderboard can't be reported from the same user very often (no more than once per 10s). If you try to report the scores too often, the messages will be cached and delivered after the mentioned period.
 
 ### Leaderboards UI
 UnnyNet displays Global Leaderboards and also Leaderboards only for Friends:
