@@ -48,9 +48,9 @@ UnnyNet.UnnyNet.onPopupOpened = (prms) =>
 ### Button parameters
 
 You can add as many buttons as you want, just bear in mind the size of the screen. With AddButton method you can add a button a specify the following parameters:
-1.  Title on the button
-2.  Action, which triggers in case player selects this button
-3.  Optional parameter for the button style. You can view how they all look like in the Theme settings of your game.
+*   Title on the button
+*   Action, which triggers in case player selects this button
+*   Optional parameter for the button style. You can view how they all look like in the Theme settings of your game.
 
 ### Incoming parameters
 

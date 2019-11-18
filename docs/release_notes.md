@@ -2,11 +2,17 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.10 - November 19, 2019
+* Fixed problem with SafeArea on Android devices 
+* You can upload your own avatars, which players can use 
+* onPopupOpened now also returns channel_id and channel_name if it called from the general channel
+ 
 ### v2.9 - October 28, 2019
 * Unpublished achievements are not displayed for user and can't be reported from the game
 * You can now remove our Exit Button to use your own logic
 * Leaderboards and Achievements can now be reported in offline and once UnnyNet connects to the server, it'll automatically synch them
 * You can't report scores for the same leaderboard more often than once per 10 seconds
+* You can send to leaderboards any custom string (including emoji), which will be displayed in our UI
 
 ### v2.8 (Backend only) - October 11, 2019
 * Reset leaderboards in the game settings window
