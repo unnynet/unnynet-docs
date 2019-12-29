@@ -36,7 +36,7 @@ For your convenience we've recorded the [small video tutorial](https://youtu.be/
 * **Scores to complete** - the amount of scores required to complete an achievement. One Time achievements don't have this field;
 * **Visibility** - a hidden achievement means that details about the achievement are hidden from the player. We recommend making an achievement hidden if it contains a spoiler you don't want to reveal about your game too early. Despite the visibility, players will see the achievement once it's completed;
 * **Order** - this number is used to sort the achievements in the way you want. Achievements with the lowest order are displayed at the top;
-* **Reward Points** - The amout of points a player gets when the achievement is completed.
+* **Reward Points** - The amount of points a player gets when the achievement is completed.
 * **Published** - unpublished achievements are not visible and can't be completed by a player;
 * **Icon** - must be 512x512 or 1024x1024 image. UnnyNet automatically crops it to a circle. Please use colored pictures, because UnnyNet applies grayscale style for uncompleted achievements.
 
@@ -60,7 +60,7 @@ UnnyNet.UnnyNet.reportAchievements(6, 99);
 unnynet.reportAchievements(6, 99);
 ```
 
-The first parameter ("6" in the example) is the id of the achievememt. It assigns to an achievements once the achievement is created, and you can find it in the achievements table of game settings.
+The first parameter ("6" in the example) is the id of the achievement. It assigns to an achievements once the achievement is created, and you can find it in the achievements table of game settings.
 The second parameter ("99" in the example) differs for each type of achievement:
 
 * **Progress** - the absolute value of the progress for the achievement.
@@ -86,6 +86,15 @@ unnynet.setOnAchievementCompletedListener(achId ->
     showMessage("Achievement Completed: " + achId)
 );
 ```
+
+This is the whole list of parameters this method receives:
+
+* **ach_id** - the unique ID of the achievement.
+* **name** - the display name of the achievement.
+* **description** - the description of the achievement.
+* **icon_url** - the icon url of the achievement.
+* **points** - the amount of points for the achievement.
+
 
 ### Achievements in Offline
 It's obvious that UnnyNet requires internet connection in order to operate, however we've added a mecanism, which saves locally all undelivered Achievement reports. Once the internet is back, UnnyNet will automatically resend all the information it stored. 
