@@ -2,6 +2,11 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.11 - December 31, 2019
+* New feature: Private Channels: https://docs.developers.unnynet.com/advanced/private_channels/
+* New parameters for the achievement complete event: https://docs.developers.unnynet.com/advanced/achievements/
+* New callback when player changes his avatar: https://docs.developers.unnynet.com/basic/authorization/
+
 ### v2.10 - November 19, 2019
 * Fixed problem with SafeArea on Android devices 
 * You can upload your own avatars, which players can use 

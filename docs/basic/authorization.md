@@ -154,3 +154,15 @@ UnnyNet.UnnyNet.onPlayerNameChanged = (newName) => {
 ```java fct_label="Java"
 unnynet.setOnPlayerNameChangedListener(newName -> showMessage(String.format("Player Name Changed: %s", newName)));
 ```
+
+
+### User has changed his avatar
+
+```csharp fct_label="Unity"
+UnnyNet.UnnyNetBase.m_OnPlayerAvatarChanged = (prms) => {
+    string avatarUrl;
+    prms.TryGetValue("avatar_url", out avatarUrl);
+    avatarUrl = Uri.UnescapeDataString(avatarUrl);
+    Debug.LogFormat("On Avatar was changed {0} ", avatarUrl);
+};
+```
