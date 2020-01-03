@@ -2,10 +2,15 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v2.12 - January 31, 2020
+* New feature: [Multiple Level Achievements](/advanced/achievements)
+* The [Guilds](/advanced/guilds/guilds) are back! 
+* Many small fixes
+
 ### v2.11 - December 31, 2019
-* New feature: Private Channels: https://docs.developers.unnynet.com/advanced/private_channels/
-* New parameters for the achievement complete event: https://docs.developers.unnynet.com/advanced/achievements/
-* New callback when player changes his avatar: https://docs.developers.unnynet.com/basic/authorization/
+* New feature: [Private Channels](/advanced/private_channels)
+* New parameters for the achievement [complete event](/advanced/achievements)
+* New callback when player changes his [avatar](/basic/authorization)
 
 ### v2.10 - November 19, 2019
 * Fixed problem with SafeArea on Android devices 
@@ -23,9 +28,9 @@ Most of the features of UnnyNet will become available despite the version of plu
 * Reset leaderboards in the game settings window
 * Remove any specific record from a leaderboard
 * Popups are now working in leaderboards
-* New parameter "placement" in the popup callback: https://docs.developers.unnynet.com/advanced/chat_popup/
-* New SetFrame method: https://docs.developers.unnynet.com/advanced/setframe/
-* Request leaderboard scores now returns the top-20: https://docs.developers.unnynet.com/requests/get_api/
+* New parameter "placement" in the [popup callback](/advanced/chat_popup)
+* New SetFrame [method](/advanced/setframe)
+* Request leaderboard scores now returns [the top-20](/requests/get_api)
 
 ### v2.7 - September 20, 2019
 * New methods:

@@ -39,6 +39,7 @@ For your convenience we've recorded the [small video tutorial](https://youtu.be/
 * **Reward Points** - The amount of points a player gets when the achievement is completed.
 * **Published** - unpublished achievements are not visible and can't be completed by a player;
 * **Icon** - must be 512x512 or 1024x1024 image. UnnyNet automatically crops it to a circle. Please use colored pictures, because UnnyNet applies grayscale style for uncompleted achievements.
+* **Multiple Levels** - make the achievement with multiple level. For example you might have achievement to **won a match 100/200/300** times. So instead of creating 3 different achievements, you can have only one, but with multiple levels. The rest of the logic will be taken care by UnnyNet. 
 
 ### Achievements UI
 
