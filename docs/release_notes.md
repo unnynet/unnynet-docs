@@ -2,9 +2,11 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
-### v2.12 - January 31, 2020
+### v2.12 - January 17, 2020
 * New feature: [Multiple Level Achievements](/advanced/achievements)
-* The [Guilds](/advanced/guilds/guilds) are back! 
+* The [Guilds](/advanced/guilds/guilds) are back!
+* Improvements in Theme Management
+* Upload your own icons for UnnyNet UI features 
 * Many small fixes
 
 ### v2.11 - December 31, 2019
