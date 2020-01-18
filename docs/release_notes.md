@@ -4,7 +4,6 @@ Most of the features of UnnyNet will become available despite the version of plu
 
 ### v2.12 - January 17, 2020
 * New feature: [Multiple Level Achievements](/advanced/achievements)
-* The [Guilds](/advanced/guilds/guilds) are back!
 * Improvements in Theme Management
 * Upload your own icons for UnnyNet UI features 
 * Many small fixes
