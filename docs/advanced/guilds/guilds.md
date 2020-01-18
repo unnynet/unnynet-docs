@@ -1,4 +1,4 @@
-# Guilds and Clans
+# Guilds and Clans (Temporary not working)
 
 Players can join long-term groups called guilds. Guilds, also known as clans, kinships or crews, are usually groups of people who are working toward a common goal in a game. A guild might emphasize raiding (progression through difficult dungeons with large groups of players) or it might focus on helping lower-level players acquire gear and experience. It can be public or private.
 
