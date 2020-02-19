@@ -17,8 +17,7 @@ As a game developer you can add additional buttons.
 To achieve this you need to add a callback for OnPopupOpened event and return PopupButtons class:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnPopupOpened = (Dictionary<string, string> prms) =>
-{
+UnnyNet.Events.OnPopupOpened = eventData => {
     UnnyNet.PopupButtons popup = new UnnyNet.PopupButtons();
 
     popup.AddButton("Test Button", () => {
@@ -57,23 +56,14 @@ You can add as many buttons as you want, just bear in mind the size of the scree
 
 As you might've noticed there are additional parameters passed to the OnPopupOpened event:
 
-*   display_name - the display name of the selected player
-*   unny_id - the unique id of the selected player
-*   friend_state:
-    *   None: -1
-    *   Friends: 0
-    *   Outgoing Request: 1
-    *   Incoming Request: 2
-    *   Banned: 3
-*   placement - where the popup was called from
-    *   Global Channel: 1
-    *   DirectMessage: 2
-    *   Guild: 3
-    *   Leaderboards: 4
+*   DisplayName - the display name of the selected player
+*   UnnyId - the unique id of the selected player
+*   FriendState - your relationship with the player
+*   Placement - where the popup was called from
 
 If the player is in a guild, additional parameters are passed as well:
 
-*   guild_id
-*   guild_name
-*   guild_mate - (true/false) indicates whether the player is in the same guild as current player  
+*   GuildId
+*   GuildName
+*   GuildMate - (true/false) indicates whether the player is in the same guild as current player  
 

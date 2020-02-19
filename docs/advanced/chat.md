@@ -13,7 +13,7 @@ Channels can be edited even after the game is released.
 ### Game Messages
 Game messages can be used to share special moments of a player with the community. For example if a players completes a hard achievement or summons a rare monster, why not to tell about that to everybody? Game messages can do that automatically on behalf on a player. Messages can be sent only to the game channels.
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.SendMessageToChannel("channel_id", "Made a successful evolution to 3");
+UnnyNet.Chat.SendMessageToChannel("channel_id", "Made a successful evolution to 3");
 ```
 
 ```csharp fct_label="JavaScript"
@@ -30,19 +30,8 @@ Sends "Made a successful evolution to 3" message to the channel with id "channel
 You might want to show notification in the game once a player receives a message. Just 
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnNewMessageReceived = (Dictionary<string, string> prms) => {
-    string sender_id;
-    prms.TryGetValue("sender_id", out sender_id);
-    string sender_name;
-    prms.TryGetValue("sender_name", out sender_name);
-    string channel_type;
-    prms.TryGetValue("type", out channel_type);
-    string channel_name;
-    prms.TryGetValue("channel_name", out channel_name);
-
-    UnnyNet.ChannelType type = (UnnyNet.ChannelType)int.Parse(channel_type);
-
-    Debug.LogFormat("New Message received from user {0} ({1}); ChannelType = {2}", sender_name, sender_id, type);
+UnnyNet.Events.OnNewMessageReceived = eventData => {
+    Debug.LogFormat("New Message received from user {0} ({1}); Placement = {2}", eventData.SenderName, eventData.SenderId, eventData.Placement);
 };
 ```
 

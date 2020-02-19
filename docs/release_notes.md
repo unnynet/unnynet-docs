@@ -2,6 +2,67 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v3.0 - February 20, 2020
+Global Refactoring
+
+**No JSONs**
+
+Instead of receiving Json data as a response in request or event callback, we have created unique classes, which had already parsed all the JSON data into the convenient fields and properties.
+
+All methods were also split into different modules:
+
+**MainController**
+
+* UnnyNetBase.InitializeUnnyNet -> MainController.Init
+* UnnyNetBase.OpenUnnyNet -> MainController.Open
+* UnnyNetBase.CloseUnnyNet -> MainController.Close
+* UnnyNet.OpenLeaderboards -> MainController.OpenLeaderboards
+* UnnyNet.OpenAchievements -> MainController.OpenAchievements
+* UnnyNet.OpenFriends -> MainController.OpenFriends
+* UnnyNet.OpenChannel -> MainController.OpenChannel
+* UnnyNet.OpenGuilds -> MainController.OpenGuilds
+* UnnyNet.OpenMyGuild -> MainController.OpenMyGuild
+* UnnyNetBase.SetFrame -> MainController.SetFrame
+* UnnyNetBase.GetPlayerPublicInfo -> MainController.GetPlayerPublicInfo
+
+
+**Auth**
+
+* UnnyNet.AuthorizeAsGuest -> Auth.AuthorizeAsGuest
+* UnnyNet.AuthorizeWithCustomId -> Auth.AuthorizeWithCustomId
+* UnnyNet.AuthorizeWithCredentials -> Auth.AuthorizeWithCredentials
+* UnnyNet.ForceLogout -> Auth.ForceLogout
+
+
+**Social**
+
+* UnnyNet.ReportLeaderboards -> Social.ReportLeaderboardScore
+* UnnyNet.ReportAchievements -> Social.ReportAchievementProgress
+* UnnyNet.GetLeaderboardScores -> Social.GetLeaderboardScores
+* UnnyNet.GetAchievementsInfo -> Social.GetAchievementsInfo
+* UnnyNet.GetGuildInfo -> Social.GetGuildInfo
+
+
+**Chat**
+
+* UnnyNet.SendMessageToChannel -> Chat.SendMessageToChannel
+* UnnyNet.JoinPrivateChannel -> Chat.JoinPrivateChannel
+* UnnyNet.LeaveAllPrivateChannels -> Chat.LeaveAllPrivateChannels
+
+
+**Events**
+
+* UnnyNetBase.m_OnUnnyNetClosed -> Events.OnUnnyNetClosed
+* UnnyNetBase.m_OnAchievementCompleted -> Events.OnAchievementCompleted
+* UnnyNetBase.m_OnNewMessageReceived -> Events.OnNewMessageReceived
+* UnnyNetBase.m_OnPopupOpened -> Events.OnPopupOpened
+* UnnyNetBase.m_OnGameLoginRequest -> Events.OnGameLoginRequest
+* UnnyNetBase.m_OnPlayerAuthorized -> Events.OnPlayerAuthorized
+* UnnyNetBase.m_OnPlayerLoggedOut -> Events.OnPlayerLoggedOut
+* UnnyNetBase.m_OnPlayerNameChanged -> Events.OnPlayerNameChanged
+* UnnyNetBase.m_OnPlayerAvatarChanged -> Events.OnPlayerAvatarChanged 
+
+
 ### v2.12 - January 17, 2020
 * New feature: [Multiple Level Achievements](/advanced/achievements)
 * Improvements in Theme Management

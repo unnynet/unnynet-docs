@@ -16,7 +16,7 @@ For your convenience we've recorded the [small video tutorial](https://youtu.be/
 When a player completes a level or makes any other important action, use the next method to report his scores to UnnyNet:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.ReportLeaderboards("leaderboard_id", 99);
+UnnyNet.Social.ReportLeaderboardScore(("leaderboard_id", 99);
 ```
 
 ```csharp fct_label="JavaScript"

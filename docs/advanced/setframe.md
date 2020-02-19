@@ -4,7 +4,7 @@ You can change the frame of UnnyNet window.
 Here is an example of how you can set UnnyNet to cover only the right half of the screen:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.SetFrame(new Rect(Screen.width/2, 0, Screen.width/2, Screen.height));
+UnnyNet.MainController.SetFrame(new Rect(Screen.width/2, 0, Screen.width/2, Screen.height));
 ```
 
 ```csharp fct_label="JavaScript"

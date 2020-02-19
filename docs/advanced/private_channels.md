@@ -4,7 +4,7 @@ Private chats can be used for a temporary group of players united with one goal.
 
 ### Join private channel
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.JoinPrivateChannel("channel_id", "display name");
+UnnyNet.Chat.JoinPrivateChannel("channel_id", "display name");
 ```
 
 ```csharp fct_label="JavaScript"
@@ -24,7 +24,7 @@ This methods adds current player to the private channel. If the channel doesn't 
 There is one method to leave all private channels: 
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.LeaveAllPrivateChannels();
+UnnyNet.Chat.LeaveAllPrivateChannels();
 ```
 
 ```csharp fct_label="JavaScript"

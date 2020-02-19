@@ -27,7 +27,7 @@ function responseReceived(data) {
 ### Player's public info
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.GetPlayerPublicInfo(ResponceReceived);
+UnnyNet.MainController.GetPlayerPublicInfo(ResponceReceived);
 ```
 
 ```csharp fct_label="JavaScript"
@@ -42,37 +42,18 @@ Example of the response:  **{"display_name":"Pavel Ignatov","avatar_url":"https:
 Put your leaderboard_id to get leaderboard info:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.GetLeaderboardScores("leaderboard_id", ResponceReceived);
+UnnyNet.Social.GetLeaderboardScores("leaderboard_id", ResponceReceived);
 ```
 
 ```csharp fct_label="JavaScript"
 UnnyNet.UnnyNet.getLeaderboardScores("leaderboard_id", responceReceived);
 ```
 
-Example of the response:
-```json
-{
-    "leaderboard_name": "Arena",
-    "leaderboard_id": "612832c3-d308-478d-a155-46cd70b48d72",
-    "records":[
-        {
-            "display_name": "Chris Evento",
-            "rank": 1,
-            "score": 999, 
-            "update_time": "2019-10-08T19:09:58Z",
-            "id": "109317f2-3991-41f0-99dc-7effefa47e7b",
-            "avatar_url": "https://unnynet.azureedge.net/avatars/unnyhog/22.jpg"
-        }
-    ]
-}
-```
-
-
 ### Get Achievements Scores
 You can request the total Achievements scores
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.GetAchievementsInfo(ResponceReceived);
+UnnyNet.Social.GetAchievementsInfo(ResponceReceived);
 ```
 
 ```csharp fct_label="JavaScript"
@@ -87,7 +68,7 @@ Example of the response:  **{"scores":100}**
 You can request guild information of a player. First parameter indicates if you need full information (basic info + list of members) or just basic information about the guild.
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.GetGuildInfo(true, ResponceReceived);
+UnnyNet.Social.GetGuildInfo(true, ResponceReceived);
 ```
 
 ```csharp fct_label="JavaScript"

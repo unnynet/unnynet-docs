@@ -50,7 +50,7 @@ This is how players see the achievements in the game:
 All types of achievements have the same method to report the progress:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.ReportAchievements(6, 99);
+UnnyNet.Social.ReportAchievementProgress(6, 99);
 ```
 
 ```csharp fct_label="JavaScript"
@@ -71,8 +71,8 @@ The second parameter ("99" in the example) differs for each type of achievement:
 ### Achievement Completed
 You can subscribe for the event to be notified, when a player completes an achievement
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnAchievementCompleted = (prms) =>{
-    Debug.Log("On Achievement Completed by id " + prms["ach_id"]);
+UnnyNet.Events.OnAchievementCompleted = eventData => {
+    Debug.LogFormat("On Achievement Completed {0} ({1}), icon = {2}, points = {3}, id = {4} ", eventData.Name, eventData.Description, eventData.IconUrl, eventData.Points, eventData.AchId);
 };
 ```
 

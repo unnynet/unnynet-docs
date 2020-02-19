@@ -7,7 +7,7 @@ Currently UnnyNet has 3 ways to authorize players:
 2)  **Guest Mode** is turned on by default, players authorize using their deviceId. Players can do that manually from UnnyNet screen or developers can do that on their behalf, so players won't see our welcome window.
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.AuthorizeAsGuest("display_name");
+UnnyNet.Auth.AuthorizeAsGuest("display_name");
 ```
 
 ```csharp fct_label="JavaScript"
@@ -21,7 +21,7 @@ unnynet.authorizeAsGuest("display_name", null);
 3)  **Custom Id**. This option should be used if you have an external or custom user identity service which you want to use.
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.AuthorizeWithCustomId("custom_id", "display_name");
+UnnyNet.Auth.AuthorizeWithCustomId("custom_id", "display_name");
 ```
 
 ```csharp fct_label="JavaScript"
@@ -37,7 +37,7 @@ unnynet.authorizeWithCustomId("custom_id", "display_name", null);
 4)  **Game Auth** with credentials if your game has any auth system, you can use those credentials to authorize your players in UnnyNet.
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
+UnnyNet.Auth.AuthorizeWithCredentials("username", "password", "display_name");
 ```
 
 ```csharp fct_label="JavaScript"
@@ -53,8 +53,8 @@ unnynet.authorizeWithCredentials("username", "password", "display_name", null);
 In case a player logs out he might want to login in back with the game credentials. We've created a flow for such situation, but it's up to developers to take care about the rest. Add the following callback before calling the Initialize method:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnGameLoginRequest = () => {
-   UnnyNet.UnnyNet.AuthorizeWithCredentials("username", "password", "display_name");
+UnnyNet.Events.OnGameLoginRequest = () => {
+   UnnyNet.Auth.AuthorizeWithCredentials("username", "password", "display_name");
 };
 ```
 
@@ -77,7 +77,7 @@ UnnyNet calls this method whenever player tries to authorize with game credentia
 In case your game supports several account and players can switch between them, you can force players to log out from UnnyNet as soon as they log out from your game.
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.ForceLogout();
+UnnyNet.Auth.ForceLogout();
 ```
 
 ```csharp fct_label="JavaScript"
@@ -95,12 +95,8 @@ UnnyNet invokes methods on different player's actions or to reply to a game requ
 ### User has Logged In
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnPlayerAuthorized = (prms) => {
-    string unnyId;
-    prms.TryGetValue("unny_id", out unnyId);
-    string playerName;
-    prms.TryGetValue("name", out playerName);
-    Debug.LogFormat("Player authorized: id = {0}; name = {1};", unnyId, playerName);
+UnnyNet.Events.OnPlayerAuthorized = eventData => {
+    Debug.LogFormat("Player authorized: id = {0}; name = {1};", eventData.UnnyId, eventData.Name);
 };
 ```
 
@@ -124,7 +120,7 @@ This event triggers once a user logs in to UnnyNet. Parameters:
 ### User has Logged Out
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnPlayerLoggedOut = () => {
+UnnyNet.Events.OnPlayerLoggedOut = () => {
     Debug.Log("On Player Logged Out");
 };
 ```
@@ -140,8 +136,8 @@ This event triggers once a user logs out from UnnyNet.
 ### User has changed his name
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnPlayerNameChanged = (newName) => {
-    Debug.Log("Player changed name to " + newName);
+UnnyNet.Events.OnPlayerNameChanged = eventData => { 
+    Debug.Log("Player changed name to " + eventData.Name); 
 };
 ```
 
@@ -159,10 +155,7 @@ unnynet.setOnPlayerNameChangedListener(newName -> showMessage(String.format("Pla
 ### User has changed his avatar
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.m_OnPlayerAvatarChanged = (prms) => {
-    string avatarUrl;
-    prms.TryGetValue("avatar_url", out avatarUrl);
-    avatarUrl = Uri.UnescapeDataString(avatarUrl);
-    Debug.LogFormat("On Avatar was changed {0} ", avatarUrl);
+UnnyNet.Events.OnPlayerAvatarChanged = eventData => { 
+    Debug.LogFormat("On Avatar was changed {0} ", eventData.AvatarUrl); 
 };
 ```

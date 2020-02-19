@@ -6,7 +6,7 @@ As UnnyNet has tons of features inside, you need a flexible way of displaying th
 Opens Default page or the page, which a player visited the last: 
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNetBase.OpenUnnyNet();
+UnnyNet.MainController.Open();
 ```
 
 ```csharp fct_label="JavaScript"
@@ -21,7 +21,7 @@ unnynet.show();
 Opens Leaderboards Window:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenLeaderboards();
+UnnyNet.MainController.OpenLeaderboards();
 ```
 
 ```csharp fct_label="JavaScript"
@@ -36,7 +36,7 @@ unnynet.openLeaderboards();
 Open Achievements Window:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenAchievements();
+UnnyNet.MainController.OpenAchievements();
 ```
 
 ```csharp fct_label="JavaScript"
@@ -51,7 +51,7 @@ unnynet.openAchievements();
 Open Friends Window:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenFriends();
+UnnyNet.MainController.OpenFriends();
 ```
 
 ```csharp fct_label="JavaScript"
@@ -66,7 +66,7 @@ unnynet.openFriends();
 Open a specific channel. For example general (channel_id = "1"):
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenChannel("channel_id");
+UnnyNet.MainController.OpenChannel("channel_id");
 ```
 
 ```csharp fct_label="JavaScript"
@@ -81,7 +81,7 @@ unnynet.openChannel("channel_id");
 Open Guilds window, where player can search, create or join guilds:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenGuilds();
+UnnyNet.MainController.OpenGuilds();
 ```
 
 ```csharp fct_label="JavaScript"
@@ -96,7 +96,7 @@ unnynet.openGuilds();
 Open my Guild window. The Guilds window is opened if the player isn't in a guild:
 
 ```csharp fct_label="Unity"
-UnnyNet.UnnyNet.OpenMyGuild();
+UnnyNet.MainController.OpenMyGuild();
 ```
 
 ```csharp fct_label="JavaScript"

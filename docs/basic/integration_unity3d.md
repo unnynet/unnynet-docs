@@ -4,34 +4,49 @@ For your convenience we've recorded the [video of the integration](https://youtu
 
 1)  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
 2)  Import the UnnyNet plugin.
-3)  In the Unity's Title Bar click on UnnyNet->Settings to set up your Game ID and Public Key:
+3)  Prepare Game ID and Public Key to use in the code:
+    ![Screenshot](../img/game_id_1_.jpg)
 
-![Screenshot](../img/settings_800.jpg)
+    Read and accept Terms of Service first:
+    ![Screenshot](../img/game_id_2_.jpg)
 
-To get the required information, open your game's settings at UnnyNet website:
-![Screenshot](../img/game_id_1_.jpg)
-
-Read and accept Terms of Service first:
-![Screenshot](../img/game_id_2_.jpg)
-
-Copy and paste Game ID and Public Key: 
-![Screenshot](../img/game_id_3_.jpg)
+    Copy and paste Game ID and Public Key: 
+    ![Screenshot](../img/game_id_3_.jpg)
 
 4)  Call initialize method at start:
 
 ```
-UnnyNet.UnnyNetBase.InitializeUnnyNet();
+UnnyNet.MainController.Init(new UnnyNet.Config {
+    GameId = "8ff16d3c-ebcc-4582-a734-77ca6c14af29",
+    PublicKey = "...",
+    OnReadyCallback = responseData => { Debug.Log("UnnyNet Initialized: " + responseData.Success); },
+    Environment = UnnyNet.Constants.Environment.Development,
+    OpenAnimation = UnnyNet.UniWebViewTransitionEdge.Left,
+    DefaultChannel = "general",
+    OpenWithFade = true
+});
 ```
         
 5)  Call the next method to show UnnyNet window:
 
 ```
-UnnyNet.UnnyNetBase.OpenUnnyNet();
+UnnyNet.MainController.Open();
 ```
         
 6)  In the Player Settings set for Android Minimum API Level to at least 19, for iOS Target minimum iOS Version to at least 8.0.
 
 Once you make an Android or iOS build - everything will work like magic. Unfortunately you can't test it in Unity yet, but we are working on it.
+
+### Further reading
+
+UnnyNet consists of several modules for your convenience.
+
+1) **Auth** - authorizations
+2) **Social** - leaderboards, achievements, guilds, etc...
+3) **Chat** - everything related to the chat
+4) **Events** - callbacks for different events
+5) **MainController** - open/close windows and to request general information 
+6) **Storage** - (coming soon) a place to save/load in-game data from the server
 
 ### Android additional settings
 
