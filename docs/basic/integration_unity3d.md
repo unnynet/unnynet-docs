@@ -5,13 +5,13 @@ For your convenience we've recorded the [video of the integration](https://youtu
 1)  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
 2)  Import the UnnyNet plugin.
 3)  Prepare Game ID and Public Key to use in the code:
-    ![Screenshot](../img/game_id_1_.jpg)
+![Screenshot](../img/game_id_1_.jpg)
 
-    Read and accept Terms of Service first:
-    ![Screenshot](../img/game_id_2_.jpg)
+Read and accept Terms of Service first:
+![Screenshot](../img/game_id_2_.jpg)
 
-    Copy and paste Game ID and Public Key: 
-    ![Screenshot](../img/game_id_3_.jpg)
+Copy and paste Game ID and Public Key: 
+![Screenshot](../img/game_id_3_.jpg)
 
 4)  Call initialize method at start:
 
