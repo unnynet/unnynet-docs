@@ -2,6 +2,19 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v3.2 - April 13, 2020
+* GetDefaultAvatars to receive the list of default avatars
+* GetGameAvatars to receive available avatars
+* SetAvatar to change player's avatar
+* SetDisplayName to change player's name
+
+
+### v3.1 - March 24, 2020
+* xCode min version was decreased to 10.1;
+* Customization of the close icon in UnnyNet windows;
+* View list of banned players and other roles.
+
+
 ### v3.0 - February 20, 2020
 Global Refactoring
 

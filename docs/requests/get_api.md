@@ -24,19 +24,6 @@ function responseReceived(data) {
 }
 ```
 
-### Player's public info
-
-```csharp fct_label="Unity"
-UnnyNet.MainController.GetPlayerPublicInfo(ResponceReceived);
-```
-
-```csharp fct_label="JavaScript"
-UnnyNet.UnnyNet.getPlayerPublicInfo(responseReceived);
-```
-
-Example of the response:  **{"display_name":"Pavel Ignatov","avatar_url":"https://unnynet.azureedge.net/avatars/unnyhog/4.jpg"}**
-
-
 ### Player's leaderboard info
 
 Put your leaderboard_id to get leaderboard info:
@@ -59,8 +46,6 @@ UnnyNet.Social.GetAchievementsInfo(ResponceReceived);
 ```csharp fct_label="JavaScript"
 UnnyNet.UnnyNet.getAchievementsInfo(responceReceived);
 ```
-
-Example of the response:  **{"scores":100}**
 
 
 ### Get Guild Info
