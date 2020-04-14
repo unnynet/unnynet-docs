@@ -28,7 +28,7 @@ nav:
     - Advanced Integration:
       - Leaderboards: advanced/leaderboards.md
       - Achievements: advanced/achievements.md
-      - Achievements: advanced/user.md
+      - User: advanced/user.md
       - Real-time Chat: advanced/chat.md
       - Chat Popup: advanced/chat_popup.md
       - Private Channels: advanced/private_channels.md
