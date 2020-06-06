@@ -2,6 +2,9 @@
 
 Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
 
+### v4.0 - June 30, 2020
+* Content Management System
+
 ### v3.2 - April 13, 2020
 * GetDefaultAvatars to receive the list of default avatars
 * GetGameAvatars to receive available avatars

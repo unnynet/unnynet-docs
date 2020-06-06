@@ -1,6 +1,6 @@
 # Authorization
 
-Currently UnnyNet has 3 ways to authorize players:
+Currently UnnyNet has 4 ways to authorize players:
 
 1)  **Email** - this is a default method, which players can use from the main screen. 
 

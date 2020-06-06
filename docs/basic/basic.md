@@ -9,4 +9,6 @@ Otherwise you can manually add your game by clicking **Add Game**. You'll need t
 4. Select your platform and follow the instructions:
 
     1. [Unity](/basic/integration_unity3d).
-    2. [JavaScript](/basic/integration_javascript).
+
+
+If you are looking for any other platform, please contact us to let us know your interest.

@@ -14,7 +14,6 @@ theme:
 
 nav:
     - Home: index.md
-    - How does it work: general.md
     - Basic Integration:
       - How to start: basic/basic.md
       - Platforms:
@@ -24,7 +23,6 @@ nav:
           - Basics: basic/integration_android.md
           - Proguard: basic/integration_android_proguard.md
       - Authorization: basic/authorization.md
-      - JSON: basic/json.md
     - Advanced Integration:
       - Leaderboards: advanced/leaderboards.md
       - Achievements: advanced/achievements.md
@@ -41,6 +39,15 @@ nav:
       - Open UnnyNet: advanced/open.md
       - Close UnnyNet: advanced/close.md
       - Set Frame: advanced/setframe.md
+    - Content Management System:
+      - Basic: cms/basic.md
+      - Getting Started:
+        - How to Launch: cms/getting_started/how_to_launch.md
+        - Important Terms: cms/getting_started/important_terms.md
+        - Templates: cms/getting_started/templates.md
+        - Parameters: cms/getting_started/parameters.md
+        - Documents: cms/getting_started/documents.md
+      - Code Generation: cms/code_generation.md
     - Requests:
       - Response Data: requests/response_data.md
       - Get API: requests/get_api.md
