@@ -1,4 +1,4 @@
-# How to launch CMS
+# How to launch DE
 
 * Open Game Settings
 ![Screenshot](../../img/game_id_1_.jpg)
@@ -9,4 +9,4 @@
 * Open Admin Panel:
 ![Screenshot](../../img/game_admin_panel.jpg)
 
-#### [Next: Important Terms](/cms/getting_started/important_terms)
+#### [Next: Important Terms](/data_editor/getting_started/important_terms)

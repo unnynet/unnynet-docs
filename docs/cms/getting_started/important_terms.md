@@ -1,9 +1,0 @@
-# Important terms:
-
-1.  [**Template**](/cms/getting_started/templates) describes the structure and behaviour of your game object (item, monster, construction,...). As a programmer you can think of it as a **Class**. Template has to have a unique name and a set of parameters.
-2.  [**Parameter**](/cms/getting_started/parameters) describes a part of a Document, storing some value. Each parameter has a name and a type. Type can be simple like string, int, float, bool or a reference to any other Template. As a programmer you can think of parameter as a **Field** or **Property** of the **Class**.
-3.  [**Document**](/cms/getting_started/documents) is a unique instance of a Template (Specific Item: Hunter's Bow, Gold Bar,...), which has it's own parameter values. Think of it as an **instance** of a **Class** as a programmer.
-4.  [**Component**](#component) is a simple Template, which doesn't have it's own Documents and can exists only inside of another Document. 
-
-
-#### [Next: Templates](/cms/getting_started/templates)

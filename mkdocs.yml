@@ -39,15 +39,17 @@ nav:
       - Open UnnyNet: advanced/open.md
       - Close UnnyNet: advanced/close.md
       - Set Frame: advanced/setframe.md
-    - Content Management System:
-      - Basic: cms/basic.md
+    - Data Editor:
+      - Basic: data_editor/basic.md
       - Getting Started:
-        - How to Launch: cms/getting_started/how_to_launch.md
-        - Important Terms: cms/getting_started/important_terms.md
-        - Templates: cms/getting_started/templates.md
-        - Parameters: cms/getting_started/parameters.md
-        - Documents: cms/getting_started/documents.md
-      - Code Generation: cms/code_generation.md
+        - How to Launch: data_editor/getting_started/how_to_launch.md
+        - Important Terms: data_editor/getting_started/important_terms.md
+        - Templates: data_editor/getting_started/templates.md
+        - Parameters: data_editor/getting_started/parameters.md
+        - Documents: data_editor/getting_started/documents.md
+      - Code Generation: data_editor/code_generation.md
+      - Example: data_editor/example.md
+      - What's next: data_editor/what_next.md
     - Requests:
       - Response Data: requests/response_data.md
       - Get API: requests/get_api.md
