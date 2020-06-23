@@ -11,6 +11,8 @@ How Does it Work?
 4. Open Unity with your project and start code generation request. UnnyNet will automatically generate the code, based on the data you provided.
 5. Once the game is launched, all the game data is delivered to the game and already mapped to the generated code.
 6. Your programmer has a direct access to all the items, weapons and other objects your game has. He doesn't have to write any code for downloading or parsing.
-7. Whenever you change the game data in DE, it'll be automatically synchronized with the game after the restart. 
+7. Whenever you change the game data in DE, it'll be automatically synchronized with the game after the restart.
+
+We'll explain every step in details in the next articles: 
 
 #### [Next: How To Launch](/data_editor/getting_started/how_to_launch)

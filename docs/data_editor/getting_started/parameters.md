@@ -26,7 +26,7 @@
     [String](https://en.wikipedia.org/wiki/String_(computer_science)) | Any Text. For ex: "Hello World", "-+ ta-ta_!! 55"
     [Float](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) | A Number with a fractional component. For ex: 1.32, -0.7432
     [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type) | Logical value: true or false
-    Document Reference | A reference to an existing document
+    Reference | A reference to an existing document
     List | An Array(list) of other type values  
 
 #### [Next: Documents & Components](/data_editor/getting_started/documents)
