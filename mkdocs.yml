@@ -18,27 +18,9 @@ nav:
       - How to start: basic/basic.md
       - Platforms:
         - Unity3D: basic/integration_unity3d.md
-        - JavaScript: basic/integration_javascript.md
-        - Android:
-          - Basics: basic/integration_android.md
-          - Proguard: basic/integration_android_proguard.md
       - Authorization: basic/authorization.md
-    - Advanced Integration:
-      - Leaderboards: advanced/leaderboards.md
-      - Achievements: advanced/achievements.md
-      - User: advanced/user.md
-      - Real-time Chat: advanced/chat.md
-      - Chat Popup: advanced/chat_popup.md
-      - Private Channels: advanced/private_channels.md
-      - Theme Customization: advanced/themes.md
-      - Guilds:
-        - Basic Information: advanced/guilds/guilds.md
-        - Setup: advanced/guilds/guilds_setup.md
-        - Tests: advanced/guilds/guilds_test.md
-        - API: advanced/guilds/guilds_api.md
-      - Open UnnyNet: advanced/open.md
-      - Close UnnyNet: advanced/close.md
-      - Set Frame: advanced/setframe.md
+      - Payments: basic/payments.md
+      - Storage: basic/storage.md
     - Data Editor:
       - Basic: data_editor/basic.md
       - Getting Started:

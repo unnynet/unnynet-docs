@@ -76,15 +76,15 @@ You should read more about UnnyNet initialization [here](/basic/integration_unit
 3. In the Start method write the following code:
 
 ```
-UnnyNet.MainController.Init(new UnnyNet.Config
+UnnyNet.UnnyNetNewInit.Init(new UnnyNet.AppConfig
 {
    GameId = YOUR_GAME_ID,
    PublicKey = YOUR_PUBLIC_KEY,
+   Environment = UnnyNet.Constants.Environment.Development,
    OnReadyCallback = responseData =>
    {
        Debug.Log("UnnyNet Initialized: " + responseData.Success);
-   },
-   Environment = UnnyNet.Constants.Environment.Development
+   }
 });
 ```
        
