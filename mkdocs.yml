@@ -24,7 +24,6 @@ nav:
     - Data Editor:
       - Basic: data_editor/basic.md
       - Getting Started:
-        - How to Launch: data_editor/getting_started/how_to_launch.md
         - Important Terms: data_editor/getting_started/important_terms.md
         - Templates: data_editor/getting_started/templates.md
         - Parameters: data_editor/getting_started/parameters.md

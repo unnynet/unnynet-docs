@@ -68,3 +68,5 @@ UnnyNet.Storage.Load<Type of Object or String>(<Collection Name>, <Key Name>, do
 
 1. You can Save/Load the same combination of Collection & Key not more than once per 20 seconds.
 2. The maximum size of a saved value is 100Kb.
+
+It's subject to change in the future.

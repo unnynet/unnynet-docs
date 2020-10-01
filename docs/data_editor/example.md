@@ -1,7 +1,7 @@
 # Data Editor usage Example
 
 In this example I'm going to show you how you can create a simple craft logic for your game. We gonna need just several Templates: Item, Recipe and Ingredient.
-I assume you've read and implemented [the basics](/basic/basic) for your game and launched the [Data Editor](/data_editor/getting_started/how_to_launch).
+I assume you've read and implemented [the basics](/basic/basic) for your game.
 
 ### Templates preparation
 
@@ -78,7 +78,7 @@ You should read more about UnnyNet initialization [here](/basic/integration_unit
 ```
 UnnyNet.UnnyNetNewInit.Init(new UnnyNet.AppConfig
 {
-   GameId = YOUR_GAME_ID,
+   ApiGameId = YOUR_GAME_ID,
    PublicKey = YOUR_PUBLIC_KEY,
    Environment = UnnyNet.Constants.Environment.Development,
    OnReadyCallback = responseData =>

@@ -6,31 +6,18 @@ For your convenience we've recorded the [video of the integration](https://youtu
 2.  Import the UnnyNet plugin.
 3.  Prepare Game ID and Public Key to use in the code:
 
-    ![Screenshot](../img/game_id_1_.jpg)
-    
-    Read and accept Terms of Service first:
-    ![Screenshot](../img/game_id_2_.jpg)
-    
-    Copy and paste Game ID and Public Key: 
-    ![Screenshot](../img/game_id_3_.jpg)
+    ![Screenshot](../img/game_id.jpg)
 
 4.  Call initialize method at start:
-
         
-        UnnyNetNewInit.Init(new AppConfig {
-            GameId = "8ff16d3c-ebcc-4582-a734-77ca6c14af29",
-            PublicKey = "...",
-            Environment = UnnyNet.Constants.Environment.Development,
-            OnReadyCallback = responseData => { Debug.Log("UnnyNet Initialized: " + responseData.Success); }
-        });
-        
-5.  Call the next method to show UnnyNet window:
-
-
-        UnnyNet.MainController.Open();
-
-        
-6.  In the Player Settings set for Android Minimum API Level to at least 19, for iOS Target minimum iOS Version to at least 8.0.
+```csharp fct_label="Unity"
+UnnyNet.Main.Init(new UnnyNet.AppConfig {
+    ApiGameId = YOUR_GAME_ID,
+    PublicKey = YOUR_PUBLIC_KEY,
+    Environment = UnnyNet.Constants.Environment.Development,
+    OnReadyCallback = responseData => { Debug.Log("UnnyNet Initialized: " + responseData.Success); }
+});
+```
 
 ### Further reading
 

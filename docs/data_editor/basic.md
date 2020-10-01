@@ -15,4 +15,4 @@ How Does it Work?
 
 We'll explain every step in details in the next articles: 
 
-#### [Next: How To Launch](/data_editor/getting_started/how_to_launch)
+#### [Next: Important Terms](/data_editor/getting_started/important_terms)

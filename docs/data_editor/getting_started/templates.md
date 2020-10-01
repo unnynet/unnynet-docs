@@ -3,7 +3,7 @@
 **Template** describes the structure and behaviour of your game object (item, monster, construction,...). As a programmer you can think of it as a **Class**. Template has to have a unique name and a set of parameters.
 
 1.  Open Templates section and click on the Create Button
-![Screenshot](../../img/cms_template_create.jpg)
+![Screenshot](../../img/de_example/de_create_template.jpg)
     
 2.  Each Template has several parameters
     

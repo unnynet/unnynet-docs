@@ -3,7 +3,7 @@
 **Parameter** describes a part of a Document, storing some value. Each parameter has a name and a type. Type can be simple like string, int, float, bool or a reference to any other Template. As a programmer you can think of parameter as a **Field** or **Property** of the **Class**.
 
 1.  After the creation of a template, you can add parameters to it.
-![Screenshot](../../img/cms_params.jpg)
+![Screenshot](../../img/de_example/de_create_params.jpg)
 
 2. In the parameters window you can view/edit all existing parameters and add new one.
     
