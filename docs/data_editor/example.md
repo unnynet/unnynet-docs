@@ -102,7 +102,7 @@ private void PrintAllData()
 
 private void PrintItems()
 {
-    var items = UnnyNet.Storage.Items;
+    var items = UnnyNet.DataEditor.Items;
     Debug.LogWarning("Items Count = " + items.Count);
     foreach (var item in items)
         Debug.Log("ITEM: " + item.Name + " : " + item.Description);
@@ -110,7 +110,7 @@ private void PrintItems()
 
 private void PrintRecipes()
 {
-    var recipes = UnnyNet.Storage.Recipes;
+    var recipes = UnnyNet.DataEditor.Recipes;
     Debug.LogWarning("Recipes Count = " + recipes.Count);
     foreach (var recipe in recipes)
         Debug.Log("RECIPE to create item " + recipe.Item.Name + " requires " + recipe.Ingredients.Length + " other items");

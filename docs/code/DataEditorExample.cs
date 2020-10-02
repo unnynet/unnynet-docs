@@ -4,16 +4,16 @@ using UnnyNet.Models;
 
 public class DataEditorExample : MonoBehaviour
 {
-    private const string YOUR_GAME_ID = "d3ecf863-5f79-4b2e-ba8b-124143fc75f7";
+    private const string YOUR_GAME_ID = "3ba357ae-03e9-11eb-be4f-0684909fddca";
     private const string YOUR_PUBLIC_KEY = "<>";
 
     private Dictionary<Item, int> _itemsStorage;
     
     private void Start()
     {
-        UnnyNet.MainController.Init(new UnnyNet.Config
+        UnnyNet.Main.Init(new UnnyNet.AppConfig
         {
-            GameId = YOUR_GAME_ID,
+            ApiGameId = YOUR_GAME_ID,
             PublicKey = YOUR_PUBLIC_KEY,
             OnReadyCallback = responseData =>
             {
@@ -28,7 +28,7 @@ public class DataEditorExample : MonoBehaviour
     private void InitializeStorage()
     {
         _itemsStorage = new Dictionary<Item, int>();
-        var items = UnnyNet.Storage.Items;
+        var items = UnnyNet.DataEditor.Items;
         foreach (var item in items)
             _itemsStorage.Add(item, 0);
     }
@@ -50,7 +50,7 @@ public class DataEditorExample : MonoBehaviour
         rect.y += rect.height;
         GUI.color = Color.white;
         
-        var items = UnnyNet.Storage.Items;
+        var items = UnnyNet.DataEditor.Items;
         foreach (var item in items)
         {
             int itemsCount = _itemsStorage[item];
@@ -72,7 +72,7 @@ public class DataEditorExample : MonoBehaviour
         rect.y += rect.height;
         GUI.color = Color.white;
         
-        var recipes = UnnyNet.Storage.Recipes;
+        var recipes = UnnyNet.DataEditor.Recipes;
         foreach (var recipe in recipes)
         {
             GUI.Label(rect, recipe.Item.Name);
@@ -122,7 +122,7 @@ public class DataEditorExample : MonoBehaviour
 
     private void PrintItems()
     {
-        var items = UnnyNet.Storage.Items;
+        var items = UnnyNet.DataEditor.Items;
         Debug.LogWarning("Items Count = " + items.Count);
         foreach (var item in items)
             Debug.Log("ITEM: " + item.Name + " : " + item.Description);
@@ -130,7 +130,7 @@ public class DataEditorExample : MonoBehaviour
     
     private void PrintRecipes()
     {
-        var recipes = UnnyNet.Storage.Recipes;
+        var recipes = UnnyNet.DataEditor.Recipes;
         Debug.LogWarning("Recipes Count = " + recipes.Count);
         foreach (var recipe in recipes)
             Debug.Log("RECIPE to create item " + recipe.Item.Name + " requires " + recipe.Ingredients.Length + " other items");
