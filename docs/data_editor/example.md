@@ -3,6 +3,8 @@
 In this example I'm going to show you how you can create a simple craft logic for your game. We gonna need just several Templates: Item, Recipe and Ingredient.
 I assume you've read and implemented [the basics](/basic/basic) for your game.
 
+Here is [the video](https://youtu.be/91JYYb1KVIY) of this tutorial.
+
 ### Templates preparation
 
 1. Open Data Editor
