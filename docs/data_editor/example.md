@@ -20,14 +20,14 @@ Here is [the video](https://youtu.be/91JYYb1KVIY) of this tutorial.
     * **Name**: Ingredient
     * **Type**: Component
 6. Add following parameters:
-    * **Item**: (Type: Reference, Reference Template: Item)
+    * **Item**: (Type: Document, Reference Template: Item)
     * **Count**: (Type: Integer, Default value: 1)
     * When you done, the list of parameters should look like this:
     ![Screenshot](../img/de_example/de_template_ingredient.jpg)
 7. The last template we gonna need is Recipe. Set **Name** as "Recipe" and leave other fields as default.
 8. Add following parameters:
-    * **Item**: (Type: Reference, Reference Template: **Item**)
-    * **Ingredients**: (Type: List, List Type: Reference, Reference Template: **Ingredient**)
+    * **Item**: (Type: Document, Reference Template: **Item**)
+    * **Ingredients**: (Type: List, List Type: Document, Reference Template: **Ingredient**)
     * When you done, the list of parameters should look like this:
     ![Screenshot](../img/de_example/de_template_recipe.jpg)
 

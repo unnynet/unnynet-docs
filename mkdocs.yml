@@ -19,8 +19,8 @@ nav:
       - Platforms:
         - Unity3D: basic/integration_unity3d.md
       - Authorization: basic/authorization.md
-      - Payments: basic/payments.md
       - Storage: basic/storage.md
+      - Payments: basic/payments.md
     - Data Editor:
       - Basic: data_editor/basic.md
       - Getting Started:
@@ -33,7 +33,6 @@ nav:
       - What's next: data_editor/what_next.md
     - Requests:
       - Response Data: requests/response_data.md
-      - Get API: requests/get_api.md
     - Release Notes: release_notes.md
 
 extra_css:

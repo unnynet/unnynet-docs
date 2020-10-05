@@ -24,9 +24,9 @@ UnnyNet server generated JSON files based on your Documents and puts it to the C
 
 
 ## How to get an access to the documents
-1. Let's say you have a Template **ItemModel** and several Documents of this Template. Use **UnnyNet.Storage.ItemModels** to access the list of those Documents.
+1. Let's say you have a Template **ItemModel** and several Documents of this Template. Use **UnnyNet.DataEditor.ItemModels** to access the list of those Documents.
 2. Let's say you have a Template **RecipeModel**, which has a Parameter Item of type **ItemModel**. Once you get an instance of that that RecipeModel as **recipeModel**, you can get an access to it's Item as **recipeModel.Item**. As simple as that!
-3. If your Template **GameConfig** is a Singleton, you get access to it by writing **UnnyNet.Storage.GameConfig**
+3. If your Template **GameConfig** is a Singleton, you get access to it by writing **UnnyNet.DataEditor.GameConfig**
 
 
 ## How to work with the generated code

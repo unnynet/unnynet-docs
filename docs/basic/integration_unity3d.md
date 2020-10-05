@@ -1,6 +1,6 @@
 # Unity3D Integration
 
-For your convenience we've recorded the [video of the integration](https://youtu.be/ql6h1WTBj5I)
+For your convenience we've recorded the [video of the integration](https://youtu.be/91JYYb1KVIY)
 
 1.  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
 2.  Import the UnnyNet plugin.
@@ -23,7 +23,8 @@ UnnyNet.Main.Init(new UnnyNet.AppConfig {
 
 UnnyNet consists of several modules for your convenience.
 
-1. **Auth** - authorizations
-2. **Payments** - purchase In-App and get information about them
-3. **Storage** - a place to work with Data Editor and to save/load in-game data with the server
-4. **Localization** - (coming soon) a place to work with localizations
+1. [**Auth**](/basic/authorization) - authorizations
+2. [**Data Editor**](/data_editor/basic) - a place to work with Data Editor
+3. [**Storage**](/basic/storage) - save/load in-game data with the server
+4. [**Payments**](/basic/payments) - purchase In-App and get information about them
+5. **Localization** - (coming soon) a place to work with localizations

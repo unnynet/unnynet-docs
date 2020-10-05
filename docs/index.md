@@ -8,6 +8,7 @@ Our core features help you to organise and to deliver Game Data, save your playe
 
 Our servers are designed to run at massive scale, and scale automatically with your user base. We have your back, so we expect from you to focus on the game itself and make it awesome.
 
+[Watch Video](https://youtu.be/sWDyoYKSnUI)
 
 ###[Out-of-the-box](/basic/basic)
 
@@ -17,10 +18,10 @@ Integration of UnnyNet is extremely easy and takes not longer than 10 minutes. I
 
 Create and edit your game data in the most convenient way. UnnyNet will automatically deliver that data to your game.
 
-###[Cloud Storage](/advanced/leaderboards)
+###[Cloud Storage](/basic/storage)
 
 Save and load the progress of your players using our reliable servers. You can forget about any headache in this area.
 
-###[Payments](/advanced/achievements)
+###[Payments](/basic/payments)
 
 Implement InApp purchases with only one simple line of code. We'll take care about all the logic and validation.

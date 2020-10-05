@@ -1,4 +1,4 @@
 # Release Notes
 
-### v1.0.0 - August 30, 2020
+### v1.0.0 - October 5, 2020
 * First release
