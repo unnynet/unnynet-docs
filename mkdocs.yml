@@ -51,3 +51,7 @@ markdown_extensions:
       permalink: True
   - markdown_fenced_code_tabs:
       single_block_as_tab: False
+
+plugins:
+  - pdf-export:
+      combined: true
