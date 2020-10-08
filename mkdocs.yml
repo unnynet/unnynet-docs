@@ -37,6 +37,7 @@ nav:
 
 extra_css:
   - css/code_tabs.css
+  - css/pages.css
 
 extra_javascript:
   - js/main.js
@@ -55,3 +56,5 @@ markdown_extensions:
 plugins:
   - pdf-export:
       combined: true
+  - search
+  - awesome-pages
