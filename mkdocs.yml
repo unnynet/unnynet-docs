@@ -13,6 +13,7 @@ theme:
   favicon: 'img/favicon.ico'
 
 nav:
+    - Table of Contents: table.md
     - Home: index.md
     - Basic Integration:
       - How to start: basic/basic.md
