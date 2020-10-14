@@ -49,7 +49,7 @@ private class SaveExample
 }   
 ```
 
-In the example above **IntValue** and **StringValue** will be saved and loaded, when other 2 field won't. So if you don't want any property ot attribute to be synchronized, just mark it with [JsonIgnore].
+In the example above **IntValue** and **StringValue** will be saved and loaded, when other 2 field won't. So if you don't want any property or attribute to be synchronized, just mark it with [JsonIgnore].
 
 ### Save
 
