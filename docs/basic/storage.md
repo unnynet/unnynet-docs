@@ -9,7 +9,11 @@ Allows you to Save and Load any data on UnnyNet servers. Make sure to authorize 
 Each player can have a set of Collections, and each collection can have a set of Keys. When you save to the Storage you need to specify both a Collection and a key. However, to Load the data there are two options:
 
 1. Load a specific key from a specific collection
-2. Load the whole collection. 
+2. Load the whole collection.
+
+You can think of a Collection as a Book, when a Key is a chapter of that book. You can have as many books as you want with many different chapters in each one. It's up to you what you want to write in each chapter. 
+
+Both a Collection and a Key can be any string value. Just make sure you are loading from the same Collection/Key pair, which you used to save your data.
 
 ###### For example 
 You might have a collection 'Player' with many keys: 'Inventory', 'Spells', 'Stats', etc.. When one of the data changes, you just need to update only a small portion, which will be stored in one key. But when you start a game you can load the whole profile with all the keys
@@ -53,15 +57,56 @@ In the example above **IntValue** and **StringValue** will be saved and loaded, 
 
 ### Save
 
+Example to save a string:
+
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Save(<Collection Name>, <Key Name>, <Value String or Object>, doneCallback);
+UnnyNet.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse =>
+{
+    Debug.Log("String was saved result: " + saveResponse.Success);
+});
+```
+
+Example to save an object:
+
+```csharp fct_label="Unity"
+var saveExample = new SaveExample
+{
+    IntValue = 5,
+    StringValue = "Hello World",
+    IgnoredValue = 3
+};
+
+UnnyNet.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
+{
+    Debug.Log("Object was saved result: " + saveResponse.Success);
+});
 ```
 
 ### Load
 
+Example to load a saved string:
+
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Load<Type of Object or String>(<Collection Name>, doneCallback);
-UnnyNet.Storage.Load<Type of Object or String>(<Collection Name>, <Key Name>, doneCallback);
+UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
+{
+    Debug.Log("String was loaded result: " + loadResponse.Success);
+    if (loadResponse.Success)
+        Debug.Log("Value = " + loadResponse.Data.Value);
+});
+```
+
+Example to load a saved object:
+
+```csharp fct_label="Unity"
+UnnyNet.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
+{
+    Debug.Log("Object was loaded result: " + loadResponse.Success);
+    if (loadResponse.Success)
+    {
+        SaveExample saveExample = loadResponse.Data.Value;
+        Debug.Log("String Value = " + saveExample.StringValue);
+    }
+});
 ```
 
 ### Limits

@@ -5,17 +5,32 @@ The list of method for authentication will be updated and for some platform we'l
 #### Email
 
 ```csharp fct_label="Unity"
-UnnyNet.Auth.WithEmail(<email>, <password>, doneCallback);
+UnnyNet.Auth.WithEmail(<email>, <password>, authResponse =>
+{
+    Debug.Log("Authorized " + authResponse.Success);
+    if (authResponse.Success)
+        Debug.Log("User id: " + authResponse.UserId);
+});
 ```
 
 #### Name and Password
 
 ```csharp fct_label="Unity"
-UnnyNet.Auth.WithName(<username>, <password>, doneCallback);
+UnnyNet.Auth.WithName(<username>, <password>, authResponse =>
+{
+    Debug.Log("Authorized " + authResponse.Success);
+    if (authResponse.Success)
+        Debug.Log("User id: " + authResponse.UserId);
+});
 ```
 
 #### As Guest using Device ID
 
 ```csharp fct_label="Unity"
-UnnyNet.Auth.AsGuest(doneCallback);
+UnnyNet.Auth.AsGuest(authResponse =>
+{
+    Debug.Log("Authorized " + authResponse.Success);
+    if (authResponse.Success)
+        Debug.Log("User id: " + authResponse.UserId);
+});
 ```
