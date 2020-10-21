@@ -3,6 +3,7 @@ site_name: UnnyNet Documentation
 # Documentation and theme
 theme:
   name: 'material'
+  custom_dir: 'overrides'
   language: 'en'
   palette:
     primary: 'indigo'
@@ -42,6 +43,10 @@ extra_css:
 
 extra_javascript:
   - js/main.js
+
+google_analytics:
+  - UA-125653723-3
+  - auto
 
 # Extensions
 markdown_extensions:
