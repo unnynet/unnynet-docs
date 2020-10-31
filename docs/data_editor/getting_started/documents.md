@@ -14,4 +14,4 @@ Component is a simple Template, which doesn't have it's own Documents and can ex
 
 For example Vector3 component template has parameters: x, y, z. If a Document "Hero" has a Parameter "position" of type Vector3, you'll be able to edit x, y, z values of "position" right inside of "Hero" Document.  
 
-#### [Next: Code Generation](/data_editor/code_generation)
+#### [Next: Enums](/data_editor/getting_started/enums)

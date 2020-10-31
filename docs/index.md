@@ -10,6 +10,8 @@ Our servers are designed to run at massive scale, and scale automatically with y
 
 [Watch Video](https://youtu.be/sWDyoYKSnUI)
 
+[Video Tutorial](https://youtu.be/91JYYb1KVIY)
+
 [Join Our Discord](https://discord.gg/X27tuQR)
 
 
