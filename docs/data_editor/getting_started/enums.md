@@ -44,4 +44,4 @@ Each enum value must have a unique name and a unique value associated with the n
 5.  When you create and save your enum, you can choose type Enum for a parameter.
 ![Screenshot](../../img/de_example/de_enum_param.jpg)
 
-#### [Next: Localization](/data_editor/getting_started/localization)
+#### [Next: Localization](/data_editor/code_generation)

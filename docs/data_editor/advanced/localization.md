@@ -26,5 +26,3 @@ If you are using a lot of UnityEngine.UI.Text with static text, you'll find very
 Just add it to your GameObject and set parameter **Localization Key** value as your **Key**. It'll automatically put Localized value as Text when you launch the game.
 
 We've the same Component for Text Mesh Pro. You can download it from [here](/code/LocalizationTextMeshPro.cs)
-
-#### [Next: Code Generation](/data_editor/code_generation)
