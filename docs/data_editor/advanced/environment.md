@@ -1,6 +1,6 @@
 # Environment
 
-We provide each game with 3 Environments: Development, Stage and Production. It's a standard and commonly user approach.
+We provide each game with 3 Environments: Development, Stage and Production. It's a standard and commonly used approach.
 
 1. **Development** used during the development process. All new features, bug fixes are created here.
 2. **Stage** can be skipped by Indie developers. It's used usually by big companies, which have their own QA department. This environment is used for testing all the features, which were created before. Separate environment for testing is helpful, because it doesn't require the development team to stop.
