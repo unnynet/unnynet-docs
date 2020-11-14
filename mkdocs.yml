@@ -40,6 +40,7 @@ nav:
       - What's next: data_editor/what_next.md
     - Requests:
       - Response Data: requests/response_data.md
+    - Pricing: pricing.md
     - Release Notes: release_notes.md
 
 extra_css:
