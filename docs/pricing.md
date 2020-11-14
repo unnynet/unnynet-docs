@@ -4,6 +4,7 @@ UnnyNet is a SaaS with monthly payments. We are tying to keep our pricing as low
 
 ### Indie
 Only new companies are eligible, who had total in revenue and investment less than $100k.
+We would love to support new businesses, providing you with 1,000 free MAU (without any time limits). It'll be enough for the whole development cycle and even a small Soft-Launch.
 
 * Free up to 1,000 MAU
 * $1 per extra 1,000 MAU
