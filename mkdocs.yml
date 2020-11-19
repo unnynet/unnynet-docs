@@ -16,6 +16,7 @@ theme:
 nav:
     - Table of Contents: table.md
     - Home: index.md
+    - Video Tutorials: video_tutorials.md
     - Basic Integration:
       - How to start: basic/basic.md
       - Platforms:

@@ -23,7 +23,7 @@ Perfect plan to start your business
 If you are an experience publisher, who values the time and you are confident with your project. 
 
 * Free Trial Period. It lasts one month or if your reach 100,000 MAU
-* Minimum price is $999, include 1,000,000 MAU
+* Minimum price is $999, includes 1,000,000 MAU
 * $1 per extra 1,000 MAU
 * Up to 10h/month of dedicated personal support
 
