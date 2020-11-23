@@ -13,7 +13,7 @@ public class LocalizationTextMeshPro : LocalizationUI
         SetTextValue();
     }
 
-    protected override void OnLocalizationChanged()
+    protected override void OnLocalizationChanged(string localizationCode)
     {
         SetTextValue();
     }
