@@ -17,9 +17,9 @@ We would love to support new businesses, providing you with 1,000 free MAU (with
 Perfect plan to start your business
 
 * Free Trial Period. It lasts one month or if your reach 100,000 MAU
-* Minimum price is $249, includes 250,000 MAU
+* Minimum price is $499, includes 500,000 MAU
 * $1 per extra 1,000 MAU
-* Up to 2h/month of dedicated personal support
+* Up to 4h/month of dedicated personal support
 
 ### Publisher
 If you are an experience publisher, who values the time and you are confident with your project. 
