@@ -21,18 +21,18 @@ You should try to avoid changing the environment in DE. In the best case scenari
 
 However there are situation when you might need to change something in the **Production** environment. 
 
-Let's say you have already published your game and your users are playing in the **Production** environment. Then you find some bug in the balance, which you want to fix asap. Your team has already prepared tons of changes in the **Development**, so you can't migrate everything to the **Production** without updating the build. So the solution here is to switch to the **Production** environment in DE, fix your balance and Deploy the changes. That's it! Just don't forget to make the same changes in the **Developement**.
+Let's say you have already published your game and your users are playing in the **Production** environment. Then you find some bug in the balance, which you want to fix asap. Your team has already prepared tons of changes in the **Development**, so you can't migrate everything to the **Production** without updating the build. So the solution here is to switch to the **Production** environment in DE, fix your balance and Deploy the changes. That's it! Just don't forget to make the same changes in the **Development**.
 
 ### Data Migration
 
-In the Environment section you can migrate you data
+In the Environment section you can migrate your data
 1. From **Development** to **Stage**
 2. From **Stage** to **Production**
 
 When you start a migration process, there are many things are happening. For example when you transfer the data from Dev to Stage, under the hood is happening:
-1.  [Deploy](/data_editor/advanced/deploy) is called for **Development**.
+1.  [Deploy](/data_editor/deploy) is called for **Development**.
 2.  All the data is transferred from **Dev** to **Stage**, overriding all the changes made in **Stage** before.
-3.  [Deploy](/data_editor/advanced/deploy) is called for **Stage**.
+3.  [Deploy](/data_editor/deploy) is called for **Stage**.
 
 It means that if you want to send all the data from the **Dev** to **Prod**, you just need to transfer the data from **Dev** to **Stage** and then to **Prod**. You don't need to Deploy anything afterwards. That was already made during the migration.    
 
@@ -65,5 +65,5 @@ public static UnnyNet.Constants.Environment GetEnvironment()
 }
 ```
 
-Then you just need to switch the define symbols between **SERVER_DEV**, **SERVER_STAGE** and **SERVER_PROD** before you launch your game in Unity or make a build to make it connect to different environment.
+Then you just need to switch the define symbols between **SERVER_DEV**, **SERVER_STAGE** and **SERVER_PROD** before you launch your game in Unity or make a build to make it to connect to different environment.
 Of course you might want to be able to change the environment at runtime for the testing purposes. Just be careful and don't let your end users to be able to connect to an environment different from the **Production**. 

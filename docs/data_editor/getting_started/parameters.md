@@ -23,10 +23,12 @@
     Type | Description
     -----|------------
     [Integer](https://en.wikipedia.org/wiki/Integer) | A Number that can be written without a fractional component. For ex: 1, 2, 999, -200
-    [String](https://en.wikipedia.org/wiki/String_(computer_science)) | Any Text. For ex: "Hello World", "-+ ta-ta_!! 55"
     [Float](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) | A Number with a fractional component. For ex: 1.32, -0.7432
     [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type) | Logical value: true or false
-    Document | A reference to an existing document
-    List | An Array(list) of other type values  
+    [String](https://en.wikipedia.org/wiki/String_(computer_science)) | Any Text. For ex: "Hello World", "-+ ta-ta_!! 55"
+    [Enum](/data_editor/getting_started/enums) | Any Text. For ex: "Hello World", "-+ ta-ta_!! 55"    
+    [Document](/data_editor/getting_started/documents) | A reference to an existing document
+    List | An Array(list) of other type values
+    [Asset](/data_editor/getting_started/assets) | A reference to an existing Asset. It's usually a prefab, sprite or other Object, which is stored in Unity game as an Addressable.
 
 #### [Next: Documents & Components](/data_editor/getting_started/documents)
