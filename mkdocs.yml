@@ -23,6 +23,7 @@ nav:
       - Code Generation: data_editor/code_generation.md
       - Advanced:
         - Environment: data_editor/advanced/environment.md
+        - Assets: data_editor/advanced/assets.md
         - Localization: data_editor/advanced/localization.md
       - Example: data_editor/example.md
       - What's next: data_editor/what_next.md
