@@ -1,0 +1,38 @@
+@page {
+    size: a4 portrait;
+    margin: 25mm 10mm 25mm 10mm;
+    counter-increment: page;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: pre;
+    color: grey;
+    /*@top-left {*/
+    /*    content: '© 2020 Unnynet';*/
+    /*}*/
+    /*@top-center {*/
+    /*    content: string(chapter);*/
+    /*}*/
+    @top-right {
+        content: 'Page ' counter(__pgnum__);
+    }
+}
+
+#languages_block {
+    margin-right: 10px;
+}
+
+#languages_block ul li {
+    display: inline;
+}
+
+#languages_block ul li:not(:last-child):after {
+    content: "/";
+    padding: 0 .5em;
+}
+
+.language-not-selected {
+    text-decoration: underline;
+}
+
+.language-selected {
+    font-weight: bold;
+}
