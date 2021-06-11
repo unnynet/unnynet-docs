@@ -2,9 +2,10 @@
 
 We are going to let you import/export and work with all of your localization right in the Data Editor. This feature is under development right now, but we have a temporary substitution, which you can use and later migrate without any problems. 
 
-When you create a new parameter, instead of selecting type **string**, make it **Localized String**. Everytime, when you try to access this parameter in the code, it'll instantly give you already localized value.
+When you create a new parameter, instead of selecting type **String**, make it **Localized String**. Everytime, when you try to access this parameter in the code, it'll instantly give you already localized value.
 
 Let's say you have a pair "Key": "LocalizedValue":
+
 1. You create a new parameter with type of Localized String.
 2. In the document you put the value **Key**.
 3. When you access your parameter from the code, you will be getting **LocalizedValue** instead of **Key**.

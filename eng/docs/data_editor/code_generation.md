@@ -8,7 +8,7 @@ Here are some reasons for you to consider:
 1. Why would you spend your precious time on such a monotone job? Such things should've been automated long time ago.
 2. Human mistakes excluded. Very often a game designer or a programmer misspell a word and parsing doesn't work as expected. Such problem might take some time to be found.
 3. Whenever a game designer changes a parameter or a Templates, all of that will be instantly reflected in the code after the generation. A programmer won't forget to apply those changes.
-4. Code generation is tightly connected with other UnnyNet awesome features, like: [SmartObjects](link) and [Localization](link). Using them all together gives your team a huge boost. 
+4. Code generation is tightly connected with other UnnyNet awesome features, like: [Localization](/data_editor/advanced/localization/). Using them all together gives your team a huge boost. 
 5. You can forget about JSONs and how to parse them. UnnyNet will do that for you, so you could work with convenient Classes only.
 6. When document refers to another document, developers usually use some kind of ID to create those links. UnnyNet will do that for you, it automatically resolves all links and gives you direct access to the Documents you expect.
 
@@ -26,7 +26,7 @@ UnnyNet server generated JSON files based on your Documents and puts it to the C
 ## How to get an access to the documents
 1. Let's say you have a Template **ItemModel** and several Documents of this Template. Use **UnnyNet.DataEditor.ItemModels** to access the list of those Documents.
 2. Let's say you have a Template **RecipeModel**, which has a Parameter Item of type **ItemModel**. Once you get an instance of that that RecipeModel as **recipeModel**, you can get an access to it's Item as **recipeModel.Item**. As simple as that!
-3. If your Template **GameConfig** is a Singleton, you get access to it by writing **UnnyNet.DataEditor.GameConfig**
+3. If your Template **GameConfig** is a Singleton, you get access to it by writing **UnnyNet.DataEditor.GameConfig**.
 
 
 ## How to work with the generated code

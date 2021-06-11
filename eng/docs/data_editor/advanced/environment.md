@@ -26,17 +26,19 @@ Let's say you have already published your game and your users are playing in the
 ### Data Migration
 
 In the Environment section you can migrate your data
+
 1. From **Development** to **Stage**
 2. From **Stage** to **Production**
 
 When you start a migration process, there are many things are happening. For example when you transfer the data from Dev to Stage, under the hood is happening:
+
 1.  [Deploy](/data_editor/deploy) is called for **Development**.
 2.  All the data is transferred from **Dev** to **Stage**, overriding all the changes made in **Stage** before.
 3.  [Deploy](/data_editor/deploy) is called for **Stage**.
 
 It means that if you want to send all the data from the **Dev** to **Prod**, you just need to transfer the data from **Dev** to **Stage** and then to **Prod**. You don't need to Deploy anything afterwards. That was already made during the migration.    
 
-### How to connect to the proper 
+### How to connect to the proper environment
 
 We usually use [Define Symbols](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) to deal with different environments:
 
