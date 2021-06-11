@@ -1,43 +1,42 @@
-# Storage
+# Хранилище
 
-Allows you to Save and Load any data on UnnyNet servers. Make sure to authorize the player (at least as a guest) before using the Storage, because all records are connected to specific players.
+Позволяет сохранять и загружать любые данные на сервера UnnyNet. Обязательно авторизуйте игрока (хотя бы как гостя) перед использованием, т. к. все записи связаны с определёнными игроками.
 
+## Основная информация
 
-## General Information
+#### Коллекции и ключи
+У каждого игрока может быть набор коллекций, каждая из которых имеет несколько ключей. При сохранении в Хранилище необходимо указать как коллекцию, так и ключ. Однако для загрузки данных есть два варианта:
 
-#### Collections and Keys
-Each player can have a set of Collections, and each collection can have a set of Keys. When you save to the Storage you need to specify both a Collection and a key. However, to Load the data there are two options:
+1. Загрузить определённый ключ из определённой коллекции.
+2. Загрузить всю коллекцию.
 
-1. Load a specific key from a specific collection
-2. Load the whole collection.
+Вы можете думать о коллекции как о книге, где ключ — это глава книги. У вас может быть сколько угодно книг с множеством разных глав в каждой. И вам решать, что вы хотите написать в каждой главе.
 
-You can think of a Collection as a Book, where a Key is a chapter of that book. You can have as many books as you want with many different chapters in each one. It's up to you what you want to write in each chapter. 
+И коллекция, и ключ являются строковыми значениями. Просто убедитесь, что вы загружаете из той же пары коллекция-ключ, которую вы использовали при отправке сохранений.
 
-Both Collection and Key are string values. Just make sure you are loading from the same Collection/Key pair, which you used to save your data.
+###### Пример
+У вас может быть коллекция «Игрок» со ключами: «Инвентарь», «Заклинания», «Статистика» и т. д. При изменении данных вам нужно обновить только небольшую часть, которая будет храниться под одним ключом. Но когда вы запускаете игру, вы можете загрузить весь профиль со всеми ключами.
 
-###### For example 
-You might have a collection 'Player' with many keys: 'Inventory', 'Spells', 'Stats', etc.. When one of the data changes, you just need to update only a small portion, which will be stored in one key. But when you start a game you can load the whole profile with all the keys
+#### Версии
+Ещё одна важная особенность — **версии**. UnnyNet обрабатывает их автоматически, но лучше понять, как этот механизм работает под капотом.
+Каждая запись в базе данных имеет свою версию, которая увеличивается при каждом изменении данных. Механизм необходим для предотвращения использования устаревших данных.
 
-#### Versions
-Another worth mentioning topic is **versions**. UnnyNet handle them automatically, but it would be better for you to understand how it works. 
-Each record in database has a version number, which increases every time you change the data. It's used to prevent using an out-dated data. 
+###### Пример 
+Вы запускаете игру на **Устройстве 1**, играете некоторое время, и последняя версия вашего прогресса, скажем, будет **5**. Затем вы переключаетесь на **Устройство 2**, которое загружает прогресс с версией **5**, отправляете какие-то изменения на сервер, после чего версия поднимется до **6**. Наконец, вы повторно открываете игру на **Устройстве 1**, где у клиента всё ещё есть версия **5**. В следующий раз, когда этот клиент попытается отправить изменения на сервер, он получит ошибку, связанную с версией данных.
 
-###### For example 
-You launch a game on the **Device1**, play for some time and the last version of your progress will be **5**. Then you switch to the **Device2**, which loads progress with version **5**, saves several changes, making the last version of the progress **10**. Finally you reopen the game on the **Device1**, where the client still has version **5**. The next time it tries to save an update, it'll get an error of a wrong version. 
+Решить эту проблему можно двумя способами:
 
-There are two ways to solve such issue:
+1. Игнорировать версию (передав параметр в метод `Save`). Не рекомендуется, т. к. могут быть затёрты важные изменения.
+2. Если вы получили такую ошибку, перезагрузите игровой прогресс, чтобы получить последние данные и актуальную версию данных, а затем примените их к своей игре.
 
-1. Ignore version (we have such parameter in the Save method). I would not recommend this option, in most cases this is wrong.
-2. If you get such error, reload your game progress to get the latest game data and version, apply it to your game and keep playing.
+#### Типы данных
 
-#### Data types
+Поддерживаются 2 варианта:
 
-We support 2 options:
+1. Простая строка **string**.
+2. Любой класс. 
 
-1. Simple **string**
-2. Any Class. 
-
-We are using Newtonsoft converter to Serialize and Deserialize objects, here is an example of the class we can use to Save/Load in the Storage :
+Мы используем конвертер Newtonsoft для сериализации и десериализации объектов. Ниже пример класса, который мы можем использовать для сохранения/загрузки данных:
 
 ```csharp fct_label="Unity"
 private class SaveExample
@@ -53,11 +52,11 @@ private class SaveExample
 }   
 ```
 
-In the example above **IntValue** and **StringValue** will be saved and loaded, when other 2 field won't. So if you don't want any property or attribute to be synchronized, just mark it with [JsonIgnore].
+В приведённом выше примере **IntValue** и **StringValue** будут сохранены и загружены, тогда как другие 2 поля — нет. Если вы не хотите, чтобы какие-либо свойства или атрибуты синхронизировались с сервером, просто пометьте их аттрибутом [JsonIgnore].
 
-### Save
+### Сохранение
 
-Example to save a string:
+Пример с сохранением строки:
 
 ```csharp fct_label="Unity"
 UnnyNet.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse =>
@@ -66,7 +65,7 @@ UnnyNet.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse 
 });
 ```
 
-Example to save an object:
+При с сохранением объекта:
 
 ```csharp fct_label="Unity"
 var saveExample = new SaveExample
@@ -82,9 +81,9 @@ UnnyNet.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
 });
 ```
 
-### Load
+### Загрузка
 
-Example to load a saved string:
+Пример загрузки сохранённой ранее строки:
 
 ```csharp fct_label="Unity"
 UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
@@ -95,7 +94,7 @@ UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
 });
 ```
 
-Example to load a saved object:
+Пример загрузки сохранённого ранее объекта:
 
 ```csharp fct_label="Unity"
 UnnyNet.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
@@ -109,9 +108,9 @@ UnnyNet.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
 });
 ```
 
-### Limits
+### Лимиты
 
-1. You can Save/Load the same combination of Collection & Key not more than once per 20 seconds.
-2. The maximum size of a saved value is 100Kb.
+1. Вы можете сохранять/загружать одну и ту же комбинацию коллекция-ключ не чаще одного раза в 20 секунд.
+2. Максимальный размер сохраняемых данных 100 КБ.
 
-It's subject to change in the future.
+Эти ограничения в будущем могут измениться.

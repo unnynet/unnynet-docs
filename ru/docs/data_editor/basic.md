@@ -1,18 +1,19 @@
 # Data Editor
 
-Data Editor (DE) is an essential part of UnnyNet. It is used for creating data structure and editing the data.
-UnnyNet automatically delivers the newest data to the app and parse it to the convenient auto-generated code, so you could easily access it.
+Data Editor (DE) является неотъемлемой частью UnnyNet. Он используется для определения структур данных и редактирования самих данных.
+UnnyNet автоматически доставляет актуальную версию данных в приложение и преобразует их в автоматически сгенерированный код для удобного доступа к данным.
 
-How Does it Work?
+Как это работает?
+-
 
-1. After [adding your game](/basic/basic) to the platform, you get an access to the DE. 
-2. Inside of DE you can add all types of objects your game has: weapon, item, construction, monster, hero, location, etc...
-3. For each type of object you can add as many documents as possible. Each document represents a unique weapon, item, construction, etc...
-4. Open Unity with your project and start code generation request. UnnyNet will automatically generate the code, based on the data you provided.
-5. Once the game is launched, all the game data is delivered to the game and already mapped to the generated code.
-6. Your programmer has a direct access to all the items, weapons and other objects your game has. He doesn't have to write any code for downloading or parsing.
-7. Whenever you change the game data in DE, it'll be automatically synchronized with the game after the restart.
+1. После [добавления игры](/basic/basic) вы сразу получаете доступ к DE.
+2. В DE вы можете определить все типы объектов, которые необходимы вашей игре: оружие, предметы, строения, монстры, герои, локация и т. д.
+3. Для каждого типа объекта вы можете добавить множество документов. Каждый представляет собой уникальное оружие, предмет, конструкцию и т. д.
+4. Откройте ваш проект в Unity и запустите запрос генерации кода. UnnyNet автоматически сгенерирует код на основе предоставленных вами данных.
+5. После запуска игры все данные будут доставлены и уже сопоставятся со сгенерированными классами.
+6. У программистов будет прямой и удобный доступ ко всеми заданными сущностям в DE. Нет необходимости самим писать код для парсинга и мапинга.
+7. Все изменения данных в DE автоматически синхронизируются с игрой на запуске. Вам всего лишь нужно [опубликовать изменения](/data_editor/deploy/).
 
-We'll explain every step in details in the next articles: 
+Мы подробно объясним каждый шаг в следующих статьях.
 
-#### [Next: Important Terms](/data_editor/getting_started/important_terms)
+[Далее: основные понятия](/data_editor/getting_started/important_terms)

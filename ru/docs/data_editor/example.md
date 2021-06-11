@@ -1,81 +1,79 @@
-# Data Editor usage Example
+# Пример использования редактора
 
-In this example I'm going to show you how you can create a simple craft logic for your game. We gonna need just several Templates: Item, Recipe and Ingredient.
-I assume you've read and implemented [the basics](/basic/basic) for your game.
+В этом примере мы покажем, как можно создать простую логику крафта для своей игры. Нам понадобится всего несколько шаблонов: Item, Recipe и Ingredient.
+Перед этим рекомендуем сначала ознакомиться с [основами](/basic/basic).
 
-Here is [the video](https://youtu.be/91JYYb1KVIY) of this tutorial.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/91JYYb1KVIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### Templates preparation
+### Подготовка шаблонов
 
-1. Open Data Editor
-2. Select Templates Section and click on Create Template
+1. Откройте Data Editor
+2. Выберите раздел Templates и нажмите Create Template
 ![Screenshot](../img/de_example/de_create_template.jpg)
-3. Set **Name** as "Item" and leave other fields as default.
-4. Add following parameters:
-    * **Name**: (Type: String, Use in display name - YES)
+3. Введите "Item" в поле для **Name**. Остальные поля оставляем со значениями по умолчанию.
+4. Добавьте следующие параметры шаблону:
+    * **Name**: (Type: String, поставьте чекбокс напротив "Use in display name")
     * **Description**: (Type: String)
-    * When you done, the list of parameters should look like this:
-    ![Screenshot](../img/de_example/de_template_item.jpg)
-5. Create another Template for Ingredient. We'll make it Component for the convenience.
+    * Когда закончите, список параметров должен выглядеть так:
+      ![Screenshot](../img/de_example/de_template_item.jpg)
+5. Создайте другой шаблон с именем Ingredient. Поменяйте ему тип на Component.
     * **Name**: Ingredient
     * **Type**: Component
-6. Add following parameters:
+6. Добавьте следующие параметры:
     * **Item**: (Type: Document, Reference Template: Item)
     * **Count**: (Type: Integer, Default value: 1)
-    * When you done, the list of parameters should look like this:
+    * Когда закончите, список параметров должен выглядеть так:
     ![Screenshot](../img/de_example/de_template_ingredient.jpg)
-7. The last template we gonna need is Recipe. Set **Name** as "Recipe" and leave other fields as default.
-8. Add following parameters:
+7. Последний шаблон, который нам понадобится, это Recipe. В поле**Name** впишите "Recipe", а остальные поля оставьте по умолчанию.
+8. Добавьте следующие параметры:
     * **Item**: (Type: Document, Reference Template: **Item**)
     * **Ingredients**: (Type: List, List Type: Document, Reference Template: **Ingredient**)
-    * When you done, the list of parameters should look like this:
+    * Когда закончите, список параметров должен выглядеть так:
     ![Screenshot](../img/de_example/de_template_recipe.jpg)
 
-### Create documents
+### Создание документов
 
-Now, as we have our Templates ready, we need to add couple of actual items and recipes. When you added the Templates, you should've noticed that in the navigation (on the left) two new section appeared: Items and Recipe. Ingredient doesn't show up because it's a Component and exists only within another Document. 
+Теперь, когда у нас есть готовые шаблоны, нам нужно добавить пару реальных предметов и рецептов. После добавления шаблонов в навигации (слева) появилось два новых раздела: Items и Recipe. Ингредиент не отображается, потому что это компонент и существует только в контексте других документов.
 
-1. In the Navigation Panel select **Items**
-2. Click on the **Create** button to add a new Item
-3. Create 3 items as shown below:  
-![Screenshot](../img/de_example/de_document_item.jpg)
+1. На панели навигации выберите **Items**
+2. Нажмите кнопку **Create**, чтобы добавить новый документ.
+3. Создайте 3 документа, как показано ниже:
+   ![Screenshot](../img/de_example/de_document_item.jpg)
 
-Now we going to make a recipe to create a Hammer using a Rock and a Wood:
+Теперь мы добавим рецепт создания Молота с использованием камня и дерева:
 
-1. In the Navigation Panel select **Recipe**
-2. Click on the **Create** button to add a new Recipe
-3. Select Item parameter as Hammer
-4. Add 2 ingredients: One Wood and one Rock
-5. It means that in order to create a Hammer, you need to spend one Wood and one Rock
+1. На панели навигации выберите **Recipe**.
+2. Нажмите кнопку **Create**, чтобы добавить новый рецепт.
+3. Выберите параметр Item как Hammer.
+4. Добавьте 2 ингредиента: дерево и камень.
+5. Так мы задали, что для создания Молота вам нужно потратить одно дерево и один камень.
 
-Ok, we set all the data we need to the test project. Now we just need to publish our changes.
+Теперь нам просто нужно опубликовать наши изменения.
 
-### Deploy
+### Публикация
 
-1. Select Deploy section in the Navigation Panel
-2. Click **Generate All** and wait couple seconds until it's done
+1. Выберите раздел «Deploy» на панели навигации.
+2. Нажмите **Deploy** и подождите несколько секунд, пока всё не будет готово.
 
-Every time you make any changes in the data, it'll be saved only inside of the Editor. If you want to push the changes to the game, you can to do that in the Deploy Section. As a programmer, you can think of it as commit/push in GIT system.
+Каждый раз, когда вы вносите какие-либо изменения в данные, они сохраняются только в рамках редактора. Если вы хотите, чтобы изменения попали в игру, вы можете сделать это в разделе «Deploy».
 
-### Code Generation
+### Генерация кода
 
-1. Open Unity Project
-2. Import [UnnyNet plugin](https://assetstore.unity.com/packages/slug/128920)
-3. Open editor window Tools->UnnyNet
-4. Input your GameId and PublicKey
-5. Click on **Generate Code**
-6. It might take several seconds
-7. Once it's done, you can find a new folder with several scripts created at /Assets/UnnyNet/AutoGeneratedCode
-8. Don't change anything in that folder. The changes will be lost with the next generation
+1. Откройте проект в Unity
+2. Импортируйте [плагин](https://assetstore.unity.com/packages/slug/128920)
+3. Откройте окно редактора Tools->UnnyNet
+4. Введите GameId и PublicKey
+5. Нажмите **Generate Code** (это может занять несколько секунд)
+6. После завершения процесса у вас появится директория с несколькими скриптами, созданными в /Assets/UnnyNet/AutoGeneratedCode
+7. Ничего не меняйте в этой папке. Все изменения будут потеряны после следующей генерации
 
+### Инициализация UnnyNet
 
-### UnnyNet Initialization
+Можете почитать про это в [отдельной статье](/basic/integration_unity3d)
 
-You should read more about UnnyNet initialization [here](/basic/integration_unity3d)
-
-1. Create a new script DataEditorExample.cs
-2. Create a new scene and add this script to the Main Camera.
-3. In the Start method write the following code:
+1. Создайте новый скрипт DataEditorExample.cs
+2. Создайте новую сцену и навесьте этот скрипт на Main Camera.
+3. В методе Start mнапишите код:
 
 ```
 UnnyNet.UnnyNetNewInit.Init(new UnnyNet.AppConfig
@@ -90,10 +88,10 @@ UnnyNet.UnnyNetNewInit.Init(new UnnyNet.AppConfig
 });
 ```
        
-### Validate Data
+### Валидация данных
 
-First, lets check if we receive correct data from the Editor.
-Add those methods to our script:
+Во-первых, давайте проверим, получаем ли мы правильные данные от редактора.
+Добавьте эти методы в наш скрипт:
 
 ```
 private void PrintAllData()
@@ -118,33 +116,32 @@ private void PrintRecipes()
         Debug.Log("RECIPE to create item " + recipe.Item.Name + " requires " + recipe.Ingredients.Length + " other items");
 }
 ```
-        
-Now we just need to call **PrintAllData** once UnnyNet was initialized. Call this method after the Log line:
+
+Теперь нам просто нужно вызвать **PrintAllData** после инициализации UnnyNet. Вызовите этот метод после метода по выводу в консоль:
 
 ```
 Debug.Log("UnnyNet Initialized: " + responseData.Success);
 PrintAllData();
 ```
-        
-Launch the game and you should see the following logs in the console:
+
+После запуска игры вы должны увидеть в консоли следующие логи:
 
 ![Screenshot](../img/de_example/de_console_logs.jpg)
 
-### Write Craft Logic
+### Написание логики по крафту
 
-The next step is to write some logic to store the items you have and spend items to make a craft items. I'll provide the whole code listing, so you could investigate it. Keep in mind that this example was made super easy on purpose. For the real project you would definitely want to organize the code better. And don't forget about [SOLID principles](https://en.wikipedia.org/wiki/SOLID).
-Good luck with coding!
+Следующим шагом будет написание логики для хранения имеющихся у вас предметов и их использования для изготовления предметов. Мы предоставим полный листинг, чтобы вы могли его изучить. Имейте в виду, что этот пример был специально сделан очень простым. Для реального проекта вы определённо захотите лучше организовать код. И не забывайте о [принципах SOLID](https://en.wikipedia.org/wiki/SOLID).
 
 [DataEditorExample.cs](/code/DataEditorExample.cs) 
 
-### Offline Games
+### Оффлайн игры
 
-If your game is offline, you might assume that the game could be launched the first time without an access to the internet. In such situation you can't rely that the game balance will be delivered to the build.
+Если вы работаете над оффлайн игрой и считаете, что игра может быть запущена в первый раз без доступа к Интернету, то в такой ситуации нельзя рассчитывать, что баланс будет скачан игрой.
 
-1. Open editor window Tools->UnnyNet
-2. Click on **Download Data**
-3. All the latest game data from Editor will be downloaded and put into /Assets/UnnyNet/Resources
-4. If your game is launched without an internet access, it'll use the data from the resources
-5. Once internet is available the data will be automatically updated if necessary
+1. Откройте окно редактора Tools->UnnyNet.
+2. Нажмите **Download Data**.
+3. Все актуальные игровые данные из редактора будут загружены и помещены в /Assets/UnnyNet/Resources.
+4. Если ваша игра будет запущена без доступа в Интернет, она будет использовать эти данные из ресурсов.
+5. Как только Интернет станет доступен, данные будут автоматически обновляться при запуске игры.
 
-#### [Next: What's next](/data_editor/what_next)
+#### [Далее: что дальше](/data_editor/what_next)

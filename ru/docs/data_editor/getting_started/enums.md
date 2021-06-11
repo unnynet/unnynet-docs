@@ -1,11 +1,11 @@
-# Enumerated Types (enums)
+# Перечисления (enums)
 
-### Overview
+### Обзор
 
-[Enumerated types](https://en.wikipedia.org/wiki/Enumerated_type) are widely used in programming. When you have a limited list of possible values, it's often convenient to use **enum** instead of **int** or **string**.
+[Перечисляемый тип](https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D1%87%D0%B8%D1%81%D0%BB%D1%8F%D0%B5%D0%BC%D1%8B%D0%B9_%D1%82%D0%B8%D0%BF) широко используется в программировании. Когда у вас ограниченный список возможных значений, часто удобно использовать **enum** вместо **int** или **string**.
 
-##### For example:
-If you have a limited set of Colors to choose in your game, you might want to store the value as integer (1,2,3,4,...) to save memory. However you can define a new enum, which will make your values more readable.
+##### Например:
+Если у вас есть ограниченный набор цветов на выбор в вашей игре, вы можете сохранить значение как целое число (1,2,3,4, ...) для экономии памяти. Однако вы можете определить новое перечисление, которое сделает ваши значения более читабельными и удобными в использовании.
 
 ```
 public enum Color
@@ -18,30 +18,30 @@ public enum Color
 }
 ```
 
-Now you can use values, like **Color.Blue** in your code instead of **2**.
+Теперь вы можете обращаться к значениям как **Color.Blue** вместо просто использования константы равной **2**.
 
-### How to create enum
+### Как создать перечисление
 
-1.  Select **Enums** section in Data Editor
+1. Выберите **Enums** в левом меню в редакторе
 ![Screenshot](../../img/de_example/de_enums.jpg)
 
-2.  Click on **Create** button
+2. Нажмите **Create**
 ![Screenshot](../../img/de_example/de_enum_create.jpg)
 
-3.  Each Enum has several parameters
+3. Каждое перечисление имеет несколько параметров
     
     Name | Description
     -----|------------
-    **Name** | This name is used when you work with your enum from code.
-    **Display Name** | The name which will be displayed in the DE.
-    **Description** | Helps other team members to easily understand what this Enum is used for.
-    **Multi-selection** | defines if a parameter can contain multiple enum values. 
-    
-4.  Table of Values
+    **Name** | Это имя используется при работе в коде.
+    **Display Name** | Имя, отображаемое в редакторе
+    **Description** | Помогает другим членам команды понять, для чего используется это перечисление.
+    **Multi-selection** | определяет, может ли параметр содержать несколько значений.
 
-Each enum value must have a unique name and a unique value associated with the name. If you are using Multi-selection, all the values must be power of 2 or zero.
+4. Таблица значений
 
-5.  When you create and save your enum, you can choose type Enum for a parameter.
+    Каждое значение перечисления должно иметь уникальное имя и уникальное значение, связанное с именем. Если вы используете множественный выбор, все значения должны быть степенью 2 или равны нулю.
+
+5. После сохранения вы сможете выбрать это перечисление как тип параметра.
 ![Screenshot](../../img/de_example/de_enum_param.jpg)
 
-#### [Next: Deploy](/data_editor/deploy)
+#### [Далее: Публикация](/data_editor/deploy)

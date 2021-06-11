@@ -1,14 +1,16 @@
-# Assets
+# Ассеты
 
-Assets are all objects which you store in Addressables. If you are not using Addressables in your game you should ignore this page or better start using them.
+Ассеты — это объекты, которые вы храните как Addressables. Если вы не используете Addressables в своей игре, вам следует игнорировать эту страницу. А лучше уже начать их использовать.
 
-1. In Unity Open **UnnyNet->Tools** and click on **Synch Addressables**.
-2. The synchronization process starts.
-3. UnnyNet detects which addressables were changed after the last synchronization and uploads images for the new files only. It means that the first synchronization might take some time, while all subsequent will be shorter.
-4. After the process is done open **Assets** section in DE and you should see the list of all your Assets.
-![Screenshot](../../img/de_example/de_assets_list.jpg)
+1. В Unity откройте **UnnyNet->Tools** и нажмите **Synch Addressables**.
+2. Начнётся процесс синхронизации.
+3. UnnyNet определит, какие ассеты были изменены после последней синхронизации, и загрузит изображения только для новых/изменённых файлов. Это означает, что первая синхронизация может занять некоторое время, а все последующие будут быстрее.
+4. После завершения процесса откройте раздел **Assets** в DE, там вы должны увидеть список всех ваших ассетов.
 
-5. If you have any parameter of type **Asset**, you'll be able to pick it from the dropdown menu:
-![Screenshot](../../img/de_example/de_assets_example.jpg)
+    ![Screenshot](../../img/de_example/de_assets_list.jpg)
 
-6. In the generated code your parameter will have the type **UnnyAsset**. For now it has only one field **Name**, which is enough for a developer to load the addressable.
+5. Если у вас есть параметр типа **Asset**, вы сможете выбрать его из раскрывающегося меню:
+
+    ![Screenshot](../../img/de_example/de_assets_example.jpg)
+
+6. В сгенерированном коде ваш параметр будет иметь тип **UnnyAsset**. Пока в нём есть только одно поле **Имя**, которого разработчику достаточно для загрузки ассета. 

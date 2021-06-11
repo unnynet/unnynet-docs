@@ -1,10 +1,10 @@
-# Unity3D Integration
+# Интеграция с Unity3D
 
-For your convenience we've recorded the [video of the integration](https://youtu.be/91JYYb1KVIY)
+Для удобства мы записали [отдельное видео об интеграции](https://youtu.be/91JYYb1KVIY)
 
-1.  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
-2.  Import the UnnyNet plugin.
-3.  Prepare Game ID and Public Key to use in the code:
+1.  Скачайте последнюю версию из [Магазина ассетов](https://assetstore.unity.com/packages/slug/128920).
+2.  Импортируйте UnnyNet плагин.
+3.  Подготовьте Game ID и Public Key для использования в коде:
 
     ![Screenshot](../img/game_id.jpg)
 
@@ -19,12 +19,12 @@ UnnyNet.Main.Init(new UnnyNet.AppConfig {
 });
 ```
 
-### Further reading
+### Что дальше
 
-UnnyNet consists of several modules for your convenience.
+Для удобства UnnyNet разбит из нескольких модулей.
 
-1. [**Auth**](/basic/authorization) - authorizations
-2. [**Data Editor**](/data_editor/basic) - a place to work with Data Editor
-3. [**Storage**](/basic/storage) - save/load in-game data with the server
-4. [**Payments**](/basic/payments) - purchase In-App and get information about them
-5. **Localization** - (coming soon) a place to work with localizations
+1. [**Auth**](/basic/authorization) — различные способы авторизации.
+2. [**Data Editor**](/data_editor/basic) — место для работы Data Editor'ом.
+3. [**Storage**](/basic/storage) — обмен игровыми данными игрока с сервером.
+4. [**Payments**](/basic/payments) — работа с внутриигровыми покупками.
+5. **Localization** — (будет в будущем) возможность настроить локализацию игры.

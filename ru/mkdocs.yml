@@ -22,8 +22,8 @@ nav:
       - Платформы:
         - Unity3D: basic/integration_unity3d.md
       - Авторизация: basic/authorization.md
-      - Сейвы: basic/storage.md
-      - Платёжка: basic/payments.md
+      - Хранилище: basic/storage.md
+      - Платежи: basic/payments.md
     - Data Editor:
       - Базовая информация: data_editor/basic.md
       - С чего начать:
@@ -32,7 +32,7 @@ nav:
         - Параметры: data_editor/getting_started/parameters.md
         - Документы: data_editor/getting_started/documents.md
         - Перечисления: data_editor/getting_started/enums.md
-      - Deploy: data_editor/deploy.md
+      - Публикация: data_editor/deploy.md
       - Генерация кода: data_editor/code_generation.md
       - Дополнительная информация :
         - Окружения: data_editor/advanced/environment.md
@@ -66,7 +66,6 @@ markdown_extensions:
       permalink: True
   - markdown_fenced_code_tabs:
       single_block_as_tab: False
-
 plugins:
   - search
   - awesome-pages

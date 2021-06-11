@@ -1,10 +1,10 @@
-# Important terms:
+# Основные понятия:
 
-1.  [**Template**](/data_editor/getting_started/templates) describes the structure and behaviour of your game object (item, monster, construction,...). As a programmer you can think of it as a **Class**. Template has to have a unique name and a set of parameters.
-2.  [**Parameter**](/data_editor/getting_started/parameters) describes a part of a Document, storing some value. Each parameter has a name and a type. Type can be simple like string, int, float, bool or a reference to any other Template. As a programmer you can think of parameter as a **Field** or **Property** of the **Class**.
-3.  [**Document**](/data_editor/getting_started/documents) is a unique instance of a Template (Specific Item: Hunter's Bow, Gold Bar,...), which has it's own parameter values. Think of it as an **instance** of a **Class** as a programmer.
-4.  [**Component**](/data_editor/getting_started/documents) is a simple Template, which doesn't have it's own Documents and can exists only inside of another Document. 
-4.  [**Enums**](/data_editor/getting_started/enums) are enumerated types, which you can create and use in Data Editor.
+1.  [**Шаблон**](/data_editor/getting_started/templates) описывает структуру и поведение вашего игрового объекта (предмет, монстр, конструкция, ...). Как программист, вы можете думать об этом как о классе. Шаблон должен иметь уникальное имя и может содержать набор параметров.
+2.  [**Параметр**](/data_editor/getting_started/parameters) описывает часть документа с каким-то значением. У каждого параметра есть имя и тип. Тип может быть простым, например, string, int, float, bool или ссылкой на другой шаблон. Как программист, вы можете думать о параметре как о поле/свойстве класса.
+3.  [**Документ**](/data_editor/getting_started/documents) является уникальным экземпляром шаблона (конкретный предмет: охотничий лук, золотой слиток и т. д.), у которого есть собственные значения параметров. В терминах кода это экземпляры класса.
+4.  [**Компонент**](/data_editor/getting_started/documents) — простой шаблон, который не имеет собственных документов и может существовать только внутри другого документа.
+4.  [**Enum**](/data_editor/getting_started/enums) — перечисляемый тип, который вы можете создавать и использовать в редакторе.
 
 
-#### [Next: Templates](/data_editor/getting_started/templates)
+#### [Далее: шаблоны](/data_editor/getting_started/templates)

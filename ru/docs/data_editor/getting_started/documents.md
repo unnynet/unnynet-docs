@@ -1,17 +1,16 @@
-# Documents & Components
+# Документы и компоненты
 
 
-### Documents
+### Документы
 
-Document is a unique instance of a Template (Specific Item: Hunter's Bow, Gold Bar,...), which has it's own parameter values. Think of it as an **instance** of a **Class** as a programmer.
+Документ — это уникальный экземпляр шаблона (конкретный предмет: охотничий лук, золотой слиток и т. д.), у которого есть собственные значения параметров. Думайте об этом как об экземпляре класса.
 
-When you add a new Template (Not Component), a new section in the left navigation appears. If you select any of the Document section, you'll be able to add new Documents in there. Each document can have a unique values for all the parameters of it's Template.  
+Когда вы добавите новый шаблон (не являющимся компонентом), в левой панели навигации появится новый раздел. Если вы выберете любой из элементов раздела «Document», вы сможете добавлять туда новые документы.
 
+### Компоненты
 
-### Components
+Компонент — это простой шаблон, который не имеет собственных документов и может существовать только внутри другого документа.
 
-Component is a simple Template, which doesn't have it's own Documents and can exists only inside of another Document.
+Например, шаблон компонента Vector3 имеет параметры: x, y, z. Если у документа «Hero» есть параметр «position» типа Vector3, вы сможете редактировать значения x, y, z «position» прямо внутри документа «Hero».
 
-For example Vector3 component template has parameters: x, y, z. If a Document "Hero" has a Parameter "position" of type Vector3, you'll be able to edit x, y, z values of "position" right inside of "Hero" Document.  
-
-#### [Next: Enums](/data_editor/getting_started/enums)
+#### [Далее: перечисления](/data_editor/getting_started/enums)

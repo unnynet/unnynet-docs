@@ -1,8 +1,8 @@
-# Authorization
+# Авторизация
 
-The list of method for authentication will be updated and for some platform we'll try to automate this process.
+Список методов аутентификации будет обновляться по мере добавления.
 
-#### Email
+#### По почте
 
 ```csharp fct_label="Unity"
 UnnyNet.Auth.WithEmail(<email>, <password>, authResponse =>
@@ -13,7 +13,7 @@ UnnyNet.Auth.WithEmail(<email>, <password>, authResponse =>
 });
 ```
 
-#### Name and Password
+#### По имени и паролю
 
 ```csharp fct_label="Unity"
 UnnyNet.Auth.WithName(<username>, <password>, authResponse =>
@@ -24,7 +24,7 @@ UnnyNet.Auth.WithName(<username>, <password>, authResponse =>
 });
 ```
 
-#### As Guest using Device ID
+#### Как гость, используя Device ID
 
 ```csharp fct_label="Unity"
 UnnyNet.Auth.AsGuest(authResponse =>

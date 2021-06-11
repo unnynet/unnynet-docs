@@ -1,34 +1,34 @@
-# Parameters
+# Параметры
 
-**Parameter** describes a part of a Document, storing some value. Each parameter has a name and a type. Type can be simple like string, int, float, bool or a reference to any other Template. As a programmer you can think of parameter as a **Field** or **Property** of the **Class**.
+**Параметр** описывает часть документа, хранящую некоторое значение. У каждого параметра есть имя и тип. Тип может быть простым, например, string, int, float, bool или ссылкой на любой другой шаблон. Как программист, вы можете думать о параметре как о поле или свойстве класса.
 
-1.  After the creation of a template, you can add parameters to it.
+1.  После создания шаблона ему можно добавлять параметры.
 ![Screenshot](../../img/de_example/de_create_params.jpg)
 
-2. In the parameters window you can view/edit all existing parameters and add new one.
-    
-2.  Each Parameter has several fields:
+2. На странице параметров вы можете просмотреть/отредактировать все существующие параметры и добавить новые.
+
+2. У каждого параметры есть базовые аттрибуты:
 
     Name              | Description
     ------------------|------
-    **Name**          | This very name is used during Class generation. To keep everything in style we advise you to use [CamelCase](https://simple.wikipedia.org/wiki/CamelCase) naming.<br/><br/> For example: MainTag, ConstructionId, HeroType,...
-    **Display Name**  | This name will be displayed in the DE for your convenience.<br/><br/> For example: Main Tag, Construction Id, Hero Type,...    
-    **Description** | Helps other team members to easily understand what this Parameter is used for.
-    **Use In Display Name** | Means that this parameter will be displayed in search and references for the corresponding Document. Usually **Name** (if any) or any other unique string parameter is selected for this or any other, which will help you instantly understand what instance is that.
-    **Is required** | Marks this parameter as a must have value. This flag helps you to make sure you won't forget to add a required reference or value.
-    **Is unique** | It's used in case you want all of your Documents of this Template to have different values of this parameter.
-    **Default Value** | The value which will be assigned by default upon a new document is created.
-    **Type** | A Data type of the parameter. All types are below.
-        
+    **Name**          | Именно это имя используется при генерации класса. Чтобы все было в одном стиле, мы советуем вам использовать именование [CamelCase](https://ru.wikipedia.org/wiki/CamelCase). <br/> <br/> Например: MainTag, ConstructionId, HeroType, ...
+    **Display Name**  | Это имя будет отображаться в DE для вашего удобства. <br/> <br/> Например: Main Tag, Construction Id, Hero Type, ...
+    **Description** | Помогает другим членам команды легко понять, для чего используется этот параметр.
+    **Use In Display Name** | Означает, что этот параметр будет отображаться в поиске и ссылках для соответствующего документа. Обычно для этого выбирается поле **Name** (если есть) или любой другой уникальный строковый параметр, который поможет вам мгновенно понять, что это за экземпляр.
+    **Is required** | Отмечает параметр как обязательный. Этот флаг поможет убедиться, что вы не забудете добавить необходимую ссылку или значение.
+    **Is unique** | Используется в том случае, если вы хотите, чтобы значение параметры в ваших документах не могло совпадать.
+    **Default Value** | Значение, которое будет присвоено по умолчанию при создании нового документа.
+    **Type** | Тип параметра. Возможные варианты представлены ниже.
+
     Type | Description
     -----|------------
-    [Integer](https://en.wikipedia.org/wiki/Integer) | A Number that can be written without a fractional component. For ex: 1, 2, 999, -200
-    [Float](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) | A Number with a fractional component. For ex: 1.32, -0.7432
-    [Boolean](https://en.wikipedia.org/wiki/Boolean_data_type) | Logical value: true or false
-    [String](https://en.wikipedia.org/wiki/String_(computer_science)) | Any Text. For ex: "Hello World", "-+ ta-ta_!! 55"
-    [Enum](/data_editor/getting_started/enums) | Any Text. For ex: "Hello World", "-+ ta-ta_!! 55"    
-    [Document](/data_editor/getting_started/documents) | A reference to an existing document
-    List | An Array(list) of other type values
-    [Asset](/data_editor/getting_started/assets) | A reference to an existing Asset. It's usually a prefab, sprite or other Object, which is stored in Unity game as an Addressable.
+    [Integer](https://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BB%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE) | Целое число. Пример: 1, 2, 999, -200
+    [Float](https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%BE_%D1%81_%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B9_%D0%B7%D0%B0%D0%BF%D1%8F%D1%82%D0%BE%D0%B9) | Число с плавающей запятой. Пример: 1.32, -0.7432
+    [Boolean](https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%82%D0%B8%D0%BF) | Логический тип: true или  false
+    [String](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%B2%D1%8B%D0%B9_%D1%82%D0%B8%D0%BF) | Любой текст. Пример: "Hello World", "-+ ta-ta_!! 55"
+    [Enum](/data_editor/getting_started/enums) | Перечисление. Можно выбирать из заранее заданных значений.   
+    [Document](/data_editor/getting_started/documents) | Ссылка на существующий документ.
+    List | Массив(список) других значений
+    [Asset](/data_editor/getting_started/assets) | Ссылка на существующий ассет. Обычно это префаб, спрайт или другой объект, который хранится в Unity как Addressable.
 
-#### [Next: Documents & Components](/data_editor/getting_started/documents)
+#### [Далее: документы и компоненты](/data_editor/getting_started/documents)

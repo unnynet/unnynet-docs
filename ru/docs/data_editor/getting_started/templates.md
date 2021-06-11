@@ -1,18 +1,18 @@
-# Templates
+# Шаблоны
 
-**Template** describes the structure and behaviour of your game object (item, monster, construction,...). As a programmer you can think of it as a **Class**. Template has to have a unique name and a set of parameters.
+**Шаблон** описывает структуру и поведение вашего игрового объекта (предмет, монстр, конструкция, ...). Как программист, вы можете думать об этом как о классе. Шаблон должен иметь уникальное имя и может иметь набор параметров.
 
-1.  Open Templates section and click on the Create Button
-![Screenshot](../../img/de_example/de_create_template.jpg)
+1.  Откройте раздел «Templates» и нажмите кнопку «Create».
+    ![Screenshot](../../img/de_example/de_create_template.jpg)
     
-2.  Each Template has several parameters
+2.  У каждого шаблона есть набор параметров по умолчанию
     
     Name | Description
     -----|------------
-    **Name** | This very name is used for Class generation. To keep everything in style we advise you to use [CamelCase](https://simple.wikipedia.org/wiki/CamelCase) naming.<br/><br/> For example: ItemModel, GameConstruction, MonsterData,...
-    **Display Name** | The name which will be displayed in the DE. Usually it's the same as name, but words are separated.<br/><br/> For example: Item Model, Game Construction, Monster Data,...
-    **Description** | Helps other team members to easily understand what this Template is used for.
-    **Base Template** | It's used if your Template inherits from another one. (This feature is under development)
-    **Type** | Can be Document, Component or Singleton:<br/><br/>  *   **Component** Documents of this Template are always embedded into another Documents. For example Vector3 component template has parameters: x, y, z. If a Document "Hero" has a Parameter "position" of type Vector3, you'll be able to edit x, y, z values of "position" right inside of "Hero" Document.<br/><br/> *   **Singleton** Only one of such Documents will be available from the code. It's usually used for settings and configs.  
+    **Name** | Именно это имя используется при генерации классов. Чтобы всё было в одном стиле, советуем вам использовать именование [CamelCase](https://simple.wikipedia.org/wiki/CamelCase). <br/> <br/> Например: ItemModel, GameConstruction, MonsterData, ...
+    **Display Name** | Имя, которое будет отображаться в DE. Обычно это то же самое, что и имя, но с разделением слов. <br/> <br/> Например: Модель предмета, Конструкция игры, Данные о монстрах, ...
+    **Description** | Помогает другим членам команды понять, для чего используется этот шаблон.
+    **Base Template** | Используется, если необходимо наследовать от другого шаблона.
+    **Type** | Может быть Document, Component или Singleton: <br/> <br/> * **Component** Документы этого шаблона всегда встраиваются в другие документы. Например, шаблон компонента Vector3 имеет параметры: x, y, z. Если Документ «Герой» имеет параметр «position» типа Vector3, вы сможете редактировать значения x, y, z для «position» прямо внутри документа «Hero». <br/> <br/> * **Singleton** Из кода будет доступен только один документ такого шаблона. Обычно используется для настроек и конфигов.
 
-#### [Next: Parameters](/data_editor/getting_started/parameters)
+#### [Далее: параметры](/data_editor/getting_started/parameters)

@@ -1,28 +1,29 @@
-# Localization
+# Локализация
 
-We are going to let you import/export and work with all of your localization right in the Data Editor. This feature is under development right now, but we have a temporary substitution, which you can use and later migrate without any problems. 
+У нас будет возможность импортировать/экспортировать и работать со всей вашей локализацией прямо в редакторе данных. Эта функция находится в стадии разработки. Сейчас для этого функционала есть временная замена, которую вы можете использовать, а затем перенести без каких-либо проблем.
 
-When you create a new parameter, instead of selecting type **string**, make it **Localized String**. Everytime, when you try to access this parameter in the code, it'll instantly give you already localized value.
+Когда вы создаёте новый параметр, вместо выбора типа **String** укажите **Localized String**. При попытке получить доступ к этому параметру в коде, он мгновенно вернёт вам уже локализованное значение.
 
-Let's say you have a pair "Key": "LocalizedValue":
-1. You create a new parameter with type of Localized String.
-2. In the document you put the value **Key**.
-3. When you access your parameter from the code, you will be getting **LocalizedValue** instead of **Key**.
+Допустим, у вас есть пара "Key": "LocalizedValue":
 
-You are probably using some other solution to store all the keys and values for localization. So in order to make everything work, you need to add those likes of code:
+1. Вы создаёте новый параметр с типом Localized String.
+2. В документе вы указываете значение **Key**.
+3. При доступе к параметру из кода вы получите **LocalizedValue** вместо **Key**.
+
+Вероятно, вы используете какое-то другое решение для хранения всех ключей и значений для локализации. Чтобы все работало, вам нужно добавить такой код:
 
 ```
 UnnyNet.Localization.Manager.onLocalizationRequested = key =>
 {
-    return <Value associated with current key for the selected localization>
+    return <Значение, связанное с текущим ключом для выбранной локализации>
 };
 ```
 
-Once we ready to store all keys and values in our system, you'll just need to remove that code and everything will be working automatically.
+Как только мы добавим возможность хранения ключей в нашей системе, вам просто нужно будет удалить этот код, и всё заработает автоматически.
 
 ### UI
 
-If you are using a lot of UnityEngine.UI.Text with static text, you'll find very helpful our Component: **LocalizationText.cs**.
-Just add it to your GameObject and set parameter **Localization Key** value as your **Key**. It'll automatically put Localized value as Text when you launch the game.
+Если вы часто используете UnityEngine.UI.Text со статическим текстом, вам будет очень полезен наш компонент: **LocalizationText.cs**.
+Просто добавьте его к GameObject'у и установите значение параметра **Localization Key** в качестве **Key**. Когда вы запускаете игру, значение Localized автоматически подставится как Text.
 
-We've the same Component for Text Mesh Pro. You can download it from [here](/code/LocalizationTextMeshPro.cs)
+У нас есть такой же компонент для Text Mesh Pro. Вы можете скачать его [отсюда](/code/LocalizationTextMeshPro.cs)

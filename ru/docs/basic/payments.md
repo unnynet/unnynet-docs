@@ -1,23 +1,19 @@
-# Payments
+# Платежи
 
-1.  Open **Platforms** section and add all the information about the Platforms, where the game is available. It's required to validate the purchases.
-2.  Open **Products** section and fill all the information about the Products your game has. In most cases you just need the main table, however if you have different ProductId, Name or Price for different platforms, you might want to use **override** section for each of the platforms.
-3.  Get List Of Products:
+1.  Откройте раздел **Platforms** и добавьте всю информацию о платформах, на которых доступна игра. Это необходимо для механизма подтверждения покупок.
+2.  Откройте раздел **Products** и заполните всю информацию о продуктах, которые присутствуют в вашей игре. В большинстве случаев вам просто нужна основная таблица. Но, у товаров отличаются ProductId или Nameдля разных платформ, вы можете в разделе **override** переопределить данные продуктов для необходимых платформ.
+3.  Получить список продуктов:
 
-```csharp fct_label="Unity"
-UnnyNet.Payments.GetProducts(productsResponse =>
-{
-    Debug.Log("Products Received " + productsResponse.Success);
-    if (productsResponse.Success)
-        Debug.Log("Products Count: " + productsResponse.Products.Length);
-});
-``` 
+        UnnyNet.Payments.GetProducts(productsResponse =>
+        {
+            Debug.Log("Products Received " + productsResponse.Success);
+            if (productsResponse.Success)
+                Debug.Log("Products Count: " + productsResponse.Products.Length);
+        });
+    
+4.  Сделать покупку:
 
-4.  Get List Of Products:
-
-```csharp fct_label="Unity"
-UnnyNet.Payments.PurchaseProduct(<product_id>, doneCallback =>
-{
-    Debug.Log("Purchase was made " + doneCallback.Success);
-});
-``` 
+        UnnyNet.Payments.PurchaseProduct(<product_id>, doneCallback =>
+        {
+            Debug.Log("Purchase was made " + doneCallback.Success);
+        });
