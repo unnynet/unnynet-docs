@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 const supportedLanguages = ['ru', 'en'];
 const localizations      = {
-    ru: 'Русский',
-    en: 'English'
+    ru: '🇷🇺 Русский',
+    en: '🇺🇸 English'
 };
 
 function onLanguageChanged(e) {
