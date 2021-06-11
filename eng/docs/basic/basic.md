@@ -1,6 +1,6 @@
 # How to start
 
-1. Create an account at [UnnyNet](https://admin.unnynet.com/)
+1. Create an account at [Balancy](https://admin.balancy.dev/)
 2. Create a new game
 4. Select your platform and follow the instructions:
 

@@ -1,8 +1,8 @@
-# Welcome to UnnyNet
+# Welcome to Balancy
 
 Page | Description
 -----|------------
-2|   Welcome to UnnyNet
+2|   Welcome to Balancy
 4|   How to start
 5|   Unity3D
 7|   Authorization

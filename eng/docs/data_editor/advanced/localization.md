@@ -13,7 +13,7 @@ Let's say you have a pair "Key": "LocalizedValue":
 You are probably using some other solution to store all the keys and values for localization. So in order to make everything work, you need to add those likes of code:
 
 ```
-UnnyNet.Localization.Manager.onLocalizationRequested = key =>
+Balancy.Localization.Manager.onLocalizationRequested = key =>
 {
     return <Value associated with current key for the selected localization>
 };

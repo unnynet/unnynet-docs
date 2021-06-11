@@ -1,8 +1,8 @@
 # Pricing
 
-UnnyNet is a SaaS with monthly payments. We are tying to keep our pricing as low as possible without any quality loss. Currently we accept PayPal payments, but we can discuss other options if necessary.
+Balancy is a SaaS with monthly payments. We are tying to keep our pricing as low as possible without any quality loss. Currently we accept PayPal payments, but we can discuss other options if necessary.
 
-We offer 3 plans for you to choose from: Indie, Startup and Publisher. When you create an account the default plan is **Startup**. If you are eligible for Indie plan, please reach us our by [email](mailto:partners@unnynet.com) and send us some information about you to prove that. If your game surpass 1MM MAU, you'll be automatically switched to the Publisher plan. If you decide you need Publisher plan earlier, you can also reach us by email.
+We offer 3 plans for you to choose from: Indie, Startup and Publisher. When you create an account the default plan is **Startup**. If you are eligible for Indie plan, please reach us our by [email](mailto:contact@balancy.co) and send us some information about you to prove that. If your game surpass 1MM MAU, you'll be automatically switched to the Publisher plan. If you decide you need Publisher plan earlier, you can also reach us by email.
 
 We charge per Game Title and each game have it's own payment deadline, depending on it's creation date.
 

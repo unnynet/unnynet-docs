@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnnyNet.Models;
+using Balancy.Models;
 
 public class DataEditorExample : MonoBehaviour
 {
@@ -11,31 +11,31 @@ public class DataEditorExample : MonoBehaviour
     
     private void Start()
     {
-        UnnyNet.Main.Init(new UnnyNet.AppConfig
+        Balancy.Main.Init(new Balancy.AppConfig
         {
             ApiGameId = YOUR_GAME_ID,
             PublicKey = YOUR_PUBLIC_KEY,
             OnReadyCallback = responseData =>
             {
-                Debug.Log("UnnyNet Initialized: " + responseData.Success);
+                Debug.Log("Balancy Initialized: " + responseData.Success);
                 PrintAllData();
                 InitializeStorage();
             },
-            Environment = UnnyNet.Constants.Environment.Development
+            Environment = Balancy.Constants.Environment.Development
         });
     }
 
     private void InitializeStorage()
     {
         _itemsStorage = new Dictionary<Item, int>();
-        var items = UnnyNet.DataEditor.Items;
+        var items = Balancy.DataEditor.Items;
         foreach (var item in items)
             _itemsStorage.Add(item, 0);
     }
 
     private void OnGUI()
     {
-        if (!UnnyNet.Storage.Initialized)
+        if (!Balancy.Storage.Initialized)
             return;
 
         RenderItems();
@@ -50,7 +50,7 @@ public class DataEditorExample : MonoBehaviour
         rect.y += rect.height;
         GUI.color = Color.white;
         
-        var items = UnnyNet.DataEditor.Items;
+        var items = Balancy.DataEditor.Items;
         foreach (var item in items)
         {
             int itemsCount = _itemsStorage[item];
@@ -72,7 +72,7 @@ public class DataEditorExample : MonoBehaviour
         rect.y += rect.height;
         GUI.color = Color.white;
         
-        var recipes = UnnyNet.DataEditor.Recipes;
+        var recipes = Balancy.DataEditor.Recipes;
         foreach (var recipe in recipes)
         {
             GUI.Label(rect, recipe.Item.Name);
@@ -122,7 +122,7 @@ public class DataEditorExample : MonoBehaviour
 
     private void PrintItems()
     {
-        var items = UnnyNet.DataEditor.Items;
+        var items = Balancy.DataEditor.Items;
         Debug.LogWarning("Items Count = " + items.Count);
         foreach (var item in items)
             Debug.Log("ITEM: " + item.Name + " : " + item.Description);
@@ -130,7 +130,7 @@ public class DataEditorExample : MonoBehaviour
     
     private void PrintRecipes()
     {
-        var recipes = UnnyNet.DataEditor.Recipes;
+        var recipes = Balancy.DataEditor.Recipes;
         Debug.LogWarning("Recipes Count = " + recipes.Count);
         foreach (var recipe in recipes)
             Debug.Log("RECIPE to create item " + recipe.Item.Name + " requires " + recipe.Ingredients.Length + " other items");

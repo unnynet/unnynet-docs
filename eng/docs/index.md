@@ -1,6 +1,6 @@
-# Welcome to UnnyNet
+# Welcome to Balancy
 
-UnnyNet is an essential extension for any game or app. Instead of using ancient solutions, you can spend several minutes learning what UnnyNet does and how it works. Which in results will save you weeks and months of time in the future.  
+Balancy is an essential extension for any game or app. Instead of using ancient solutions, you can spend several minutes learning what Balancy does and how it works. Which in results will save you weeks and months of time in the future.  
 
 We've spent more than a decade in Game Dev Industry, creating tons of different games, so we know the problem you are facing right now. Our main goal is to prevent game developers from reinventing the wheel, developing the same technology over and over with each new game. That's why our solution is super easy to use and it does most of the work on your behalf.
 
@@ -21,11 +21,11 @@ Video Tutorial
 
 ###[Out-of-the-box](/basic/basic)
 
-Integration of UnnyNet is extremely easy and takes not longer than 10 minutes. Instead of wasting your time on implementing features which any other game already has, focus your energy on creating the best game!
+Integration of Balancy is extremely easy and takes not longer than 10 minutes. Instead of wasting your time on implementing features which any other game already has, focus your energy on creating the best game!
 
 ###[Data Editor](/data_editor/basic)
 
-Create and edit your game data in the most convenient way. UnnyNet will automatically deliver that data to your game.
+Create and edit your game data in the most convenient way. Balancy will automatically deliver that data to your game.
 
 ###[Cloud Storage](/basic/storage)
 

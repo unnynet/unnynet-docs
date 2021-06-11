@@ -15,7 +15,7 @@ Before you deploy the new data, you can set a minimum version for your game and 
 If your game version (Unity->Player Settings->Version) is lower than any of 2 versions, the new data will not be downloaded.
 
 ### Min version to Launch Game
-This version usually used to let your players know about a new game update available. It's up to the developer to implement all the logic, UnnyNet will only return an error in Init Method. This is how you can check if the game version is outdated (after you init UnnyNet): 
+This version usually used to let your players know about a new game update available. It's up to the developer to implement all the logic, Balancy will only return an error in Init Method. This is how you can check if the game version is outdated (after you init Balancy): 
 
 ```csharp fct_label="Unity"
 private bool IsVersionOutdated()

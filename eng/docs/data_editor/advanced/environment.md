@@ -17,7 +17,7 @@ We provide each game with 3 Environments: Development, Stage and Production. It'
 
 ### Changing of the environment
 
-You should try to avoid changing the environment in DE. In the best case scenario you just need to work in the **Development** and then transfer the data to other environments. UnnyNet even doesn't support transferring the environment's data in the opposite direction.
+You should try to avoid changing the environment in DE. In the best case scenario you just need to work in the **Development** and then transfer the data to other environments. Balancy even doesn't support transferring the environment's data in the opposite direction.
 
 However there are situation when you might need to change something in the **Production** environment. 
 
@@ -43,26 +43,26 @@ It means that if you want to send all the data from the **Dev** to **Prod**, you
 We usually use [Define Symbols](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) to deal with different environments:
 
 ```csharp fct_label="Unity"
-UnnyNet.Main.Init(new AppConfig
+Balancy.Main.Init(new AppConfig
 {
     ApiGameId = <API_GAME_ID>,
     PublicKey = <PUBLIC_KEY>,
     OnReadyCallback = response =>
     {
         if (!response.Success)
-            Debug.LogError("Couldn't initialize UnnyNet");
+            Debug.LogError("Couldn't initialize Balancy");
     },
     Environment = GetEnvironment()
 });
             
-public static UnnyNet.Constants.Environment GetEnvironment()
+public static Balancy.Constants.Environment GetEnvironment()
 {
 #if SERVER_PROD
-    return UnnyNet.Constants.Environment.Production;
+    return Balancy.Constants.Environment.Production;
 #elif SERVER_STAGE
-    return UnnyNet.Constants.Environment.Stage;
+    return Balancy.Constants.Environment.Stage;
 #else
-    return UnnyNet.Constants.Environment.Development;
+    return Balancy.Constants.Environment.Development;
 #endif
 }
 ```

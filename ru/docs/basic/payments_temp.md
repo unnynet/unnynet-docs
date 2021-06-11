@@ -1,8 +1,8 @@
 # Payments
 
-UnnyNet offers a one line purchase system for all the platforms. The list of available platforms is available in your Admin Panel and it'll be updated.
+Balancy offers a one line purchase system for all the platforms. The list of available platforms is available in your Admin Panel and it'll be updated.
 
-#### Add purchases information to UnnyNet platform:
+#### Add purchases information to Balancy platform:
 
 //TODO
  
@@ -14,13 +14,13 @@ https://learn.unity.com/tutorial/unity-iap#5c7f8528edbc2a002053b46e
 #### Make Purchase
 
 ```csharp fct_label="Unity"
-UnnyNet.Payments.PurchaseProduct(<unnynet_purchase_id>, doneCallback);
+Balancy.Payments.PurchaseProduct(<balancy_purchase_id>, doneCallback);
 ```
 
 #### Get list of available Purchases
 
 ```csharp fct_label="Unity"
-UnnyNet.Payments.GetProducts(doneCallback);
+Balancy.Payments.GetProducts(doneCallback);
 ```
 
 This can be used if you want to display the list of available purchases with the prices. But we would recommend to create your own StoreItems system with [Data Editor](/data_editor/basic). It'll be more flexible. 
@@ -28,7 +28,7 @@ This can be used if you want to display the list of available purchases with the
 #### Get list of already purchased products:
 
 ```csharp fct_label="Unity"
-UnnyNet.Payments.GetPurchases(UnnyNet.Constants.PurchaseStatusFilter.Claimed, doneCallback);
+Balancy.Payments.GetPurchases(Balancy.Constants.PurchaseStatusFilter.Claimed, doneCallback);
 ```
 
 #### Restore Purchases
@@ -36,7 +36,7 @@ UnnyNet.Payments.GetPurchases(UnnyNet.Constants.PurchaseStatusFilter.Claimed, do
 Sometimes something can go wrong, for example a player had purchased a product, but the game crashed and he didn't get the item. We have prepared a method which might help in such situations.
 
 ```csharp fct_label="Unity"
-UnnyNet.Payments.RestorePurchases(doneCallback);
+Balancy.Payments.RestorePurchases(doneCallback);
 ```
 
 We recommend to call it every time a player opens your Store Window.

@@ -1,6 +1,6 @@
 # Requests, Response Data and Errors
 
-All UnnyNet methods are asynchronous with a callback as an argument, which is invoked once the method is complete. The parameter of the callback is inherited from **ResponseData**.    
+All Balancy methods are asynchronous with a callback as an argument, which is invoked once the method is complete. The parameter of the callback is inherited from **ResponseData**.    
 
  
 ```csharp fct_label="Unity"

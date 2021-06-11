@@ -17,7 +17,7 @@
 
 ### Смена окружения
 
-Вам следует избегать изменения окружения в DE. В лучшем случае вам просто нужно поработать в **Development**, а затем перенести данные в другие окружения. UnnyNet даже не поддерживает передачу данных среды в обратном направлении.
+Вам следует избегать изменения окружения в DE. В лучшем случае вам просто нужно поработать в **Development**, а затем перенести данные в другие окружения. Balancy даже не поддерживает передачу данных среды в обратном направлении.
 
 Однако бывают ситуации, когда вам может потребоваться что-то изменить сразу в **Production**.
 
@@ -42,26 +42,26 @@
 Мы обычно используем [Define Symbols](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) для указания окружения:
 
 ```csharp fct_label="Unity"
-UnnyNet.Main.Init(new AppConfig
+Balancy.Main.Init(new AppConfig
 {
     ApiGameId = <API_GAME_ID>,
     PublicKey = <PUBLIC_KEY>,
     OnReadyCallback = response =>
     {
         if (!response.Success)
-            Debug.LogError("Couldn't initialize UnnyNet");
+            Debug.LogError("Couldn't initialize Balancy");
     },
     Environment = GetEnvironment()
 });
             
-public static UnnyNet.Constants.Environment GetEnvironment()
+public static Balancy.Constants.Environment GetEnvironment()
 {
 #if SERVER_PROD
-    return UnnyNet.Constants.Environment.Production;
+    return Balancy.Constants.Environment.Production;
 #elif SERVER_STAGE
-    return UnnyNet.Constants.Environment.Stage;
+    return Balancy.Constants.Environment.Stage;
 #else
-    return UnnyNet.Constants.Environment.Development;
+    return Balancy.Constants.Environment.Development;
 #endif
 }
 ```

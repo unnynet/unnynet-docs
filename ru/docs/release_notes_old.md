@@ -1,6 +1,6 @@
 # Release Notes
 
-Most of the features of UnnyNet will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of UnnyNet installed.
+Most of the features of Balancy will become available despite the version of plugin, however some features require additional integration, so it's important to have the latest version of Balancy installed.
 
 ### v4.0 - June 30, 2020
 * Data Editor
@@ -14,7 +14,7 @@ Most of the features of UnnyNet will become available despite the version of plu
 
 ### v3.1 - March 24, 2020
 * xCode min version was decreased to 10.1;
-* Customization of the close icon in UnnyNet windows;
+* Customization of the close icon in Balancy windows;
 * View list of banned players and other roles.
 
 
@@ -29,60 +29,60 @@ All methods were also split into different modules:
 
 **MainController**
 
-* UnnyNetBase.InitializeUnnyNet -> MainController.Init
-* UnnyNetBase.OpenUnnyNet -> MainController.Open
-* UnnyNetBase.CloseUnnyNet -> MainController.Close
-* UnnyNet.OpenLeaderboards -> MainController.OpenLeaderboards
-* UnnyNet.OpenAchievements -> MainController.OpenAchievements
-* UnnyNet.OpenFriends -> MainController.OpenFriends
-* UnnyNet.OpenChannel -> MainController.OpenChannel
-* UnnyNet.OpenGuilds -> MainController.OpenGuilds
-* UnnyNet.OpenMyGuild -> MainController.OpenMyGuild
-* UnnyNetBase.SetFrame -> MainController.SetFrame
-* UnnyNetBase.GetPlayerPublicInfo -> MainController.GetPlayerPublicInfo
+* BalancyBase.InitializeBalancy -> MainController.Init
+* BalancyBase.OpenBalancy -> MainController.Open
+* BalancyBase.CloseBalancy -> MainController.Close
+* Balancy.OpenLeaderboards -> MainController.OpenLeaderboards
+* Balancy.OpenAchievements -> MainController.OpenAchievements
+* Balancy.OpenFriends -> MainController.OpenFriends
+* Balancy.OpenChannel -> MainController.OpenChannel
+* Balancy.OpenGuilds -> MainController.OpenGuilds
+* Balancy.OpenMyGuild -> MainController.OpenMyGuild
+* BalancyBase.SetFrame -> MainController.SetFrame
+* BalancyBase.GetPlayerPublicInfo -> MainController.GetPlayerPublicInfo
 
 
 **Auth**
 
-* UnnyNet.AuthorizeAsGuest -> Auth.AuthorizeAsGuest
-* UnnyNet.AuthorizeWithCustomId -> Auth.AuthorizeWithCustomId
-* UnnyNet.AuthorizeWithCredentials -> Auth.AuthorizeWithCredentials
-* UnnyNet.ForceLogout -> Auth.ForceLogout
+* Balancy.AuthorizeAsGuest -> Auth.AuthorizeAsGuest
+* Balancy.AuthorizeWithCustomId -> Auth.AuthorizeWithCustomId
+* Balancy.AuthorizeWithCredentials -> Auth.AuthorizeWithCredentials
+* Balancy.ForceLogout -> Auth.ForceLogout
 
 
 **Social**
 
-* UnnyNet.ReportLeaderboards -> Social.ReportLeaderboardScore
-* UnnyNet.ReportAchievements -> Social.ReportAchievementProgress
-* UnnyNet.GetLeaderboardScores -> Social.GetLeaderboardScores
-* UnnyNet.GetAchievementsInfo -> Social.GetAchievementsInfo
-* UnnyNet.GetGuildInfo -> Social.GetGuildInfo
+* Balancy.ReportLeaderboards -> Social.ReportLeaderboardScore
+* Balancy.ReportAchievements -> Social.ReportAchievementProgress
+* Balancy.GetLeaderboardScores -> Social.GetLeaderboardScores
+* Balancy.GetAchievementsInfo -> Social.GetAchievementsInfo
+* Balancy.GetGuildInfo -> Social.GetGuildInfo
 
 
 **Chat**
 
-* UnnyNet.SendMessageToChannel -> Chat.SendMessageToChannel
-* UnnyNet.JoinPrivateChannel -> Chat.JoinPrivateChannel
-* UnnyNet.LeaveAllPrivateChannels -> Chat.LeaveAllPrivateChannels
+* Balancy.SendMessageToChannel -> Chat.SendMessageToChannel
+* Balancy.JoinPrivateChannel -> Chat.JoinPrivateChannel
+* Balancy.LeaveAllPrivateChannels -> Chat.LeaveAllPrivateChannels
 
 
 **Events**
 
-* UnnyNetBase.m_OnUnnyNetClosed -> Events.OnUnnyNetClosed
-* UnnyNetBase.m_OnAchievementCompleted -> Events.OnAchievementCompleted
-* UnnyNetBase.m_OnNewMessageReceived -> Events.OnNewMessageReceived
-* UnnyNetBase.m_OnPopupOpened -> Events.OnPopupOpened
-* UnnyNetBase.m_OnGameLoginRequest -> Events.OnGameLoginRequest
-* UnnyNetBase.m_OnPlayerAuthorized -> Events.OnPlayerAuthorized
-* UnnyNetBase.m_OnPlayerLoggedOut -> Events.OnPlayerLoggedOut
-* UnnyNetBase.m_OnPlayerNameChanged -> Events.OnPlayerNameChanged
-* UnnyNetBase.m_OnPlayerAvatarChanged -> Events.OnPlayerAvatarChanged 
+* BalancyBase.m_OnBalancyClosed -> Events.OnBalancyClosed
+* BalancyBase.m_OnAchievementCompleted -> Events.OnAchievementCompleted
+* BalancyBase.m_OnNewMessageReceived -> Events.OnNewMessageReceived
+* BalancyBase.m_OnPopupOpened -> Events.OnPopupOpened
+* BalancyBase.m_OnGameLoginRequest -> Events.OnGameLoginRequest
+* BalancyBase.m_OnPlayerAuthorized -> Events.OnPlayerAuthorized
+* BalancyBase.m_OnPlayerLoggedOut -> Events.OnPlayerLoggedOut
+* BalancyBase.m_OnPlayerNameChanged -> Events.OnPlayerNameChanged
+* BalancyBase.m_OnPlayerAvatarChanged -> Events.OnPlayerAvatarChanged 
 
 
 ### v2.12 - January 17, 2020
 * New feature: [Multiple Level Achievements](/advanced/achievements)
 * Improvements in Theme Management
-* Upload your own icons for UnnyNet UI features 
+* Upload your own icons for Balancy UI features 
 * Many small fixes
 
 ### v2.11 - December 31, 2019
@@ -98,7 +98,7 @@ All methods were also split into different modules:
 ### v2.9 - October 28, 2019
 * Unpublished achievements are not displayed for user and can't be reported from the game
 * You can now remove our Exit Button to use your own logic
-* Leaderboards and Achievements can now be reported in offline and once UnnyNet connects to the server, it'll automatically synch them
+* Leaderboards and Achievements can now be reported in offline and once Balancy connects to the server, it'll automatically synch them
 * You can't report scores for the same leaderboard more often than once per 10 seconds
 * You can send to leaderboards any custom string (including emoji), which will be displayed in our UI
 
@@ -129,7 +129,7 @@ All methods were also split into different modules:
 * Optimization for chat channels
 
 ### v2.3 - August 01, 2019
-* New method CloseUnnyNet window
+* New method CloseBalancy window
 * Messages format: make text bold, italic, start new lines or post links
 * Now you can open player's profile from his invitation to friends
 
@@ -151,12 +151,12 @@ All methods were also split into different modules:
 * New API Methods:
     1.  ForceLogOut - used when you game supports several accounts for players to switch
     2.  GetGuildInfo - returns information about player's guild 
-* Nice animations to show UnnyNet window: 
+* Nice animations to show Balancy window: 
     1.  Fade
     2.  Move from side
 
 ### v1.9 - February 13, 2019
-* Partnership with PlayMaker. UnnyNet features are available in visual scripting now.
+* Partnership with PlayMaker. Balancy features are available in visual scripting now.
     
 ### v1.8 - February 7, 2019
 * Guilds
@@ -168,7 +168,7 @@ All methods were also split into different modules:
 * Performance improvements
 * 'Close button' is now available from everywhere
 * 'No Connection' window was added
-* Developers can open different UnnyNet windows from the game: leaderboards, friends, specific channel
+* Developers can open different Balancy windows from the game: leaderboards, friends, specific channel
 * Players now can view other players profile's and see who is online
     
 ### v1.5 - November 27, 2018

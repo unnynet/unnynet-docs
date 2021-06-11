@@ -1,6 +1,6 @@
 # Storage
 
-Allows you to Save and Load any data on UnnyNet servers. Make sure to authorize the player (at least as a guest) before using the Storage, because all records are connected to specific players.
+Allows you to Save and Load any data on Balancy servers. Make sure to authorize the player (at least as a guest) before using the Storage, because all records are connected to specific players.
 
 
 ## General Information
@@ -19,7 +19,7 @@ Both Collection and Key are string values. Just make sure you are loading from t
 You might have a collection 'Player' with many keys: 'Inventory', 'Spells', 'Stats', etc.. When one of the data changes, you just need to update only a small portion, which will be stored in one key. But when you start a game you can load the whole profile with all the keys
 
 #### Versions
-Another worth mentioning topic is **versions**. UnnyNet handle them automatically, but it would be better for you to understand how it works. 
+Another worth mentioning topic is **versions**. Balancy handle them automatically, but it would be better for you to understand how it works. 
 Each record in database has a version number, which increases every time you change the data. It's used to prevent using an out-dated data. 
 
 ###### For example 
@@ -60,7 +60,7 @@ In the example above **IntValue** and **StringValue** will be saved and loaded, 
 Example to save a string:
 
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse =>
+Balancy.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse =>
 {
     Debug.Log("String was saved result: " + saveResponse.Success);
 });
@@ -76,7 +76,7 @@ var saveExample = new SaveExample
     IgnoredValue = 3
 };
 
-UnnyNet.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
+Balancy.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
 {
     Debug.Log("Object was saved result: " + saveResponse.Success);
 });
@@ -87,7 +87,7 @@ UnnyNet.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
 Example to load a saved string:
 
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
+Balancy.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
 {
     Debug.Log("String was loaded result: " + loadResponse.Success);
     if (loadResponse.Success)
@@ -98,7 +98,7 @@ UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
 Example to load a saved object:
 
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
+Balancy.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
 {
     Debug.Log("Object was loaded result: " + loadResponse.Success);
     if (loadResponse.Success)

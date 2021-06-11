@@ -4,7 +4,7 @@
 2.  Откройте раздел **Products** и заполните всю информацию о продуктах, которые присутствуют в вашей игре. В большинстве случаев вам просто нужна основная таблица. Но, у товаров отличаются ProductId или Nameдля разных платформ, вы можете в разделе **override** переопределить данные продуктов для необходимых платформ.
 3.  Получить список продуктов:
 
-        UnnyNet.Payments.GetProducts(productsResponse =>
+        Balancy.Payments.GetProducts(productsResponse =>
         {
             Debug.Log("Products Received " + productsResponse.Success);
             if (productsResponse.Success)
@@ -13,7 +13,7 @@
     
 4.  Сделать покупку:
 
-        UnnyNet.Payments.PurchaseProduct(<product_id>, doneCallback =>
+        Balancy.Payments.PurchaseProduct(<product_id>, doneCallback =>
         {
             Debug.Log("Purchase was made " + doneCallback.Success);
         });

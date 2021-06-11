@@ -1,6 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnnyNet;
+using Balancy;
 
 [RequireComponent(typeof(TMP_Text))]
 public class LocalizationTextMeshPro : LocalizationUI

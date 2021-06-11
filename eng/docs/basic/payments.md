@@ -4,7 +4,7 @@
 2.  Open **Products** section and fill all the information about the Products your game has. In most cases you just need the main table, however if you have different ProductId, Name or Price for different platforms, you might want to use **override** section for each of the platforms.
 3.  Get List Of Products:
 
-        UnnyNet.Payments.GetProducts(productsResponse =>
+        Balancy.Payments.GetProducts(productsResponse =>
         {
             Debug.Log("Products Received " + productsResponse.Success);
             if (productsResponse.Success)
@@ -13,7 +13,7 @@
 
 4. Make purchase:
 
-        UnnyNet.Payments.PurchaseProduct(<product_id>, doneCallback =>
+        Balancy.Payments.PurchaseProduct(<product_id>, doneCallback =>
         {
             Debug.Log("Purchase was made " + doneCallback.Success);
         });

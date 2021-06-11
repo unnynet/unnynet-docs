@@ -1,6 +1,6 @@
 # Хранилище
 
-Позволяет сохранять и загружать любые данные на сервера UnnyNet. Обязательно авторизуйте игрока (хотя бы как гостя) перед использованием, т. к. все записи связаны с определёнными игроками.
+Позволяет сохранять и загружать любые данные на сервера Balancy. Обязательно авторизуйте игрока (хотя бы как гостя) перед использованием, т. к. все записи связаны с определёнными игроками.
 
 ## Основная информация
 
@@ -18,7 +18,7 @@
 У вас может быть коллекция «Игрок» со ключами: «Инвентарь», «Заклинания», «Статистика» и т. д. При изменении данных вам нужно обновить только небольшую часть, которая будет храниться под одним ключом. Но когда вы запускаете игру, вы можете загрузить весь профиль со всеми ключами.
 
 #### Версии
-Ещё одна важная особенность — **версии**. UnnyNet обрабатывает их автоматически, но лучше понять, как этот механизм работает под капотом.
+Ещё одна важная особенность — **версии**. Balancy обрабатывает их автоматически, но лучше понять, как этот механизм работает под капотом.
 Каждая запись в базе данных имеет свою версию, которая увеличивается при каждом изменении данных. Механизм необходим для предотвращения использования устаревших данных.
 
 ###### Пример 
@@ -59,7 +59,7 @@ private class SaveExample
 Пример с сохранением строки:
 
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse =>
+Balancy.Storage.Save("MyCollection1", "StringKey", "Hello World!", saveResponse =>
 {
     Debug.Log("String was saved result: " + saveResponse.Success);
 });
@@ -75,7 +75,7 @@ var saveExample = new SaveExample
     IgnoredValue = 3
 };
 
-UnnyNet.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
+Balancy.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
 {
     Debug.Log("Object was saved result: " + saveResponse.Success);
 });
@@ -86,7 +86,7 @@ UnnyNet.Storage.Save("MyCollection2", "ObjectKey", saveExample, saveResponse =>
 Пример загрузки сохранённой ранее строки:
 
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
+Balancy.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
 {
     Debug.Log("String was loaded result: " + loadResponse.Success);
     if (loadResponse.Success)
@@ -97,7 +97,7 @@ UnnyNet.Storage.Load<string>("MyCollection1", "StringKey", loadResponse =>
 Пример загрузки сохранённого ранее объекта:
 
 ```csharp fct_label="Unity"
-UnnyNet.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
+Balancy.Storage.Load<SaveExample>("MyCollection2", "ObjectKey", loadResponse =>
 {
     Debug.Log("Object was loaded result: " + loadResponse.Success);
     if (loadResponse.Success)

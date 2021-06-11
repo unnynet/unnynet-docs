@@ -5,7 +5,7 @@
 #### По почте
 
 ```csharp fct_label="Unity"
-UnnyNet.Auth.WithEmail(<email>, <password>, authResponse =>
+Balancy.Auth.WithEmail(<email>, <password>, authResponse =>
 {
     Debug.Log("Authorized " + authResponse.Success);
     if (authResponse.Success)
@@ -16,7 +16,7 @@ UnnyNet.Auth.WithEmail(<email>, <password>, authResponse =>
 #### По имени и паролю
 
 ```csharp fct_label="Unity"
-UnnyNet.Auth.WithName(<username>, <password>, authResponse =>
+Balancy.Auth.WithName(<username>, <password>, authResponse =>
 {
     Debug.Log("Authorized " + authResponse.Success);
     if (authResponse.Success)
@@ -27,7 +27,7 @@ UnnyNet.Auth.WithName(<username>, <password>, authResponse =>
 #### Как гость, используя Device ID
 
 ```csharp fct_label="Unity"
-UnnyNet.Auth.AsGuest(authResponse =>
+Balancy.Auth.AsGuest(authResponse =>
 {
     Debug.Log("Authorized " + authResponse.Success);
     if (authResponse.Success)

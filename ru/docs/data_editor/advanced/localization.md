@@ -13,7 +13,7 @@
 Вероятно, вы используете какое-то другое решение для хранения всех ключей и значений для локализации. Чтобы все работало, вам нужно добавить такой код:
 
 ```
-UnnyNet.Localization.Manager.onLocalizationRequested = key =>
+Balancy.Localization.Manager.onLocalizationRequested = key =>
 {
     return <Значение, связанное с текущим ключом для выбранной локализации>
 };

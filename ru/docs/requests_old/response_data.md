@@ -1,6 +1,6 @@
 # Requests, Response Data and Errors
 
-When you request any information from UnnyNet or submit leaderboard scores you can provide a callback method. All methods are asynchronous, so it might take some time(usually milliseconds) for callback to be invoked. In the callback you are receiving ResponseData:
+When you request any information from Balancy or submit leaderboard scores you can provide a callback method. All methods are asynchronous, so it might take some time(usually milliseconds) for callback to be invoked. In the callback you are receiving ResponseData:
  
 ```csharp fct_label="Unity"
 public class Error {
