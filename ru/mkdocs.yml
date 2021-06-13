@@ -67,5 +67,7 @@ markdown_extensions:
   - markdown_fenced_code_tabs:
       single_block_as_tab: False
 plugins:
+  - pdf-export:
+      combined: true
   - search
   - awesome-pages
