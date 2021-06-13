@@ -31,7 +31,7 @@ If you are an experience publisher, who values the time and you are confident wi
 Besides of the flat fee we charge additionally for the bandwidth usage.
 
 * first 10Gb are included in each plan
-* $0.2 per 1Gb
+* $0.2 per additional Gb
 
 All the game balance is split into many json files (one for each Template) and the data is being delivered to your clients when they launch your game. If your make any changes in the balance, only the changed Json files will be delivered. The size of each file multiplied by the time it was downloaded from our servers is the bandwidth we charge for. This fee is not something your should worry about, we just added it to make sure our business is profitable for any kind of games we serve. 
 
