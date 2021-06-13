@@ -18,6 +18,7 @@ Perfect plan to start your business
 * Free Trial Period. It lasts one month or if your reach 10,000 MAU
 * $499 per month
 * Up to 4h/month of dedicated personal support
+* Up to 1MM MAU
 
 ### Publisher
 If you are an experience publisher, who values the time and you are confident with your project. 
@@ -25,6 +26,7 @@ If you are an experience publisher, who values the time and you are confident wi
 * Free Trial Period. It lasts one month or if your reach 10,000 MAU
 * $999 per month
 * Up to 10h/month of dedicated personal support
+* Unlimited MAU
 
 ### Pay as you go
 
