@@ -24,7 +24,6 @@ Balancy.Main.Init(new Balancy.AppConfig {
 Для удобства Balancy разбит из нескольких модулей.
 
 1. [**Auth**](/basic/authorization) — различные способы авторизации.
-2. [**Data Editor**](/data_editor/basic) — место для работы Data Editor'ом.
-3. [**Storage**](/basic/storage) — обмен игровыми данными игрока с сервером.
-4. [**Payments**](/basic/payments) — работа с внутриигровыми покупками.
-5. **Localization** — (будет в будущем) возможность настроить локализацию игры.
+2. [**Data Editor**](/data_editor/basic) — место для работы с игровым балансом
+3. [**Payments**](/basic/payments) — работа с внутриигровыми покупками.
+4. **Localization** — (будет в будущем) возможность настроить локализацию игры.

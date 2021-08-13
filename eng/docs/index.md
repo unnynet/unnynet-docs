@@ -4,7 +4,9 @@ Balancy is an essential extension for any game or app. Instead of using ancient 
 
 We've spent more than a decade in Game Dev Industry, creating tons of different games, so we know the problem you are facing right now. Our main goal is to prevent game developers from reinventing the wheel, developing the same technology over and over with each new game. That's why our solution is super easy to use and it does most of the work on your behalf.
 
-Our core features help you to organise and to deliver Game Data, save your players' progress and validate in-app purchases. Many more features are coming. 
+![Screenshot](img/de_example/WeAreTooBusy.jpg)
+
+Our core feature help you to organise and to deliver Game Balance Data. Many more features are coming. 
 
 Our servers are designed to run at massive scale, and scale automatically with your user base. We have your back, so we expect from you to focus on the game itself and make it awesome.
 
@@ -26,10 +28,6 @@ Integration of Balancy is extremely easy and takes not longer than 10 minutes. I
 ###[Data Editor](/data_editor/basic)
 
 Create and edit your game data in the most convenient way. Balancy will automatically deliver that data to your game.
-
-###[Cloud Storage](/basic/storage)
-
-Save and load the progress of your players using our reliable servers. You can forget about any headache in this area.
 
 ###[Payments](/basic/payments)
 

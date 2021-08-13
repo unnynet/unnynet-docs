@@ -24,7 +24,6 @@ Balancy.Main.Init(new Balancy.AppConfig {
 Balancy consists of several modules for your convenience.
 
 1. [**Auth**](/basic/authorization) - authorizations
-2. [**Data Editor**](/data_editor/basic) - a place to work with Data Editor
-3. [**Storage**](/basic/storage) - save/load in-game data with the server
-4. [**Payments**](/basic/payments) - purchase In-App and get information about them
-5. **Localization** - (coming soon) a place to work with localizations
+2. [**Data Editor**](/data_editor/basic) - a place to work with Game Balance Data
+3. [**Payments**](/basic/payments) - purchase In-App and get information about them
+4. **Localization** - (coming soon) a place to work with localizations
