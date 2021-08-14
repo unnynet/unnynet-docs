@@ -9,12 +9,13 @@ We charge per Game Title and each game have it's own payment deadline, depending
 | `Annual Payment`       | 0$ | $10 per seat / month | $20 per seat / month | $XX |
 | `Montly Payment`       | 0$ | $15 per seat / month | $40 per seat / month | $XX |
 | `Seats`    | 1-3 | 1-5 | 4-10 | 10+ |
-| `Documents`    | 1000 | 5000 | 20000 | Unlimited |
+| `Documents*`    | 1000 | 5000 | 20000 | Unlimited |
 | `CDN Included`    | 2Gb | 10Gb | 100Gb | 1000Gb |
 | `History (soon)`    | - | + | + | + |
 | `Branches (soon)`    | - | - | + | + |
 | `A/B Testing (soon)`    | - | - | + | + |
 
+*Documents - you can see an approximate value based on the Id's of your document. Each new Document, Component, Template, enum will add an additional Id. The number won't go down if you remove a document, because technically it's not removed and you can restore it later if you want to. We've taken into account approximately 10% of removed documents when we were planing our pricing. Please don't try to minimize this value in exchange to the convenience for your team.
 
 ### Pay as you go
 
