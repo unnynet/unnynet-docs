@@ -10,7 +10,8 @@ Bear in mind that your are pushing only for the active Environment. If you want 
 ## Versions
 
 Before you deploy the new data, you can set a minimum version for your game and data:
-![Screenshot](../../img/de_example/de_deploy.jpg)
+
+![Screenshot](/img/de_example/de_deploy.jpg)
 
 If your game version (Unity->Player Settings->Version) is lower than any of 2 versions, the new data will not be downloaded.
 

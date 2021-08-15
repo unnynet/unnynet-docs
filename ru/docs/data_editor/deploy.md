@@ -9,7 +9,8 @@
 ## Версии
 
 Перед развёртыванием новых данных вы можете установить минимальную версию для своей игры и данных:
-![Screenshot](../../img/de_example/de_deploy.jpg)
+
+![Screenshot](/img/de_example/de_deploy.jpg)
 
 Если версия вашей игры (Unity->Player Settings->Version) ниже любой из 2-х версий, новые данные не будут загружены.
 
