@@ -2,17 +2,6 @@
 
 The list of method for authentication will be updated and for some platform we'll try to automate this process.
 
-#### Email
-
-```csharp fct_label="Unity"
-Balancy.Auth.WithEmail(<email>, <password>, authResponse =>
-{
-    Debug.Log("Authorized " + authResponse.Success);
-    if (authResponse.Success)
-        Debug.Log("User id: " + authResponse.UserId);
-});
-```
-
 #### Name and Password
 
 ```csharp fct_label="Unity"
