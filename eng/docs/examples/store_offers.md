@@ -11,7 +11,7 @@ There are 2 types conditions:
 1. Reach certain level
 2. Make N purchases
 
-You can can as many other conditions as you want to.
+You can use as many other conditions as you want to.
 
 
 ### How to start
