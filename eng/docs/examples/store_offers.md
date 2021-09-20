@@ -8,18 +8,18 @@ This Demo shows how to create Store for In-Apps and other in-game items. The sto
 
 There are 2 types conditions:
 
-1. Reach certain level
-2. Make N purchases
+1. Reach certain level.
+2. Make N purchases.
 
 You can use as many other conditions as you want to.
 
 
 ### How to start
 
-1. Clone [Git Project](https://github.com/pavelbalancy/Example-Store)
-2. Open Project in Unity
-3. Launch Scene Assets/StoreDemo/Scenes/SampleScene.unity
-4. Press Play
+1. Clone [Git Project](https://github.com/pavelbalancy/Example-Store).
+2. Open Project in Unity.
+3. Launch Scene Assets/StoreDemo/Scenes/SampleScene.unity.
+4. Press Play.
 5. Click on offers to purchase items. Please note that once you make 5 purchases, new offers appear.
 
 ### Create your own Balance
@@ -35,11 +35,11 @@ Follow our documentation and replace in Unity Project GameId from our project to
 
 ### Brief description of Balancy setup for Store Offers
 
-1. **Item Model** is the template all items. In my example I've created Gems and Gold as Items.
-2. All items, including resources are stored in Inventories. Thus we have **Inventory Config**. We'll speak more about Inventory in our next Example Project with Inventories.
+1. **Item Model** is the template for all items. In my example I've created Gems and Gold as Items.
+2. All items, including resources are stored in Inventories. Thus, we have **Inventory Config**. We'll speak more about Inventory in our next Example Project with Inventories.
 3. **Store Offer** is the main Template for this Example Project. It looks like this
-
-![Screenshot](../../img/example_store_offers.png) 
+   
+     ![Screenshot](../../img/example_store_offers.png) 
 
 4. The first parameter is **Icon**. This is the image, which is used in the game store. We synchronized Unity Addressables with Balancy to make it work. You can find how it works [here](/data_editor/advanced/assets). 
 5. **Conditions** is the most tricky part. I'll explain it in the next section
@@ -54,15 +54,15 @@ Conditions are often used to hide some parts of a game from a player before he i
 
 **Condition** can be anything:
 
-* player's level
-* find a specific item
-* killed a certain enemy
+* player's level;
+* find a specific item;
+* killed a certain enemy;
 * etc...
 
 You should implement Conditions logic only once in Balancy and in your code and after that you can use it everywhere: Tutorials, Quests, Dialogs,... I'm using them in Store Offers.
 
-* To see offers with Ids **53** and **56** player must make 5 purchases
-* For offer **50** player must have at least level 5 and make 10 purchases
+* To see offers with Ids **53** and **56** player must make 5 purchases.
+* For this offer **50** player must have at least level 5 and make 10 purchases.
 
 You can see this information in my table (screenshot above).
-**ConditionChecker.cs** is the class, which works with conditions. You should check it's implementation. If you decide any new types of Conditions, you'll need to make changes only there.
+**ConditionChecker.cs** is the class, which works with conditions. You should check its implementation. If you decide to add any new types of Conditions, you'll need to make changes only there.
