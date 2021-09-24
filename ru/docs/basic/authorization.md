@@ -2,17 +2,6 @@
 
 Список методов аутентификации будет обновляться по мере добавления.
 
-#### По почте
-
-```csharp fct_label="Unity"
-Balancy.Auth.WithEmail(<email>, <password>, authResponse =>
-{
-    Debug.Log("Authorized " + authResponse.Success);
-    if (authResponse.Success)
-        Debug.Log("User id: " + authResponse.UserId);
-});
-```
-
 #### По имени и паролю
 
 ```csharp fct_label="Unity"
