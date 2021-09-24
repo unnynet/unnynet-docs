@@ -2,6 +2,7 @@
 
 ![Screenshot](../../img/example_store_offers2.png) 
 
+
 ### Description
 
 This Demo shows how to create Store for In-Apps and other in-game items. The store is using Balancy to manage all the data. It has not only ordinary offers, but also conditional offers. Such offers are available for players only after certain conditions are complete.
@@ -14,13 +15,22 @@ There are 2 types conditions:
 You can can as many other conditions as you want to.
 
 
+### Before you begin
+
+Such development method on Conditions proved to work extremely well in many projects. The code will be reusable for any game system and it's super easy for game-designer to view and edit all the conditions in one place.    
+
+
 ### How to start
 
 1. Clone [Git Project](https://github.com/pavelbalancy/Example-Store)
 2. Open Project in Unity
-3. Launch Scene Assets/StoreDemo/Scenes/SampleScene.unity
+3. Launch Scene Assets/StoreOffers/StoreDemo/Scenes/SampleScene.unity
 4. Press Play
 5. Click on offers to purchase items. Please note that once you make 5 purchases, new offers appear.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mQFmZTR-p1I" title="Video tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### Create your own Balance
 
@@ -30,12 +40,12 @@ You can can as many other conditions as you want to.
 4. Click on Clone and confirm
 
 You'll get your own version of Store Offers app on Balancy. 
-Follow our documentation and replace in Unity Project GameId from our project to your newly created one.
+Follow our [documentation](/basic/integration_unity3d/) and replace in Unity Project GameId from our project to your newly created one.
 
 
 ### Brief description of Balancy setup for Store Offers
 
-1. **Item Model** is the template all items. In my example I've created Gems and Gold as Items.
+1. **Item Model** is the template for all items. In my example I've created Gems and Gold as Items.
 2. All items, including resources are stored in Inventories. Thus we have **Inventory Config**. We'll speak more about Inventory in our next Example Project with Inventories.
 3. **Store Offer** is the main Template for this Example Project. It looks like this
 
