@@ -36,6 +36,7 @@ nav:
       - Advanced:
         - Environment: data_editor/advanced/environment.md
         - Assets: data_editor/advanced/assets.md
+        - Display Format: data_editor/advanced/display_format.md
         - Localization: data_editor/advanced/localization.md
       - Example: data_editor/example.md
       - What's next: data_editor/what_next.md
