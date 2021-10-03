@@ -36,9 +36,12 @@ nav:
       - Дополнительная информация :
         - Окружения: data_editor/advanced/environment.md
         - Ассеты: data_editor/advanced/assets.md
+        - Формат отображения: data_editor/advanced/display_format.md
         - Локализация: data_editor/advanced/localization.md
       - Пример: data_editor/example.md
       - Что дальше: data_editor/what_next.md
+    - Примеры:
+        - Оферы в магазине: examples/store_offers.md
     - Запросы:
       - Формат ответов: requests/response_data.md
     - Цены: pricing.md
