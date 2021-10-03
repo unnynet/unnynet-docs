@@ -6,8 +6,8 @@ We charge per Game Title and each game have it's own payment deadline, depending
 
 |       | Free            | Plus            | Pro            | Enterprise       |
 | :---------- | :-------------- |:-------------- |:-------------- |:-------------- |
-| `Annual Payment`       | 0$ | $10 per seat / month | $20 per seat / month | $XX |
-| `Montly Payment`       | 0$ | $15 per seat / month | $40 per seat / month | $XX |
+| `Annual Payment`       | 0$ | $10 per seat / game / month | $20 per seat / game / month | $XX |
+| `Montly Payment`       | 0$ | $15 per seat / game / month | $40 per seat / game / month | $XX |
 | `Seats`    | 1-3 | 1-5 | 4-10 | 10+ |
 | `Documents*`    | 1000 | 5000 | 20000 | Unlimited |
 | `CDN Included`    | 2Gb | 10Gb | 100Gb | 1000Gb |
