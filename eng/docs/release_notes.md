@@ -1,5 +1,15 @@
 # Release Notes
 
+### Web 2.3.0 - November 7, 2021
+* Param description can now be much longer and still fits the screen
+* Fixed Products page crash when using search
+* Removed cell margins when you open content with double click
+* Hot key Control+Shift+F to open search
+
+### 2.3.0 - November 7, 2021
+* SmartObjects improvements
+* Bug fixes
+
 ### 2.2.0 - August 16, 2021
 * Option to rollback the deploy to a previous version
 * Plugin now reports us about any problems in your game balance, so we could help you asap
