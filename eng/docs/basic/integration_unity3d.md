@@ -3,7 +3,7 @@
 For your convenience we've recorded the [video of the integration](https://youtu.be/91JYYb1KVIY)
 
 1.  Download the latest version of the plugin from the [Asset Store](https://assetstore.unity.com/packages/slug/128920).
-2   Alternatively you can use our direct link to the [package](https://dictionaries-unnynet.fra1.cdn.digitaloceanspaces.com/config/Packages/balancy_latest.unitypackage).
+2.  Alternatively you can use our direct link to the [package](https://dictionaries-unnynet.fra1.cdn.digitaloceanspaces.com/config/Packages/balancy_latest.unitypackage).
 3.  Import the Balancy plugin.
 4.  Prepare Game ID and Public Key to use in the code:
 
