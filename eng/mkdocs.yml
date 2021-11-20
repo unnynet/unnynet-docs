@@ -31,9 +31,7 @@ nav:
         - Parameters: data_editor/getting_started/parameters.md
         - Documents: data_editor/getting_started/documents.md
         - Enums: data_editor/getting_started/enums.md
-      - Deploy and data format:
-          - Deploy: data_editor/deploy/validation_and_export.md
-          - Data scheme: data_editor/deploy/data_scheme.md
+      - Deploy: data_editor/deploy.md
       - Code Generation: data_editor/code_generation.md
       - Advanced:
         - Environment: data_editor/advanced/environment.md
@@ -42,6 +40,9 @@ nav:
         - Localization: data_editor/advanced/localization.md
       - Example: data_editor/example.md
       - What's next: data_editor/what_next.md
+      - Extra:
+        - Info: data_editor/extra/info.md
+        - Data scheme: data_editor/extra/data_scheme.md
     - Examples:
       - Store Offer: examples/store_offers.md
     - Requests:
