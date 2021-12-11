@@ -1,5 +1,11 @@
 # Release Notes
 
+### Web 2.3.1 - December 10, 2021
+* Template Diagrams
+* Control button added for each column for sorting and to hide the column
+* Any column of any table can now be changed
+* Documents controls were moved to the left
+
 ### Web 2.3.0 - November 7, 2021
 * Param description can now be much longer and still fits the screen
 * Fixed Products page crash when using search
