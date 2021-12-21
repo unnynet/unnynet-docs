@@ -1,5 +1,8 @@
 # Release Notes
 
+### Web 2.3.2 - December 21, 2021
+* History page enhancement
+
 ### Web 2.3.1 - December 10, 2021
 * Template Diagrams
 * Control button added for each column for sorting and to hide the column
