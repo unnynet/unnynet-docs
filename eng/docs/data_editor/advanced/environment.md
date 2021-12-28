@@ -17,7 +17,7 @@ We provide each game with 3 Environments: Development, Stage and Production. It'
 
 ### Changing of the environment
 
-You should try to avoid changing the environment in DE. In the best case scenario you just need to work in the **Development** and then transfer the data to other environments. Balancy even doesn't support transferring the environment's data in the opposite direction.
+You should try to avoid changing the environment in DE. In the best case scenario you just need to work in the **Development** and then transfer the data to other environments.
 
 However there are situation when you might need to change something in the **Production** environment. 
 

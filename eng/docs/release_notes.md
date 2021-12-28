@@ -1,5 +1,15 @@
 # Release Notes
 
+### Web 2.4.0 - December 28, 2021
+* Deploy refactor: deploy, history and data migration pages were united to one single page.
+* Templates, Enums and Assets sections were moved to Data Structure.
+* Platforms and Products were united as well.
+* Control+Z and Control+Y can now be used to undo and redo your last actions.
+* Many small improvements.
+
+### Web 2.3.3 - December 27, 2021
+* Single Document Page
+
 ### Web 2.3.2 - December 21, 2021
 * History page enhancement
 
