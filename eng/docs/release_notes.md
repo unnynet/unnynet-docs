@@ -1,5 +1,9 @@
 # Release Notes
 
+### Web 2.4.1 - January 6, 2022
+* Unique setting for parameters.
+* New cell editor for complex Data.
+
 ### Web 2.4.0 - December 28, 2021
 * Deploy refactor: deploy, history and data migration pages were united to one single page.
 * Templates, Enums and Assets sections were moved to Data Structure.
