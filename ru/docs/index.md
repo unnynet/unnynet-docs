@@ -12,11 +12,7 @@ Balancy — полезный инструмент для любой игры и�
 
 Просто посмотрите видео
 -
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BVL9Hb3Bt50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Стартовый туториал
--
-<iframe width="560" height="315" src="https://www.youtube.com/embed/91JYYb1KVIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KsJN0yzuNBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Присоединяйтесь к нашему Дискорду](https://discord.gg/X27tuQR)
 

@@ -12,11 +12,7 @@ Our servers are designed to run at massive scale, and scale automatically with y
 
 Watch Video
 -
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BVL9Hb3Bt50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Video Tutorial
--
-<iframe width="560" height="315" src="https://www.youtube.com/embed/91JYYb1KVIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KsJN0yzuNBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Join Our Discord](https://discord.gg/X27tuQR)
 
