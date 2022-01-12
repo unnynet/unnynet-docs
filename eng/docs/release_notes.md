@@ -1,5 +1,8 @@
 # Release Notes
 
+### 2.4.1 - January 10, 2022
+* New workflow to work with plugin
+
 ### Web 2.4.1 - January 6, 2022
 * Unique setting for parameters.
 * New cell editor for complex Data.

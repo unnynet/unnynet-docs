@@ -1,6 +1,6 @@
 # Интеграция с Unity3D
 
-Для удобства мы записали [отдельное видео об интеграции](https://youtu.be/91JYYb1KVIY)
+Для удобства мы записали [отдельное видео об интеграции](https://www.youtube.com/watch?v=4efFdjhyePg&list=PLHHFKd2iPYt7x7OGKsd0VLzJ1c0Vi4wmn)
 
 1.  Скачайте последнюю версию из [Магазина ассетов](https://assetstore.unity.com/packages/slug/128920).
 2.  Или воспользуйтесь прямой ссылкой на [package](https://dictionaries-unnynet.fra1.cdn.digitaloceanspaces.com/config/Packages/balancy_latest.unitypackage).
@@ -24,7 +24,7 @@ Balancy.Main.Init(new Balancy.AppConfig {
 
 Для удобства Balancy разбит из нескольких модулей.
 
-1. [**Auth**](/basic/authorization) — различные способы авторизации.
-2. [**Data Editor**](/data_editor/basic) — место для работы с игровым балансом
+1. [**Data Editor**](/data_editor/basic) — место для работы с игровым балансом
+2. [**Auth**](/basic/authorization) — различные способы авторизации.
 3. [**Payments**](/basic/payments) — работа с внутриигровыми покупками.
 4. **Localization** — (будет в будущем) возможность настроить локализацию игры.
