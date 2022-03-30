@@ -36,6 +36,7 @@ nav:
       - Advanced:
         - Environment: data_editor/advanced/environment.md
         - Assets: data_editor/advanced/assets.md
+        - Data Objects: data_editor/advanced/data_objects.md
         - Display Format: data_editor/advanced/display_format.md
         - Localization: data_editor/advanced/localization.md
       - Example: data_editor/example.md
@@ -43,6 +44,17 @@ nav:
       - Extra:
         - Info: data_editor/extra/info.md
         - Data scheme: data_editor/extra/data_scheme.md
+    - Smart Offers:
+      - Basic: smart_offers/basic.md
+      - How to Start: smart_offers/how_to_start.md
+      - Overview: smart_offers/overview.md
+      - Game Events: smart_offers/game_events.md
+      - Visual Scripting:
+        - Basic: smart_offers/visual_scripting/basic.md
+        - Smart Objects: smart_offers/visual_scripting/smart_objects.md
+      - Smart Offers: smart_offers/smart_offers.md
+      - Smart Windows: smart_offers/smart_windows.md
+      - Other Templates: smart_offers/other_templates.md
     - Examples:
       - Store Offer: examples/store_offers.md
     - Requests:
