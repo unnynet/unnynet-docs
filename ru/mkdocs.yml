@@ -16,7 +16,7 @@ theme:
 nav:
     - Table of Contents: table.md
     - Главная: index.md
-    - Видео туториалы: video_tutorials.md
+#    - Видео туториалы: video_tutorials.md
     - Базовая интеграция:
       - С чего начать: basic/basic.md
       - Платформы:
