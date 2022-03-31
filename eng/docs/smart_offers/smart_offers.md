@@ -26,7 +26,7 @@ Thanks to Balancy you already have all the tools you need to start your experime
 
 ### Section for programmers
 
-When an Game Offer starts/finishes the events in code are triggered. You can subscribed for such events if you need to run any additional logic:  
+When a Game Offer starts the event in code is triggered. You can subscribed for such event if you need to run any additional logic:  
 
 ```csharp fct_label="Unity"
 Balancy.ExternalEvents.SmartObjects.NewOfferActivatedEvent += offerInfo =>
@@ -34,6 +34,8 @@ Balancy.ExternalEvents.SmartObjects.NewOfferActivatedEvent += offerInfo =>
     Debug.Log("New Offer Activated " + offerInfo.GameOffer.Name);
 };
 ```
+
+And when the Game Offer ends:
 
 ```csharp fct_label="Unity"
 Balancy.ExternalEvents.SmartObjects.OfferDeactivatedEvent += (offerInfo, wasPurchased) =>

@@ -3,7 +3,7 @@
 Game Event is the first step for launching Game Offers. However Game Events have much broader meaning. You can use them to plan your in-game activities and events like Halloween, Tournaments, Weekends, and much more.
 Adding Game Events increase your games retention and engagements.
 
-After installing SmartOffers plugin, you get a ready to use structure for Game Events, and the table look like this:
+After installing SmartOffers package, you get a ready to use structure for Game Events, and the table look like this:
 ![Screenshot](../img/smart_offers/table_game_events.jpg)
 
  Name              | Description
@@ -15,7 +15,7 @@ After installing SmartOffers plugin, you get a ready to use structure for Game E
 
 ### Section for programmers
 
-When an Game Event starts/finishes the events in code are triggered. You can subscribed for such events if you need to run any additional logic:  
+When an Game Event starts the event in code is triggered. You can subscribed for such event if you need to run any additional logic:  
 
 ```csharp fct_label="Unity"
 Balancy.ExternalEvents.SmartObjects.NewEventActivatedEvent += eventInfo =>
@@ -23,6 +23,8 @@ Balancy.ExternalEvents.SmartObjects.NewEventActivatedEvent += eventInfo =>
     Debug.Log("New Event Started " + eventInfo.GameEvent.Name);
 };
 ```
+
+And when the Game Event ends:
 
 ```csharp fct_label="Unity"
 Balancy.ExternalEvents.SmartObjects.EventDeactivatedEvent += eventInfo =>

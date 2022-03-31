@@ -31,6 +31,7 @@ All the game balance is split into many json files (one for each Template) and t
 $10 per 1 Million API Calls.
 
 What generates API Call:
+
 * GameEvent Starts/Ends
 * GameOffer Starts/Ends
 * VisualScripting each executed node Enter/Exit

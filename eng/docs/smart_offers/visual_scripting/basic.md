@@ -20,7 +20,7 @@ When you click on an ID of any Script, the Visual Scripting tool will launch and
 2.  Right Click on the canvas to add a new Node. Each Node executes a specific logic.
 3.  You can connect ports of different nodes to define the logic flow.
 4.  On the right side there is variables section. You can add new variables there. Drag and Drop variable to the canvas to operate with them in the Script.
-5.  Each Script starts with the Enter Port and should and at the exit port.
+5.  Each Script starts with the Enter Port and should end at the exit port.
 
 We provide Several Scripts as Examples - they are the best place to start learning how it works.
 Once the script is ready you can link it to the [GameEvent](/smart_offers/game_events)
