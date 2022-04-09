@@ -28,3 +28,6 @@ Create and edit your game data in the most convenient way. Balancy will automati
 ###[Payments](/basic/payments)
 
 Implement InApp purchases with only one simple line of code. We'll take care about all the logic and validation.
+
+###[Smart Offers](/smart_offers/basic)
+Balancy Smart Offers - helps game developers to run any Live Operations, including Personalized Offers. A game with in-game Events and Offers makes twice more money.

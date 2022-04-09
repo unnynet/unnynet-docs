@@ -18,10 +18,14 @@ Thanks to Balancy you already have all the tools you need to start your experime
 **Sprite**        | The image associated with this Offer. Read more about [Data Objects](/data_editor/advanced/data_objects)
 **Name**          | The name of the Offer
 **Duration**      | How long will the offer be available to a user after the initial offering. (In seconds)
-**Store Item**    | Defines what you are selling in this offer. Read more about [Store Item](/smart_offers/other_templates) 
+**Store Item**    | Defines what you are selling in this offer. Read more about [Store Item](/smart_offers/extra/other_templates) 
 **View**          | The window which will be shown once the offer is activate. Read more about [Smart Windows](/smart_offers/smart_windows)
 **Description**   | A detailed information about the offer
-**Show Type**     | Defines when the offer window is being shown. On Activation and/or when a new Session starts. 
+**Show Type**     | Defines when the offer window is being shown. On Activation and/or when a new Session starts.
+
+### Extension
+
+If your game requires any additional parameters, you should inherit a new Template from **GameOffer** and add as many parameters as you need. New Template creates a new section in navigation though.
 
 
 ### Section for programmers
