@@ -52,9 +52,13 @@ nav:
       - Visual Scripting:
         - Basic: smart_offers/visual_scripting/basic.md
         - Smart Objects: smart_offers/visual_scripting/smart_objects.md
+        - Segmentation: smart_offers/visual_scripting/segmentation.md
+        - A/B Tests: smart_offers/visual_scripting/ab_tests.md
       - Smart Offers: smart_offers/smart_offers.md
       - Smart Windows: smart_offers/smart_windows.md
-      - Other Templates: smart_offers/other_templates.md
+      - Extra:
+        - Other Templates: smart_offers/extra/other_templates.md
+        - Conditions: smart_offers/extra/conditions.md
     - Examples:
       - Store Offer: examples/store_offers.md
     - Requests:
