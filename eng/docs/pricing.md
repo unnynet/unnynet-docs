@@ -39,10 +39,10 @@ What generates API Call:
 ##### What to expect:
 
 * You have a mid-core game with DAU = 30k. 
-* Your ARPDAU should be at least $0.1.
-* Thus you make around $3k/day or $90k/month.
+* Your ARPDAU should be at least $0.05.
+* Thus you make around $1.5k/day or $45k/month.
 * Your game have 10 unique GameOffers, each of them triggers 30 API Call for one user. 
 * This make total of 300 API Calls per user for the perfect game with 100% retention.
 * Most of your players will churn and won't see all the offers, so you should expect to have on average 60 API Calls per user.
 * Taking into account your DAU your game will generate around 2 Millions API Calls a day.
-* You pay us $20 our of your $3k revenue a day.
+* You pay us $20/day, but your revenue grows to $3k a day.
