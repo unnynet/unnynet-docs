@@ -17,3 +17,37 @@
         {
             Debug.Log("Purchase was made " + doneCallback.Success);
         });
+        
+5. If you are using our [Smart Offers](/smart_offers/basic), use the next method to purchase an [Offer](/smart_offers/smart_offers) and a [Store Item](/smart_offers/extra/other_templates)
+        
+        Balancy.SmartObjects.Manager.PurchaseOffer(offerInfo, purchaseResponse =>
+        {
+            Debug.Log("Purchase status " + purchaseResponse.Success + " for " + purchaseResponse.ProductId);
+        });
+        
+        Balancy.SmartObjects.Manager.PurchaseStoreItem(storeItem, purchaseResponse =>
+        {
+            Debug.Log("Purchase status " + purchaseResponse.Success + " for " + purchaseResponse.ProductId);
+        });
+        
+7. If you are using your own Payment/Validation system, you just need to confirm the purchase with Balancy. This information will only be used for future [Segmentation](/smart_offers/visual_scripting/segmentation) and will be saved in the profile history if the purchase if valid.
+
+        var paymentInfo = new PaymentInfo
+        {
+            Receipt = unityProduct.receipt,
+            Price = (float)unityProduct.metadata.localizedPrice,
+            Currency = unityProduct.metadata.isoCurrencyCode,
+            ItemId = unityProduct.definition.id
+        };
+        
+        Balancy.SmartObjects.Manager.OfferWasPurchased(offerInfo, paymentInfo, purchaseResponse =>
+        {
+            Debug.Log("Purchase status " + purchaseResponse.Success + " for " + purchaseResponse.ProductId);
+        });
+        <-- OR -->
+        Balancy.SmartObjects.Manager.ItemWasPurchased(storeItem, paymentInfo, purchaseResponse =>
+        {
+            Debug.Log("Purchase status " + purchaseResponse.Success + " for " + purchaseResponse.ProductId);
+        });
+
+

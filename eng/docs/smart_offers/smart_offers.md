@@ -70,4 +70,6 @@ Balancy.ExternalEvents.SmartObjects.SmartObjectsInitializedEvent += () =>
 };
 ```
 
+Visit the [Payments](/basic/payments) section to read how you can purchase Offers.
+
 #### [Next: Smart Windows](/smart_offers/smart_windows)

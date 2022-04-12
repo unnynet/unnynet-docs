@@ -52,4 +52,6 @@ Defines the maximum one time payment the player can afford
 ####  **SystemLanguage**
 ####  **Platform** 
 
+Visit the [Payments](/basic/payments) section to understand the importance of validation of the purchases. 
+
 #### [Next: A/B Tests](/smart_offers/visual_scripting/ab_tests)
