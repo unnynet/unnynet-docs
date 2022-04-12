@@ -50,4 +50,7 @@
             Debug.Log("Purchase status " + purchaseResponse.Success + " for " + purchaseResponse.ProductId);
         });
 
+8.  To get the list of all the payments the user made, call the following method (make sure to do that after **ExternalEvents.SmartObjects.SmartObjectsInitializedEvent** is invoked)
+
+        UnnyProfileManager.GetPaymentsInfo();
 
