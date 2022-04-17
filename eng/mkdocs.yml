@@ -1,17 +1,17 @@
 site_name: Balancy Documentation
 
-# Documentation and theme
-theme:
-  name: 'material'
-  custom_dir: 'overrides'
-  language: 'en'
-  palette:
-    primary: 'indigo'
-    accent: 'indigo'
-  font:
-    text: 'Roboto'
-    code: 'Roboto Mono'
-  favicon: 'img/favicon.ico'
+## Documentation and theme
+#theme:
+#  name: 'material'
+#  custom_dir: 'overrides'
+#  language: 'en'
+#  palette:
+#    primary: 'indigo'
+#    accent: 'indigo'
+#  font:
+#    text: 'Roboto'
+#    code: 'Roboto Mono'
+#  favicon: 'img/favicon.ico'
 
 nav:
     - Table of Contents: table.md
@@ -77,19 +77,19 @@ google_analytics:
   - UA-125653723-3
   - auto
 
-# Extensions
-markdown_extensions:
-  - admonition
-  - codehilite:
-      linenums: False
-      guess_lang: False
-  - toc:
-      permalink: True
-  - markdown_fenced_code_tabs:
-      single_block_as_tab: False
-
-plugins:
-  - pdf-export:
-      combined: true
-  - search
-  - awesome-pages
+## Extensions
+#markdown_extensions:
+#  - admonition
+#  - codehilite:
+#      linenums: False
+#      guess_lang: False
+#  - toc:
+#      permalink: True
+#  - markdown_fenced_code_tabs:
+#      single_block_as_tab: False
+#
+#plugins:
+#  - pdf-export:
+#      combined: true
+#  - search
+#  - awesome-pages

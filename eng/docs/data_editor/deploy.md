@@ -38,3 +38,13 @@ private bool IsVersionOutdated()
 ### Min version to Update Data
 This version is usually used, when Templates in DE were dramatically changed, thus old clients won't be able to parse new structure correctly.
 
+
+### Offline Games
+
+If your game is offline, you might assume that the game could be launched the first time without an access to the internet. In such situation you can't rely that the game balance will be delivered to the build.
+
+1. Open editor window Tools->Balancy
+2. Click on **Download Data**
+3. All the latest game data from Editor will be downloaded and put into /Assets/Balancy/Resources
+4. If your game is launched without an internet access, it'll use the data from the resources
+5. Once internet is available the data will be automatically updated if necessary

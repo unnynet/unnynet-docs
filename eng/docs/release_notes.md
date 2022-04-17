@@ -1,5 +1,8 @@
 # Release Notes
 
+### 3.0.0 - April 18, 2022
+* New product added - Smart Offers and Game Events
+
 ### 2.4.1 - January 10, 2022
 * New workflow to work with plugin
 

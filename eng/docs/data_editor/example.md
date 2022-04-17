@@ -134,16 +134,6 @@ Launch the game and you should see the following logs in the console:
 The next step is to write some logic to store the items you have and spend items to make a craft items. I'll provide the whole code listing, so you could investigate it. Keep in mind that this example was made super easy on purpose. For the real project you would definitely want to organize the code better. And don't forget about [SOLID principles](https://en.wikipedia.org/wiki/SOLID).
 Good luck with coding!
 
-[DataEditorExample.cs](/code/DataEditorExample.cs) 
-
-### Offline Games
-
-If your game is offline, you might assume that the game could be launched the first time without an access to the internet. In such situation you can't rely that the game balance will be delivered to the build.
-
-1. Open editor window Tools->Balancy
-2. Click on **Download Data**
-3. All the latest game data from Editor will be downloaded and put into /Assets/Balancy/Resources
-4. If your game is launched without an internet access, it'll use the data from the resources
-5. Once internet is available the data will be automatically updated if necessary
+[DataEditorExample.cs](/code/DataEditorExample.cs)
 
 #### [Next: What's next](/data_editor/what_next)
