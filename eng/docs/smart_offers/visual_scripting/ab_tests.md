@@ -1,8 +1,19 @@
 # A/B Tests
 
-A/B testing is a way for developers to run a controlled experiment between two or more versions of something in their game to determine which is more effective. Your audience is segmented into two or more groups, the control group (current performance – no changes) and your test group.
+    A/B testing is a way for developers to run a controlled experiment between two or more versions of something in their game to determine which is more effective. Your audience is segmented into two or more groups, the control group (current performance – no changes) and your test group.
 
 A/B testing is a great way to find the best pricing, game difficulty or test any of your hypothesis.
+
+![Screenshot](../../img/smart_offers/table_ab_tests.jpg)
+
+Before using all AB Tests must be added to the table.
+
+Name              | Description
+------------------|------
+**Name**          | The name of the Test.
+**Variants**      | Each user gets one random variant. The chance depends on the variant weight.
+**Best Variant**  | Is used when AB Test is over and you want to specify the best performed variant. 
+**Status**        | **Active** - the Test is running. **Inactive** - the test was cancelled or wasn't yet started. **Finished** - the test is finished, all new users will automatically be assigned to the **Best Variant**, meanwhile old user won't change their variant. **FinishedWithChange** - the test is finished and all users, including the old ones, will change their variant to the **Best Variant**
 
 There are currently 3 ways to work with A/B testing:
 
