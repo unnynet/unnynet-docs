@@ -6,10 +6,10 @@ If your string contains any special symbols or starts with a number, you need to
 ### Available operators
 
 1.  For numeric columns you can use operators **>, >=, <, <=, ==, !=**. For example **MaxStack >= 10** - it'll select only document, which parameter **MaxStack** value is greater or equal **10**.
-2.  **\<string\> contains \<substring\>** or **\<string\> includes \<substring\> or **\<substring\> in \<string\>** can be used to check if the \<string\> contains the \<substring\>. You can use here any string parameters or constant values.
+2.  **&lt;param_name&gt; contains &lt;string&gt;** or **&lt;param_name&gt; includes &lt;string&gt;** or **&lt;string&gt; in &lt;param_name&gt;** can be used to check if the &lt;param_name&gt; value contains the &lt;string&gt;. You can use here any string parameters or constant values.
 3.  **&&** - And operator. For example **Level >= 10 && Level <= 20**.
 4.  **||** - Or operator. For example **Level < 10 || Level > 20**.
-5.  **!** - Not operator. For example **!(level>=10)**. *!* can also be used to find all documents, which don't have the string value in a specific parameter. Lets say you have a parameter **Description**, this is how you can find all documents, which are missing the description - **!Description**. If you want to filter only document, which have description, type this - **!!Description**.
-6.  **\<string\> startsWith \<prefix\>** - checks if the \<string\> starts with \<prefix\>.
-7.  **\<string\> endsWith \<suffix\>** - checks if the \<string\> ends with \<suffix\>.
+5.  **!** - Not operator. For example **!(level>=10)**. **!** can also be used to find all documents, which don't have the string value in a specific parameter. Lets say you have a parameter **Description**, this is how you can find all documents, which are missing the description - **!Description**. If you want to filter only document, which have description, type this - **!!Description**.
+6.  **&lt;param_name&gt; startsWith &lt;prefix&gt;** - checks if the &lt;param_name&gt; value starts with &lt;prefix&gt;.
+7.  **&lt;param_name&gt; endsWith &lt;suffix&gt;** - checks if the &lt;param_name&gt; value ends with &lt;suffix&gt;.
 7.  You can use brackets to make complex search filter. For example: **Level >= 10 && (Name contains Weapon || Name contains Tool)**
