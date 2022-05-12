@@ -1,5 +1,11 @@
 # Release Notes
 
+### 3.2.0 - May 12, 2022
+* SmartOffers are now public
+* New Balancy Example added
+* A/B Testing
+* Segmentation
+
 ### 3.0.0 - April 18, 2022
 * New product added - Smart Offers and Game Events
 
