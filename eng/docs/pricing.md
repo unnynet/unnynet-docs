@@ -6,7 +6,6 @@ We charge per Game Title and each game have it's own payment deadline, depending
 
 |       | Free            | Plus            | Pro            | Enterprise       |
 | :---------- | :-------------- |:-------------- |:-------------- |:-------------- |
-| `Annual Payment`       | 0$ | $10 per seat / game / month | $20 per seat / game / month | $XX |
 | `Montly Payment`       | 0$ | $15 per seat / game / month | $40 per seat / game / month | $XX |
 | `Seats`    | 1 | 1-3 | 4-10 | 10+ |
 | `Documents*`    | 1000 | 5000 | 20000 | Unlimited |
@@ -15,7 +14,7 @@ We charge per Game Title and each game have it's own payment deadline, depending
 | `Branches (soon)`    | - | - | + | + |
 | `A/B Testing (soon)`    | - | - | + | + |
 
-*Documents - you can see an approximate value based on the Id's of your document. Each new Document, Component, Template, enum will add an additional Id. Please don't try to minimize this value in exchange to the convenience for your team.
+*Documents - Components are also included here.
 
 ### Pay as you go
 
